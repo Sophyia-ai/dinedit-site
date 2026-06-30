@@ -81,7 +81,8 @@ def _md_to_html(md, accent_color="#C9A063"):
             out.append(f"<h3>{_inline(line[4:], accent_color)}</h3>")
         elif re.match(r"^\s*[-*]\s+", line):
             if not in_list: out.append("<ul>"); in_list = True
-            out.append(f"<li>{_inline(re.sub(r'^\\s*[-*]\\s+','',line), accent_color)}</li>")
+            item = re.sub(r"^\s*[-*]\s+", "", line)
+            out.append(f"<li>{_inline(item, accent_color)}</li>")
         else:
             if in_list: out.append("</ul>"); in_list = False
             out.append(f"<p>{_inline(line, accent_color)}</p>")
