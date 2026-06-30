@@ -1,0 +1,22 @@
+{
+  "title": "Agenda",
+  "subtitle": "Les dîners inédits à venir et la trace de ceux qui ont eu lieu.",
+  "filter": {
+    "upcoming": "À venir",
+    "past": "Passés",
+    "all": "Tous"
+  },
+  "card": {
+    "from": "à partir de",
+    "guests_max": "{{count}} convives",
+    "tba": "à dévoiler",
+    "see_more": "Voir l'événement"
+  },
+  "participation": {
+    "headline": "Demande de participation",
+    "personal": "À titre personnel",
+    "company": "Pour mon entreprise",
+    "next": "Continuer"
+  },
+  "empty": "Aucun événement pour le moment dans cette catégorie."
+}

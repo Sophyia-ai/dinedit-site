@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Dinédit",
+    "tagline": "L'art et la table dans des lieux qu'on ne fait visiter qu'une soirée.",
+    "cta_agenda": "Voir l'agenda",
+    "cta_btob": "Composer un événement"
+  },
+  "intro": {
+    "title": "Une marque, deux rendez-vous",
+    "btoc": {
+      "label": "Pour vous",
+      "text": "Rejoignez un dîner inédit : ~20 convives, un lieu insolite révélé à l'inscription, une œuvre et une table qui se répondent."
+    },
+    "btob": {
+      "label": "Pour votre entreprise",
+      "text": "Composez un événement sur mesure avec Serge et Fany — afterwork, lancement, soirée privée, mariage. Notre méthodologie tient en trois mots : intimité, surprise, circularité."
+    }
+  }
+}

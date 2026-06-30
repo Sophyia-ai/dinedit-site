@@ -1,0 +1,22 @@
+{
+  "title": "Agenda",
+  "subtitle": "Upcoming singular dinners, and the trace of those already held.",
+  "filter": {
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "all": "All"
+  },
+  "card": {
+    "from": "from",
+    "guests_max": "{{count}} guests",
+    "tba": "to be revealed",
+    "see_more": "See the event"
+  },
+  "participation": {
+    "headline": "Request to attend",
+    "personal": "In a personal capacity",
+    "company": "On behalf of my company",
+    "next": "Continue"
+  },
+  "empty": "No events in this category for now."
+}

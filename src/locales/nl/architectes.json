@@ -1,0 +1,18 @@
+{
+  "title": "De Architecten",
+  "subtitle": "Serge en Fany — twee paden die elkaar bewust rond een tafel kruisten.",
+  "serge": {
+    "name": "Serge Van Mol",
+    "role": "Kunstenaars, locaties, scenografie",
+    "bio": "Geboren in Brussel, opgeleid aan de Beaux-Arts, ondernemer in hart en nieren. Hij onderhoudt een breed netwerk van kunstenaars, verzamelaars en chefs. Hij opent de deuren van de ongewone plekken en geeft de dimensie kunst × gastronomie vorm."
+  },
+  "fany": {
+    "name": "Fany Ramadier",
+    "role": "Gastervaring, intimiteit, circulariteit",
+    "bio": "Parisienne, met een achtergrond in klantbeleving, freelance consultant gespecialiseerd in duurzame strategieën. Ze brengt graag mensen van alle leeftijden en achtergronden samen. Zij draagt de menselijke dimensie en het circulaire engagement van elke avond."
+  },
+  "genesis": {
+    "title": "Hoe Dinédit is ontstaan",
+    "text": "Tijdens hun reizen in New York en Londen ontdekten Serge en Fany exclusieve diners en secret cinema — avonden in plekken die niemand zou hebben verwacht. In 2017 besloten ze die werking naar Brussel te brengen, met één eenvoudige opdracht: conventies doorbreken, en gewoontes veranderen."
+  }
+}

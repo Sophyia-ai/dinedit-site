@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Dinédit",
+    "tagline": "Art and the table, in places we only open for one night.",
+    "cta_agenda": "See the agenda",
+    "cta_btob": "Compose an event"
+  },
+  "intro": {
+    "title": "One name, two ways in",
+    "btoc": {
+      "label": "For you",
+      "text": "Join one of our singular dinners: ~20 guests, an unusual venue revealed at booking, a work of art and a table in conversation."
+    },
+    "btob": {
+      "label": "For your company",
+      "text": "Compose a bespoke event with Serge and Fany — afterwork, product launch, private evening, wedding. Our methodology, in three words: intimacy, surprise, circularity."
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "2026-07-25-frederic-chaine-rafael-gouirand",
+  "status": "upcoming",
+  "rubric": "evenement",
+
+  "date_start": "2026-07-25T19:30:00+02:00",
+  "date_end": "2026-07-25T23:30:00+02:00",
+  "_todo_dates": "Confirmer heures exactes (apéritif / dîner / fin) avec Serge",
+
+  "location_name": null,
+  "location_address": null,
+  "location_city": null,
+  "location_country": "BE",
+  "location_lat": null,
+  "location_lng": null,
+  "_todo_location": "Champ de lupins sur le flyer — Serge doit donner le lieu réel (probablement un domaine en Brabant ou Hainaut). Si lieu secret jusqu'à inscription, garder location_name='Lieu insolite révélé après réservation' + ville indicative pour SEO.",
+
+  "capacity": 20,
+  "_todo_capacity": "À confirmer Serge (format Dinédit habituel = ~20)",
+
+  "price_btoc_eur": null,
+  "_todo_price": "À confirmer Serge (fourchette habituelle 150–185 €)",
+
+  "guests": [
+    {
+      "name": "Frédéric Chaine",
+      "role": "Violon — jazz manouche",
+      "bio_short_fr": "Chef d'orchestre, violoniste et compositeur français né à Avignon, très actif en Belgique. Étudié au Koninklijk Conservatorium Brussel. Fondateur et directeur artistique de l'Ensemble Orchestral Européen, il dirige aussi le Frédéric Chaine Quartet — un jazz manouche qui mêle son bagage classique à l'improvisation.",
+      "bio_short_en": "French conductor, violinist and composer, born in Avignon, deeply rooted in Belgium. Trained at the Koninklijk Conservatorium Brussel. Founder and artistic director of the Ensemble Orchestral Européen; also leads the Frédéric Chaine Quartet, a gypsy-jazz formation that bridges his classical foundation with jazz improvisation.",
+      "bio_short_nl": "Frans dirigent, violist en componist, geboren in Avignon, sterk verbonden met België. Studeerde aan het Koninklijk Conservatorium Brussel. Oprichter en artistiek directeur van het Ensemble Orchestral Européen; leidt ook het Frédéric Chaine Quartet, een gipsyjazz-formatie die zijn klassieke achtergrond verbindt met jazzimprovisatie.",
+      "_todo_photo": "Photo solo Frédéric Chaine à demander à Serge ou à récupérer depuis ses publications"
+    },
+    {
+      "name": "Rafael Gouirand",
+      "role": "Guitare manouche — luthier",
+      "bio_short_fr": "Guitariste du Frédéric Chaine Quartet et luthier. En atelier, il fabrique des guitares acoustiques de style « manouche » inspirées des modèles historiques, au sein de la BiM Lutherie Compagnie (Braine-le-Comte), partagée avec Frédéric Guédon et Simon Daron. Sur scène, ses instruments racontent autant que ses notes.",
+      "bio_short_en": "Guitarist of the Frédéric Chaine Quartet, and luthier. At his bench, he builds acoustic gypsy-style guitars inspired by historical models, through BiM Lutherie Compagnie (Braine-le-Comte), a workshop shared with Frédéric Guédon and Simon Daron. On stage, his instruments speak as loudly as his notes.",
+      "bio_short_nl": "Gitarist van het Frédéric Chaine Quartet en luthier. In zijn atelier bouwt hij akoestische gitaren in gipsy-stijl, geïnspireerd op historische modellen, via BiM Lutherie Compagnie (Braine-le-Comte), een werkplaats die hij deelt met Frédéric Guédon en Simon Daron. Op het podium spreken zijn instrumenten net zo luid als zijn noten.",
+      "_todo_photo": "Photo solo Rafael Gouirand à demander à Serge"
+    }
+  ],
+
+  "chef": null,
+  "_todo_chef": "Y a-t-il un chef invité ? Si oui, à ajouter en 3e guest avec profil et plat signature.",
+
+  "flyer_image": "/images/events/2026-07-25/flyer.jpg",
+  "hero_image": null,
+  "gallery": [],
+  "_todo_images": "Source flyer = sites/dinedit-site/events/flyer25 juilklet.jpg (1749×2481). À recopier dans le repo final en /public/images/events/2026-07-25/flyer.jpg lors de la création du squelette. Hero (vue large lieu) + galerie chef/artistes : à compléter quand Serge fournit.",
+
+  "stripe_checkout_url": null,
+  "stripe_product_id": null,
+  "_todo_stripe": "Phase 3 — endpoint Sophyia générera Checkout dynamique. Au démarrage, mode STRIPE_SIMULATE=1.",
+
+  "btob_lead_email": "anais@dinedit.be",
+
+  "title": {
+    "fr": "Dîner inédit du 25 juillet — Frédéric Chaine & Rafael Gouirand, jazz manouche dans les lupins",
+    "en": "Singular Dinner of July 25 — Frédéric Chaine & Rafael Gouirand, gypsy jazz in the lupines",
+    "nl": "Uniek diner van 25 juli — Frédéric Chaine & Rafael Gouirand, gipsyjazz tussen de lupines"
+  },
+  "_todo_title": "Titres à valider Raoul / Serge — placeholder pour le moment.",
+
+  "excerpt": {
+    "fr": "Une table dressée dans un champ de lupins en pleine floraison, le violon de Frédéric Chaine et la guitare manouche de Rafael Gouirand pour faire chanter le soir. Un dîner d'été en pleine nature, intime, où l'art posera sa note avant l'assiette.",
+    "en": "A table set in a field of lupines in full bloom, Frédéric Chaine's violin and Rafael Gouirand's gypsy guitar carrying the evening. A summer dinner in open countryside — intimate, where art will set the tone before the first course.",
+    "nl": "Een tafel gedekt in een veld van bloeiende lupines, met de viool van Frédéric Chaine en de gipsy-gitaar van Rafael Gouirand die de avond dragen. Een zomers diner in volle natuur — intiem, waar de kunst de toon zet vóór de eerste hap."
+  },
+  "_todo_excerpt": "Excerpts à valider — bonne pour l'agenda, à confirmer.",
+
+  "body_md": {
+    "fr": "## L'alchimie d'un soir d'été\n\n*Section à enrichir quand Serge aura confirmé le lieu, le menu et les détails de la soirée.*\n\nLe 25 juillet, Dinédit dresse sa table à ciel ouvert, dans un champ de lupins en pleine floraison. Pas de murs, pas de plafonds — juste l'horizon, la lumière de fin de journée, et le silence d'un paysage que peu de gens connaissent.\n\n## Les artistes\n\n**Frédéric Chaine** prend son violon. Formé au Koninklijk Conservatorium Brussel, fondateur de l'Ensemble Orchestral Européen, il a la rigueur du classique et la liberté du jazz manouche. À ses côtés, **Rafael Gouirand** — guitariste manouche, mais aussi luthier dans son atelier de Braine-le-Comte. Les guitares qu'il joue, il les a souvent construites de ses mains.\n\nEnsemble, ils forment le **Frédéric Chaine Quartet** ; ce soir-là, ils joueront en duo, dans cette intimité particulière qui ne tient qu'à deux instruments et au paysage.\n\n## La table\n\n*Menu et chef invité à confirmer avec Serge.*\n\n## Comment se rendre\n\n*Lieu communiqué après inscription (format Dinédit habituel). Détails d'accès — transports en commun, parking, gare la plus proche — précisés au moment de la confirmation.*\n\n## Capacité\n\n**20 convives.** Pour rejoindre la soirée à titre **personnel**, l'inscription se fait directement en ligne. Pour venir en **groupe avec votre entreprise**, la maison adapte la prestation : prévenez Anaïs en amont.",
+
+    "en": "## TODO — translate FR body once content is locked",
+    "nl": "## TODO — translate FR body once content is locked"
+  },
+  "_todo_body": "Body FR = teaser placeholder. À enrichir une fois Serge a fourni lieu / menu / chef invité. EN + NL = à traduire après validation FR.",
+
+  "tags": ["jazz manouche", "violon", "guitare", "pleine nature", "été", "Brabant"],
+
+  "seo": {
+    "meta_description_fr": "Dîner inédit Dinédit le 25 juillet 2026 : jazz manouche avec Frédéric Chaine au violon et Rafael Gouirand à la guitare, table dressée dans un champ de lupins. 20 convives.",
+    "meta_description_en": "Dinédit singular dinner on July 25, 2026: gypsy jazz with Frédéric Chaine on violin and Rafael Gouirand on guitar, table set in a field of lupines. 20 guests.",
+    "meta_description_nl": "Dinédit uniek diner op 25 juli 2026: gipsyjazz met Frédéric Chaine op viool en Rafael Gouirand op gitaar, tafel gedekt in een veld van lupines. 20 gasten."
+  },
+
+  "_meta": {
+    "source_flyer": "sites/dinedit-site/events/flyer25 juilklet.jpg",
+    "source_flyer_typo": "Le flyer écrit « Frédérie Chaine » — typo probable, corrigé en « Frédéric Chaine » dans cette fiche (à confirmer Raoul/Serge).",
+    "created_at": "2026-06-30",
+    "created_by": "CC site dinedit-site",
+    "completion_status": "partial — attend confirmations Serge (lieu, heures précises, prix, chef invité éventuel, photos artistes)"
+  }
+}

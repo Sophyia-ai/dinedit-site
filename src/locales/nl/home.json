@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "title": "Dinédit",
+    "tagline": "Kunst en tafel, op plekken die maar één avond opengaan.",
+    "cta_agenda": "Bekijk de agenda",
+    "cta_btob": "Een evenement samenstellen"
+  },
+  "intro": {
+    "title": "Eén naam, twee ingangen",
+    "btoc": {
+      "label": "Voor u",
+      "text": "Sluit aan bij een van onze unieke diners: ~20 gasten, een ongewone locatie die bij reservering wordt onthuld, een kunstwerk en een tafel die met elkaar in gesprek gaan."
+    },
+    "btob": {
+      "label": "Voor uw bedrijf",
+      "text": "Stel met Serge en Fany een evenement op maat samen — afterwork, productlancering, privé-avond, bruiloft. Onze werkwijze in drie woorden: intimiteit, verrassing, circulariteit."
+    }
+  }
+}

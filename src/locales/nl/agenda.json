@@ -1,0 +1,22 @@
+{
+  "title": "Agenda",
+  "subtitle": "Komende unieke diners, en het spoor van diners die al plaatsvonden.",
+  "filter": {
+    "upcoming": "Komend",
+    "past": "Voorbij",
+    "all": "Alle"
+  },
+  "card": {
+    "from": "vanaf",
+    "guests_max": "{{count}} gasten",
+    "tba": "wordt onthuld",
+    "see_more": "Bekijk het evenement"
+  },
+  "participation": {
+    "headline": "Aanvraag tot deelname",
+    "personal": "In persoonlijke naam",
+    "company": "Namens mijn bedrijf",
+    "next": "Volgende"
+  },
+  "empty": "Voorlopig geen evenementen in deze categorie."
+}

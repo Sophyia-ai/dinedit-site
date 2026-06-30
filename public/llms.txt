@@ -1,0 +1,32 @@
+# Villa Olive You
+
+> Demeure de prestige à Callas (Var, France), entre oliveraies et arrière-pays varois. Site multilingue (FR, EN, DE, IT, RU, NL, HE) avec concierge IA Olivia. Spécialisé séjours sur-mesure, mariages, événements, art de vivre méditerranéen.
+
+## Pages principales
+
+- [La maison (accueil)](https://villaoliveyou.com/): scènes immersives — bassin, oliveraie, intérieurs, couleurs du Sud
+- [Expériences](https://villaoliveyou.com/experiences): séjours signature, art de vivre
+- [Près d'ici](https://villaoliveyou.com/pres-dici): environs immédiats de Callas — marchés, villages perchés
+- [L'arrière-pays](https://villaoliveyou.com/arriere-pays): gorges du Verdon, Pays de Fayence, Bargemon, Mons
+- [La Riviera](https://villaoliveyou.com/riviera): Côte d'Azur de Cannes à Menton
+- [Carnet d'Olivia](https://villaoliveyou.com/journal): articles éditoriaux — bien-être, tables & saveurs, mariages, Provence vivante
+- [Réservation](https://villaoliveyou.com/booking): formulaire de demande sur mesure
+
+## Détails
+
+- Localisation : Callas, 83830, Var, Provence-Alpes-Côte d'Azur
+- Distance : 1h15 de Nice, 1h de Cannes, 45 min de Saint-Tropez, 25 min du Verdon
+- Positionnement : haut de gamme, demande, pas de tarification publique
+- Concierge IA : Olivia (déclenchable dans le widget de chat bas-droite, 7 langues incluant hébreu RTL)
+
+## Carnet d'Olivia (catégories)
+
+- Bien-être & sérénité
+- Tables & saveurs
+- Mariages & événements (création originale)
+- Provence vivante
+
+## Contact
+
+- Email : villa.oliveyou@gmail.com
+- WhatsApp : +41 79 903 25 98

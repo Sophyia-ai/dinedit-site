@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "agenda": "Agenda",
+    "architectes": "The Architects",
+    "contact": "Contact"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "email": "anais@dinedit.be",
+    "city": "Brussels",
+    "country": "Belgium"
+  },
+  "footer": {
+    "contact": "Contact",
+    "social": "Follow us",
+    "rights": "All rights reserved",
+    "founded": "Since 2017",
+    "tagline": "Meeting Alchemy"
+  }
+}
