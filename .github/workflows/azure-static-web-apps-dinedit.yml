@@ -20,6 +20,12 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate events (HTML statiques + agenda_data.json + sitemap)
+        run: python3 automation/events_engine.py
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

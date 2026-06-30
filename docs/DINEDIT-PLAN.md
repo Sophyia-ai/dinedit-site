@@ -521,3 +521,39 @@ Lu et noté. Récap exécution côté CC bonjour.sophyia :
 - **Pas bloquant pour Phase 1 site** : Anaïs marche déjà depuis le knowledge global. La branche events viendra l'élever au niveau « classe villa ».
 
 **Côté site, prochaine action immédiate** : Phase 1 = création repo `Sophyia-ai/dinedit-site` + arbo squelette React + repalette nuit+or + 3 locales FR/EN/NL + intégration widget Anaïs.
+
+### 2026-06-30 — Phase 1 squelette LIVRÉE ✅ et déployée sur SWA provisoire
+
+**Repo + déploiement** :
+- Repo `Sophyia-ai/dinedit-site` créé (public) — premier commit `3f9b383`, workflow Azure SWA `aa6fed0`.
+- SWA Azure `dinedit-site` provisionnée (resource group `Sophyia-chat`, sku Free) — hostname provisoire **`kind-smoke-0fbf0a803.7.azurestaticapps.net`**.
+- Secret `AZURE_STATIC_WEB_APPS_API_TOKEN_DINEDIT` injecté via stdin (no clear-text in logs).
+- 2 déploiements réussis : init + fix SPA fallback (`staticwebapp.config.json` — `navigationFallback` vers `/index.html` pour React Router).
+- Routes vérifiées 200 : `/`, `/agenda`, `/architectes`, `/en`, `/nl`, `/widget/widget.js`, flyers events.
+
+**Contenu Phase 1** :
+- Stack React 19 + Vite 7 + TypeScript + Tailwind + i18next (3 langues FR/EN/NL, pas de RTL).
+- Palette : fond blanc + nuit `#1B2A4A` + or `#C9A063`.
+- Home : hero logo + tagline + 2 CTA (BtoC `/agenda` + BtoB `/architectes`) + intro 2-colonnes.
+- `/agenda` : 3 events placeholder avec flyers (`2026-07-25`, `2026-08-29`, `2026-09-25`).
+- `/architectes` : Serge & Fany + genèse 2017, placeholder photos.
+- Widget Anaïs intégré : `data-bot=dinedit`, `data-color=#C9A063`, mode bubble, auto-open 6 s / auto-close 10 s, skip-welcome (welcome dynamique tenant).
+
+**CORS pipe validé** (croisé avec CC bonjour.sophyia) :
+- `dinedit/settings.json.domains` → ajout `kind-smoke-0fbf0a803.7.azurestaticapps.net` (snapshot `dinedit/_backups/settings_20260630_232446.json`).
+- Plateforme Azure App Service CORS → hostname ajouté aussi (par sécurité, ceinture + bretelles).
+- Aucune écriture côté `function_app.py` `ALLOWED_ORIGINS` (per-tenant + plateforme suffisent pour le widget seul).
+- Curl POST depuis Origin SWA → header `Access-Control-Allow-Origin` reflété ✅. Anaïs répond.
+
+**Réserve qualité voix Anaïs (attendue)** :
+- Tant que la branche events dans `function_app.py` n'est pas faite, **rendu chat encore restaurant-teinté** : Jean-Luc / CHF / menu-du-jour peuvent fuiter (le défaut est restaurant, pas neutre — confirmé par le CC bonjour). Le knowledge socle prend le dessus à la marge, mais la voix complète arrive avec la fenêtre coordonnée.
+
+**Conventions docs actées (croisé avec CC bonjour.sophyia)** :
+- `sites/<client>/docs/` → tout ce qui est lié à UN client précis (chantier, knowledge, welcomes, briefs).
+- `api/docs/` → tout ce qui touche la plateforme (`function_app.py`, markers, rag_lite, refonte rubriques admin, briefs cross-clients).
+- À noter : `BRIEF-CODEX-2-branche-events-anais.md` + `SPEC-PROMPT-anais-events.md` (rédigés par CC bonjour) iront dans `sites/dinedit-site/docs/` puisque la branche events est introduite POUR Dinédit (même si le code vit dans `api/`).
+
+**Prochaines étapes** :
+1. **DNS `dinedit.be`** — audit zone actuelle (registrar à identifier), CNAME `www` vers SWA, redirection 301 apex vers www. Pattern Villa.
+2. **Fenêtre `function_app.py`** (coordonnée avec CC bonjour) — branche events + câblage `live_search` pour `type=="events"`. À déclencher quand Raoul donne le créneau.
+3. **Phase 2** côté site : `events_engine.py` + `agenda_data.json` (généré au build) + `<Agenda />` inline sur la home (équivalent du `<Blog />` Villa).
