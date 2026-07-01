@@ -594,3 +594,145 @@ Lu et noté. Récap exécution côté CC bonjour.sophyia :
 **Sync** = doc partagé `sites/<client>/docs/<CLIENT>-PLAN.md` (journaux CC bonjour + CC site côte-à-côte, comme ce fichier).
 
 **Ce que Raoul attend de cette répartition** : *« il faut vraiment resserrer les tafs »* — chacun sur son territoire pour aller vite, coordination explicite quand on croise. Pas de dispersion.
+
+---
+
+## Session soirée 2026-07-01 → nuit 2026-07-02 — mise en ligne dinedit.events (CC site)
+
+**Contexte du jour :** Raoul a acheté `dinedit.events` chez OVH en cours de journée. Le domaine legacy `dinedit.be` héberge encore le WordPress de Serge — la nouvelle version React vit sur `.events` en environnement invisible (Serge n'est pas au courant). Photos et textes attendus le 2026-07-02+.
+
+### Livraisons de la session
+
+**1) Corrections UX (double hero + Anaïs prend la relève partout)**
+- `VideoHero.tsx` créé : vidéo plein écran autoplay/muet/loop (`public/video/homepage_hero.mp4`) au-dessus de `Scenes.tsx`. Chevron scroll doux vers `#scenes-hero`.
+- `Scenes.tsx` : retrait du `LanguagePill` (reste sur VideoHero uniquement), bouton hero renommé « Parle-moi de l'événement » (FR/EN/NL), bouton secondaire → ancre `#agenda`.
+- Nav « Agenda & réservation » = ancre `#agenda` (smooth scroll cross-page depuis `/architectes`), Nav « Les Architectes » ouvre Anaïs (`openAnaisWithArchitectes`).
+- Footer : `/architectes` conservé mais label = « Sources / Bronnen » (fallback SEO / crash LLM, même logique que Villa `/journal` → « Carnet d'Olivia »).
+- Page event statique : header « ← Agenda » et breadcrumb pointent sur `/#agenda` pour retour rapide au bloc blog.
+- CTA hero « Voir l'événement » → « Parle-moi de l'événement » car le bouton ouvre le chat, pas la page event.
+
+**2) Pages légales BE — RGPD (UE) 2016/679 + loi belge 30/07/2018**
+- 3 fichiers `src/locales/{fr,en,nl}/legal.json` créés (mentions légales, confidentialité, CGU).
+- Namespace `legal` enregistré dans `i18n.ts` (5 namespaces total).
+- Éditeur : Serge Vanmol seul, indépendant personne physique (Fany volontairement absente pour protéger Serge côté déclaratif).
+- Section `SECTIONS.privacy` renommée `olivia` → `anais` dans `Legal.tsx`.
+- Bouton CGU ajouté dans le footer (absent avant).
+- Hébergement chatbot **Azure Switzerland North (Zurich)** mentionné, **jamais** le nom d'un LLM.
+- Placeholders restants à remplir par Raoul : `[adresse complète]` + `[BE 0XXX.XXX.XXX]`.
+
+**3) Constellation Dinédit — moteur « Nos recommandations »**
+- `automation/recommendations_engine.py` (moteur complet, calqué sur `blog_engine.py` de Villa mais adapté HTML scraping + 3 langues).
+- `automation/reco_sources.json` : 10 sources (7 offices du tourisme belges + 3 portails Wallonie/Flandre/national). 8 actives, 2 désactivées via `disabled: true` (visitantwerpen.be SPA JS-rendered, out.be timeout).
+- `automation/template_reco.html` : palette Dinédit + bloc « constellation » CTA `/#agenda` + home en pied d'article.
+- **Garde-fous constellation Dinédit vérifiés programmatiquement** (`_verify_constellation`) : au moins 2 occurrences de « Dinédit » + lien `/#agenda` + lien home + trigger `[Anaïs](anais:...)`. 1 retry avec rappel explicite si un check rate, sinon rejet.
+- `.github/workflows/recommendations.yml` : cron lun+jeu 06:30 UTC (2×/semaine) + burst manuel via `workflow_dispatch` + purge mensuelle des recos passées (>30 j).
+- `AgendaInline.tsx` : 4e chip « Nos recommandations » qui fetch `/reco_data.json` + rendu 3-col cards. `useRef` + `useEffect` sur `filter === 'reco'` → `scrollIntoView` smooth vers `#recos-block` (car le bloc est sous les 3 cards upcoming, hors du viewport initial).
+- **Résultat des runs** : run 1 a produit 6 recos mais le push a échoué (gitignore trop agressif) ; run 2 après fixes = 9 recos publiées, sitemap 45 URLs, push OK. Bruxelles 1 + Bruges 3 + Liège 2 + Mons 3.
+
+**4) Basculement domaine → dinedit.events (production)**
+- DNS OVH : CNAME `www` → `kind-smoke-0fbf0a803.7.azurestaticapps.net` + A apex → `9.163.40.246` (IP Azure SWA West Europe).
+- Redirection 301 apex → www **supprimée** après bascule A record (Azure force auto le HTTPS + gère l'apex directement).
+- Azure SWA `dinedit-site` : `www.dinedit.events` + `dinedit.events` en Ready avec SSL auto.
+- Google Search Console + Bing validés (TXT `google-site-verification` posé par Raoul, sitemap soumis).
+- `BASE_URL` swap `dinedit.be` → `dinedit.events` partout : `automation/{events,recommendations}_engine.py`, `src/config/site.ts`, `public/{robots,llms}.txt`, `src/locales/{fr,en,nl}/legal.json`, `public/recommendations/**.html` (27 fichiers du run reco antérieur), `public/reco_data.json`, `public/sitemap.xml`, `index.html` (canonical).
+- Emails `anais@dinedit.be` **volontairement conservés sur `.be`** (déjà annoncé à Serge, cadre Belgique).
+- Régénération complète events × 3 langues (9 HTML) + sitemap.xml (45 URLs total).
+
+**5) Anaïs — fix CORS multi-couches + anti-rabâchage prompt**
+- **CORS** : ajout de `https://dinedit.events`, `https://www.dinedit.events`, `https://kind-smoke-0fbf0a803.7.azurestaticapps.net` dans `ALLOWED_ORIGINS` (`function_app.py`) **et** dans la plateforme Azure Function App (`az functionapp cors add`). Non-régression byte-per-byte prouvée : villa/events SHA inchangés.
+- **Prompt anti-rabâchage v1** : nouveau rail 5 « MÉMOIRE DE CONVERSATION » + section FONDATEURS renforcée (« une seule présentation », puis « la maison / on / ils »). Villa SHA `5ef9171b061640e0` inchangé.
+- **Prompt anti-rabâchage v2 (correction)** : Anaïs continuait à redemander des infos déjà données (« tu as le nombre de convive patate ! Je t'ai dit 30 personnes »). RAPPEL FINAL restructuré avec MÉMOIRE DE CONVERSATION en tête (relire l'échange, ne redemande jamais une info déjà donnée, « je transmets » = une fois, alternance Serge/Fany/la maison/ils/on). Villa SHA inchangé.
+
+### Bilan smoke test final (2026-07-02 00:19 UTC)
+
+- Apex HTTPS `https://dinedit.events/` : 200 (Azure SSL) ✅
+- www HTTPS : 200 ✅
+- Apex HTTP → 301 HTTPS (Azure enforce) ✅
+- Sitemap 45 URLs multilingues ✅
+- Canonical index → `https://www.dinedit.events/` ✅
+- 9 recos + 3 events upcoming ✅
+- CORS chat OK ✅
+- Pages event/reco statiques + llms.txt + vidéo hero : 200 ✅
+
+### Leçons apprises — à ne pas reproduire
+
+**L1. `.gitignore` trop agressif sur les artefacts CI.**
+- **Bug** : run 1 du moteur reco a produit les HTML sur le runner GHA mais le `git add public/recommendations public/reco_data.json public/sitemap.xml` a échoué car ces chemins étaient dans `.gitignore`. `git add` refuse les fichiers ignorés sans `-f`.
+- **Fix** : retirer du `.gitignore` tout ce qui est généré par un workflow LLM (non-reproductible au build). Villa n'a **rien** dans `.gitignore` sur `public/` — c'est le bon pattern.
+- **Règle** : ne gitignore que ce qui est régénéré à chaque build Azure SWA (events, gallery). Ce que le GHA cron produit (recos) ou ce qui contient un agrégat cross-source (sitemap) **doit être tracké**.
+
+**L2. Sitemap partagé entre 2 moteurs — coordination.**
+- **Bug potentiel** : `events_engine.py` (prebuild Azure) régénère le sitemap avec events seuls. Il écrasait la version enrichie recos.
+- **Fix** : `events_engine.py` merge désormais `reco_data.json` (si présent) dans son sitemap. Un seul sitemap canonique, généré au dernier build.
+- **Règle** : quand 2 pipelines écrivent le même artefact, celui qui court en dernier (Azure prebuild) doit connaître les autres via leurs index JSON.
+
+**L3. Sources tourisme belge : la moitié rend zéro candidat en HTML statique.**
+- **Bug** : visitgent.be, namurtourisme.be (racine), visitwallonia.be, coeurdeflandre.fr, visitantwerpen.be, out.be = 0 candidats ou fetch KO.
+- **Cause** : sites SPA rendus côté JS (Anvers, Gand, une partie de Wallonia) → HTML statique quasi vide. Ou pages listing sans balisage exploitable.
+- **Fix appliqué** : Anvers + out.be désactivés via `disabled: true`. Namur → URL `/fr/agenda` spécifique. Les 4 autres restent branchés mais rendent 0-1 candidat sporadiquement.
+- **À prévoir** : rendu headless (Playwright) pour Anvers + Gand, ou API sitemap.xml des offices pour extraire les URLs d'events sans dépendre du HTML de la home.
+
+**L4. Distribution burst pondérée peut donner 0 à une source active.**
+- **Bug** : run 1 avec `--initial-burst 20` a réparti aléatoirement les quotas via `random.shuffle` sur les priorités → Namur reçoit 0 comme quota alors qu'elle est active.
+- **Fix** : garantir min 1 quota par source active avant distribution proportionnelle du reste. Fix appliqué dans `recommendations_engine.py` main().
+- **Règle** : quand on répartit un budget sur N sources actives, toujours **plancher = 1 par source**, distribuer le surplus en pondéré.
+
+**L5. Constellation Dinédit sans vérif programmatique = article qui fuit sans marque.**
+- **Risque** : le LLM peut oublier de mettre les liens Dinédit ou les mentionner qu'une fois → l'article vaut moins comme boost SEO.
+- **Fix** : `_verify_constellation()` compte les occurrences « Dinédit » (≥2), la présence de `/#agenda`, du lien home, du trigger `anais:`. Si un check rate, 1 retry avec rappel explicite au LLM, sinon rejet propre.
+- **Règle** : quand un article est censé porter des règles SEO cross-brand, valider programmatiquement avant publication. Ne jamais faire confiance au LLM pour respecter une consigne « obligatoire ».
+
+**L6. Nouveau domaine = double couche CORS à mettre à jour (piège récurrent).**
+- **Contexte** : quand Olivia est passée sur `villaoliveyou.com` (2026-06-29), CORS 403 « Origin not allowed » car seule la couche Python `ALLOWED_ORIGINS` avait été mise à jour ; la couche plateforme Azure Function App bloquait le preflight OPTIONS avant même d'atteindre le code Python.
+- **Rejeu 2026-07-01 sur Dinédit** : Anaïs n'apparaît pas sur `www.dinedit.events`. Même diagnostic.
+- **Règle en dur** : à chaque nouveau custom domain d'un client, mettre à jour **les 2 couches** :
+  1. `function_app.py` `ALLOWED_ORIGINS` (Python)
+  2. Azure Function App CORS platform : `az functionapp cors add --name sophyia-chat-api --resource-group Sophyia-chat --allowed-origins "https://<domaine>" "https://www.<domaine>"`
+- Ajouter aussi le hostname SWA brut (`<hash>.azurestaticapps.net`) pour le debug pré-DNS.
+
+**L7. Perl look-behind pour swap dinedit.be → dinedit.events sans casser les emails.**
+- **Bug évité** : un `sed 's/dinedit.be/dinedit.events/g'` casserait `anais@dinedit.be` (email conservé sur `.be`).
+- **Solution** : `perl -pi -e 's/(?<!\@)dinedit\.be/dinedit.events/g'` — le `(?<!\@)` refuse le match si `@` juste avant. Sed BSD ne supporte pas look-behind, il faut Perl.
+- **Règle** : pour tout swap partiel de domaine avec préservation des emails, utiliser Perl look-behind. Toujours faire un `grep -rn "old" src/ automation/ public/ | grep -v "@old"` après pour vérifier.
+
+**L8. OVH web redirection = HTTP-only + oubli fréquent.**
+- **Contexte** : OVH « Redirection » côté panneau crée un A record vers l'IP de leur serveur redirect (openresty) qui ne fait le 301 qu'en HTTP. HTTPS apex → erreur SSL.
+- **Solution propre** : ajouter l'apex comme custom domain sur Azure SWA (validation TXT), puis basculer l'A record OVH vers l'IP Azure SWA. Azure sert HTTPS sur l'apex + redirige HTTP → HTTPS automatiquement.
+- **Ordre à respecter** : (1) modifier A record, (2) attendre propagation Google DNS + Cloudflare, (3) supprimer la redirection 301 OVH. Si étape 3 avant étape 1 : apex tombe sur parking OVH pendant l'intervalle.
+
+**L9. Canonical HTML = seule protection contre duplicate content quand Azure sert apex ET www.**
+- **Contexte** : Azure SWA sert le même contenu sur `dinedit.events` ET `www.dinedit.events`, sans redirect natif entre les 2. Google verrait ça comme du duplicate content sauf si le HTML dit lequel est canonique.
+- **Fix** : `<link rel="canonical" href="https://www.dinedit.events/">` dans `index.html`. Perl sed a oublié `index.html` la 1ère passe → oubli critique attrapé au dernier moment.
+- **Règle** : quand on swap BASE_URL, la checklist des fichiers doit inclure `index.html` explicitement. Toujours faire un `grep -rn "olddomain" .` de sanity check final incluant la racine, pas seulement `src/`.
+
+**L10. Prompt anti-rabâchage : le RAPPEL FINAL prime sur les rails du milieu.**
+- **Contexte** : v1 du fix anti-rabâchage a été ajouté au milieu du prompt (rail 5) mais Anaïs a juste échangé « Serge et Fany » contre « la maison » et a re-demandé des infos déjà données.
+- **Fix v2** : nouvelle structure du RAPPEL FINAL (fin du prompt = ce que le LLM relit juste avant de répondre → plus d'ancrage) avec :
+  * MÉMOIRE DE CONVERSATION en tête : « relis l'échange, ne redemande jamais une info déjà donnée »
+  * Traitement symétrique de « Serge et Fany » ET « la maison » (une fois puis on varie ou on omet)
+  * « Je transmets » = une fois seulement
+- **Règle** : les règles de mémoire de conversation et d'anti-répétition doivent vivre dans le RAPPEL FINAL, pas au milieu. Un rail au milieu s'oublie ; un rappel en fin de prompt s'applique.
+
+**L11. Byte-per-byte test = protocole obligatoire à chaque touche `function_app.py`.**
+- **Contexte** : `function_app.py` est zone commune avec CC bonjour. Toute touche doit prouver que les prompts La Gare + Villa restent identiques.
+- **Méthode utilisée cette session** :
+  1. AVANT edit : `hashlib.sha256` sur le code des fonctions `_build_villa_system_prompt` et `_build_events_system_prompt` (extraction regex du bloc `def` complet).
+  2. APRÈS edit : recomputer les SHA. Villa doit rester identique, events peut changer si c'est l'events qu'on modifie.
+  3. Toujours `python3 -c "import ast; ast.parse(open('function_app.py').read()); print('AST OK')"` pour valider la syntaxe avant push.
+- **Règle** : sans cette preuve, ne pas push. Le message de commit doit contenir les SHA avant/après pour audit CC bonjour.
+
+### État du chantier au 2026-07-02 00:19 UTC
+
+- **Site en ligne** : https://www.dinedit.events (SSL Azure, apex + www propres)
+- **Anaïs** : chatbot déployé, CORS OK, prompt v2 en cours de test par Raoul
+- **Recos** : 9 publiées, cron 2×/semaine armé, purge mensuelle
+- **Legal BE** : 3 documents × 3 langues, RGPD UE + loi belge conforme
+- **SEO** : sitemap 45 URLs, canonical propre, GSC + Bing validés
+- **Attente Serge** : photos (ambiances, portraits, événements) + textes définitifs (agenda, bio, mentions BCE/TVA) → 2026-07-02+
+
+### Reste à venir (prochaine session)
+
+- Intégrer les photos/textes de Serge quand ils arrivent.
+- Réactiver visitantwerpen.be (rendu headless Playwright dans le workflow reco) et out.be (URL alternative avec timeout élargi).
+- Vérifier Anaïs post prompt v2 → si toujours du rabâchage, itérer une v3.
+- Basculement final du domaine `.be` → `.events` (si Raoul valide avec Serge et si Serge veut abandonner le WordPress legacy).
