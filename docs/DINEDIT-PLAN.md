@@ -732,7 +732,35 @@ Lu et noté. Récap exécution côté CC bonjour.sophyia :
 
 ### Reste à venir (prochaine session)
 
-- Intégrer les photos/textes de Serge quand ils arrivent.
+- Intégrer les photos/textes de Serge quand ils arrivent (retour prévu 2026-07-02).
 - Réactiver visitantwerpen.be (rendu headless Playwright dans le workflow reco) et out.be (URL alternative avec timeout élargi).
-- Vérifier Anaïs post prompt v2 → si toujours du rabâchage, itérer une v3.
 - Basculement final du domaine `.be` → `.events` (si Raoul valide avec Serge et si Serge veut abandonner le WordPress legacy).
+
+### Ajout à minuit — refonte structurelle du prompt Anaïs (L12–L13)
+
+**Contexte** : après la v2 anti-rabâchage, Anaïs continuait à partir dans tous les sens. Test réel avec « dîner à l'aveugle dans mon garage » : elle re-demandait « particulier ou entreprise » (info déductible du contexte « mon garage »), listait 2 options dont 1 impossible (participation groupe à un dîner publié — mais le lieu est le garage du visiteur), et oubliait « à l'aveugle » entre les tours. Le mailto sortait cassé (pas de `mailto:` préfixe, HTML parasite).
+
+**L12. Ne PAS empiler les règles — une source de vérité par sujet.**
+- Le prompt v2 avait les 3 parcours (particulier/groupe/sur-mesure) dispersés en 3 endroits (QUALIFICATION + PRIX + CONVERGENCE) + l'anti-rabâchage en 3 endroits (Rail 5 + FONDATEURS + RAPPEL FINAL) + les interdits en 3 sections. GPT-4o-mini se paumait entre les versions concurrentes.
+- **Fix** : refonte en 8 sections avec **une source de vérité par sujet**. Les 3 parcours vivent dans UN tableau. L'anti-rabâchage vit dans § TON. La joute du mail vit dans § LE MAIL DE FIN. Chaque règle apparaît une seule fois.
+- **Règle** : quand une règle est répétée dans 2 sections, le modèle **doit choisir** entre elles à chaque tour → il se contredit ou hésite. Fusionner ou déplacer.
+
+**L13. Script rigide → inférence contextuelle.**
+- Le prompt v2 forçait un script (« d'abord qualifier particulier/société, ensuite collecter les infos, ensuite mail »). Résultat : Anaïs pose sa 1ère question même quand le visiteur a déjà donné les infos qui la rendent inutile.
+- **Fix** : nouvelle section « LIS AVANT DE RÉPONDRE » avec exemples INLINE de bonne inférence (« mon garage » → sur-mesure ; « à l'aveugle » → thème acquis ; « entreprise + lieu perso » → sur-mesure BtoB). Elle élimine les options impossibles **au lieu** de les lister.
+- **Règle** : préférer les exemples inline aux règles abstraites. Le modèle apprend mieux par « voici comment tu fais » que par « voici ce que tu ne dois pas faire ».
+
+**L14. Placeholders abstraits vs exemple concret entier — pour le mailto.**
+- Précédemment j'avais mis `[Envoyer...](mailto:...?subject=SUJET_URL_ENCODE&body=BODY_URL_ENCODE)` avec placeholders → GPT-4o-mini se perdait à substituer et sortait un lien HTML pollué.
+- **Fix** : je fournis un **exemple concret complet et fonctionnel** (« Dîner sur-mesure — 10 convives — dans 3 semaines » entièrement URL-encodé), vérifié en le décodant via `urllib.parse.unquote`. Le modèle a un template réel à imiter, pas un squelette à compléter.
+- **Règle** : pour les formats complexes (URL encoding, JSON, XML), donner un exemple **exécutable** vaut mieux que 20 règles d'encodage.
+
+### Test de la refonte (session soirée)
+
+Extraction du builder + appel Azure OpenAI GPT-4o-mini avec le scénario problématique :
+- Tour 1 « garage/aveugle » → infère sur-mesure, avance sans re-qualifier
+- Tour 2 « entreprise » → note la précision, pas de menu déroulant à 2 options
+- Tour 3 « 3 semaines » → mentionne « à l'aveugle » et « votre garage » (elle retient), UNE seule question
+- Tour 4 « 10 personnes » → phrase complice + lien mailto propre (décodé : « Événement sur-mesure — dîner à l'aveugle — 10 convives — dans 3 semaines » + body structuré + signature)
+
+**Verdict** : refonte validée en local, poussée en prod (SHA events `8f034e03d1afc57b`). Villa `5ef9171b061640e0` intacte.
