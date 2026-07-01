@@ -68,4 +68,4 @@ User-agent: Bytespider
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.dinedit.be/sitemap.xml
+Sitemap: https://www.dinedit.events/sitemap.xml

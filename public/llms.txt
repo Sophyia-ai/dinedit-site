@@ -4,9 +4,9 @@
 
 ## Pages principales
 
-- [Accueil](https://www.dinedit.be/): scènes rotatives des dîners à venir, intro BtoC/BtoB, aperçu de l'agenda
-- [Agenda](https://www.dinedit.be/agenda): dîners inédits à venir et archive des soirées passées
-- [Les Architectes](https://www.dinedit.be/architectes): portraits de Serge Van Mol et Fany Ramadier, genèse 2017
+- [Accueil](https://www.dinedit.events/): scènes rotatives des dîners à venir, intro BtoC/BtoB, aperçu de l'agenda
+- [Agenda](https://www.dinedit.events/agenda): dîners inédits à venir et archive des soirées passées
+- [Les Architectes](https://www.dinedit.events/architectes): portraits de Serge Van Mol et Fany Ramadier, genèse 2017
 
 ## Détails
 

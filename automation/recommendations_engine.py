@@ -59,12 +59,12 @@ SITEMAP_PATH   = APP_ROOT / "public" / "sitemap.xml"
 TEMPLATE_PATH  = Path(__file__).resolve().parent / "template_reco.html"
 SOURCES_PATH   = Path(__file__).resolve().parent / "reco_sources.json"
 
-BASE_URL       = "https://www.dinedit.be"
+BASE_URL       = "https://www.dinedit.events"
 GPT_MODEL      = "gpt-4o-mini"
 TARGET_LANGS   = ("fr", "en", "nl")
 CATEGORY_LABEL = {"fr": "Nos recommandations", "en": "Our picks", "nl": "Onze tips"}
 
-USER_AGENT = "Mozilla/5.0 (compatible; DineditBot/1.0; +https://www.dinedit.be)"
+USER_AGENT = "Mozilla/5.0 (compatible; DineditBot/1.0; +https://www.dinedit.events)"
 
 # .env
 _env = APP_ROOT / ".env"
@@ -134,8 +134,8 @@ VOIX ÉDITORIALE DINÉDIT :
 CONSTELLATION DINÉDIT — RÈGLES ABSOLUES (SEO cross-brand) :
 1. Le mot « Dinédit » doit apparaître EXPLICITEMENT au moins 2 fois dans le contenu.
 2. Le contenu contient OBLIGATOIREMENT ces 3 liens markdown intégrés naturellement :
-   - Vers l'agenda Dinédit : [nos prochains dîners inédits](https://www.dinedit.be/#agenda)
-   - Vers la home Dinédit : [Dinédit — Meeting Alchemy](https://www.dinedit.be)
+   - Vers l'agenda Dinédit : [nos prochains dîners inédits](https://www.dinedit.events/#agenda)
+   - Vers la home Dinédit : [Dinédit — Meeting Alchemy](https://www.dinedit.events)
    - Vers Anaïs (chatbot) : [Anaïs](anais:Bonjour, je viens de lire la reco sur {seed_title} — dis-moi si un dîner Dinédit pourrait s'accorder avec ce moment.)
      Le préfixe « anais: » est OBLIGATOIRE. Le message est contextualisé.
 3. Attribution source à la fin du texte, format markdown : [{source_name}]({source_url}).
@@ -343,9 +343,9 @@ def _verify_constellation(article: dict) -> tuple:
     missing = []
     if content.count("Dinédit") < 2:
         missing.append("dinedit_mentions<2")
-    if "https://www.dinedit.be/#agenda" not in content:
+    if "https://www.dinedit.events/#agenda" not in content:
         missing.append("agenda_link")
-    if "https://www.dinedit.be" not in content:
+    if "https://www.dinedit.events" not in content:
         missing.append("home_link")
     if "anais:" not in content:
         missing.append("anais_trigger")

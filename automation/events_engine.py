@@ -36,7 +36,7 @@ TEMPLATE_PATH = Path(__file__).resolve().parent / "template_event.html"
 # Rubriques du carnet éditorial (alignées Phase 4)
 CARNET_RUBRICS = ("portraits", "carnet-de-cave", "comment-se-rendre", "agenda-quartier")
 
-BASE_URL      = "https://www.dinedit.be"
+BASE_URL      = "https://www.dinedit.events"
 TARGET_LANGS  = ("fr", "en", "nl")
 
 

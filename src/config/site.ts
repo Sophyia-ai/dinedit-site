@@ -51,8 +51,8 @@ const brand = {
   wordmark: 'Dinédit',
   tagline: 'Meeting Alchemy',
   logoPath: '/images/brand/logo-dinedit.png',
-  domain: 'dinedit.be',
-  siteUrl: 'https://www.dinedit.be',
+  domain: 'dinedit.events',
+  siteUrl: 'https://www.dinedit.events',
   email: 'anais@dinedit.be',
   phone: '', // pas de téléphone public — qualification via Anaïs / form
 }
@@ -61,7 +61,7 @@ const brand = {
 const agenda = {
   apiUrl: 'https://sophyia-chat-api-b6fbarcsb7chczam.switzerlandnorth-01.azurewebsites.net/api/blog?bot_id=dinedit',
   fallbackPath: '/agenda_data.json',
-  baseUrl: 'https://www.dinedit.be/agenda',
+  baseUrl: 'https://www.dinedit.events/agenda',
 }
 
 // ── Participation (BtoC + BtoB) ──────────────────────────────────────────────
