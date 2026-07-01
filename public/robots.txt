@@ -1,4 +1,4 @@
-# robots.txt — Villa Olive You
+# robots.txt — Dinédit
 # Site vitrine public : on autorise tout (recherche classique + AI crawlers).
 # Pour bloquer un bot précis, ajouter `Disallow: /` sous son User-agent.
 
@@ -68,4 +68,4 @@ User-agent: Bytespider
 Allow: /
 
 # Sitemaps
-Sitemap: https://villaoliveyou.com/sitemap.xml
+Sitemap: https://www.dinedit.be/sitemap.xml

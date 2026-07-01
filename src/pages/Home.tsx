@@ -1,9 +1,8 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// Home.tsx — Dinédit landing
+// Home.tsx — Dinédit landing (Phase 3 : Scenes hero + AgendaInline)
 //
-// Phase 1 squelette : hero logo + tagline + 2 CTA (BtoC / BtoB), intro
-// 2-colonnes (Pour vous / Pour votre entreprise), footer.
-// L'agenda inline viendra en Phase 2 (events_engine.py → agenda_data.json).
+// Structure : Scenes (hero rotatif flyers events, plein écran) → Intro
+// 2-colonnes BtoC/BtoB → AgendaInline (3 cards events) → Footer.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { Link } from 'react-router-dom'
@@ -11,7 +10,8 @@ import { useTranslation } from 'react-i18next'
 
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
-import LanguagePill from '../components/LanguagePill'
+import Scenes from '../sections/Scenes'
+import AgendaInline from '../sections/AgendaInline'
 import Footer from '../sections/Footer'
 
 export default function Home() {
@@ -21,40 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="relative min-h-[88vh] bg-bone text-nuit flex flex-col">
-        <div className="absolute top-5 right-6 z-10">
-          <LanguagePill variant="overlay" />
-        </div>
-
-        <div className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-          <img
-            src={siteConfig.brand.logoPath}
-            alt={siteConfig.brand.name}
-            className="h-20 md:h-28 w-auto mb-8 opacity-95"
-          />
-          <p className="font-display text-2xl md:text-4xl leading-snug max-w-2xl text-nuit/90">
-            {t('home:hero.tagline')}
-          </p>
-          <p className="mt-4 text-sm tracking-[0.3em] uppercase text-gold">
-            {siteConfig.brand.tagline}
-          </p>
-
-          <div className="mt-12 flex flex-wrap gap-3 justify-center">
-            <Link
-              to={`${prefix}/agenda`}
-              className="px-6 py-3 rounded-full bg-nuit text-bone text-sm font-medium tracking-wide hover:bg-nuit-light transition-colors"
-            >
-              {t('home:hero.cta_agenda')}
-            </Link>
-            <Link
-              to={`${prefix}/architectes`}
-              className="px-6 py-3 rounded-full border border-nuit/30 text-nuit text-sm font-medium tracking-wide hover:border-gold hover:text-gold transition-colors"
-            >
-              {t('home:hero.cta_btob')}
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Scenes />
 
       <section className="bg-bone py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
@@ -93,6 +60,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <AgendaInline />
 
       <Footer />
     </>

@@ -1,32 +1,35 @@
-# Villa Olive You
+# Dinédit
 
-> Demeure de prestige à Callas (Var, France), entre oliveraies et arrière-pays varois. Site multilingue (FR, EN, DE, IT, RU, NL, HE) avec concierge IA Olivia. Spécialisé séjours sur-mesure, mariages, événements, art de vivre méditerranéen.
+> Marque belge d'événements art × gastronomie en lieux insolites. Fondée en 2017 à Bruxelles par Serge Van Mol et Fany Ramadier. Dîners inédits ~20 convives (150–185 € par personne), événements sur mesure BtoB et BtoC. Site multilingue (FR, EN, NL) avec maîtresse de cérémonie IA Anaïs.
 
 ## Pages principales
 
-- [La maison (accueil)](https://villaoliveyou.com/): scènes immersives — bassin, oliveraie, intérieurs, couleurs du Sud
-- [Expériences](https://villaoliveyou.com/experiences): séjours signature, art de vivre
-- [Près d'ici](https://villaoliveyou.com/pres-dici): environs immédiats de Callas — marchés, villages perchés
-- [L'arrière-pays](https://villaoliveyou.com/arriere-pays): gorges du Verdon, Pays de Fayence, Bargemon, Mons
-- [La Riviera](https://villaoliveyou.com/riviera): Côte d'Azur de Cannes à Menton
-- [Carnet d'Olivia](https://villaoliveyou.com/journal): articles éditoriaux — bien-être, tables & saveurs, mariages, Provence vivante
-- [Réservation](https://villaoliveyou.com/booking): formulaire de demande sur mesure
+- [Accueil](https://www.dinedit.be/): scènes rotatives des dîners à venir, intro BtoC/BtoB, aperçu de l'agenda
+- [Agenda](https://www.dinedit.be/agenda): dîners inédits à venir et archive des soirées passées
+- [Les Architectes](https://www.dinedit.be/architectes): portraits de Serge Van Mol et Fany Ramadier, genèse 2017
 
 ## Détails
 
-- Localisation : Callas, 83830, Var, Provence-Alpes-Côte d'Azur
-- Distance : 1h15 de Nice, 1h de Cannes, 45 min de Saint-Tropez, 25 min du Verdon
-- Positionnement : haut de gamme, demande, pas de tarification publique
-- Concierge IA : Olivia (déclenchable dans le widget de chat bas-droite, 7 langues incluant hébreu RTL)
+- Localisation : Bruxelles, Belgique (sièges Ixelles et Stalle)
+- Format dîner inédit : ~20 convives dans un lieu insolite révélé à l'inscription, art et table se répondent, ambiance intimiste
+- Format sur mesure : afterworks entreprises, lancements produits, dîners privés, mariages intimes — composition avec Serge et Fany
+- Prix BtoC : 150–185 € par personne selon la soirée ; bons-cadeaux à partir de 150 €
+- Prix BtoB : sur demande, se compose avec la maison
+- Concierge / maîtresse de cérémonie IA : Anaïs (widget chat bas-droite, 3 langues FR/EN/NL)
+- Signature : « Meeting Alchemy » — l'alchimie du lieu, de l'art et de la table
 
-## Carnet d'Olivia (catégories)
+## Prochains dîners inédits (illustratifs, voir agenda pour la liste à jour)
 
-- Bien-être & sérénité
-- Tables & saveurs
-- Mariages & événements (création originale)
-- Provence vivante
+- 25 juillet 2026 — Frédéric Chaine (violon) et Rafael Gouirand (guitare manouche), table dressée dans un champ de lupins
+- 29 août 2026 — The Past, the Present & the Future : buste antique en dialogue avec une table
+- 25 septembre 2026 — J'adore c'est quoi ? Parfumerie et table dialoguent autour des accords floraux
+
+## Fondateurs
+
+- **Serge Van Mol** : bruxellois, formé aux Beaux-Arts, entrepreneur événementiel. Réseau d'artistes, collectionneurs et chefs.
+- **Fany Ramadier** : parisienne, expérience client, consultante freelance en stratégies durables et projets circulaires.
 
 ## Contact
 
-- Email : villa.oliveyou@gmail.com
-- WhatsApp : +41 79 903 25 98
+- Email : anais@dinedit.be
+- Ville : Bruxelles, Belgique
