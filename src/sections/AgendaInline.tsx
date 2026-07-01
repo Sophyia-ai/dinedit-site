@@ -8,7 +8,7 @@
 // pour la cohérence.
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
@@ -67,6 +67,17 @@ export default function AgendaInline() {
   const [past, setPast] = useState<EventCard[]>([])
   const [recos, setRecos] = useState<RecoCard[]>([])
   const [filter, setFilter] = useState<Filter>('upcoming')
+  const recosRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (filter !== 'reco') return
+    const t = window.setTimeout(() => {
+      if (recosRef.current) {
+        recosRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }, 120)
+    return () => window.clearTimeout(t)
+  }, [filter])
 
   useEffect(() => {
     fetch('/agenda_data.json')
@@ -154,7 +165,7 @@ export default function AgendaInline() {
         )}
 
         {filter === 'reco' && (
-          <div className="mt-16 pt-10 border-t border-nuit/10">
+          <div ref={recosRef} id="recos-block" className="mt-16 pt-10 border-t border-nuit/10 scroll-mt-24">
             <p className="text-center text-xs uppercase tracking-[0.25em] text-gold mb-8">
               {t('agenda:filter.reco')}
             </p>
