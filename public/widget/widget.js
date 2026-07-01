@@ -49,6 +49,11 @@
   // dans ce délai, la bulle se referme gentiment (pas d'effacement).
   // 0 = désactivé (défaut). Olivia villa : 10000.
   const AUTO_CLOSE_MS = parseInt(script.getAttribute("data-auto-close-ms") || "0", 10);
+  // Durée de la transition d'ouverture ET de fermeture du panneau chat (en ms).
+  // Défaut 300 = comportement historique (La Gare + tout client qui ne passe
+  // pas cet attribut → INCHANGÉ byte-pour-byte). Villa/Dinédit : 2000 pour un
+  // effet d'ouverture doux, théâtral, cohérent avec le ton prestige.
+  const OPEN_DURATION_MS = parseInt(script.getAttribute("data-open-duration-ms") || "300", 10);
 
   // ── i18n ──────────────────────────────────────────────────────────────────
   const SUPPORTED_LANGS = ["fr", "en", "de", "it", "ru", "nl", "he"];
@@ -256,7 +261,7 @@
       overflow: hidden;
       opacity: 0;
       transform: translateY(20px) scale(0.95);
-      transition: opacity 0.3s ease, transform 0.3s ease;
+      transition: opacity ${OPEN_DURATION_MS}ms ease, transform ${OPEN_DURATION_MS}ms ease;
     }
     #sophyia-chat-window.open {
       display: flex;
@@ -1762,10 +1767,14 @@
     if (_autoOpenTimer) { clearTimeout(_autoOpenTimer); _autoOpenTimer = null; }
     isOpen = !isOpen;
     if (isOpen) {
-      window_.classList.add("open");
-      // Force reflow for animation
+      // Fix animation d'ouverture : le browser ne sait pas transitionner
+      // FROM display:none — il faut d'abord peindre l'élément en état initial
+      // (display:flex + opacity:0 + transform initial), PUIS ajouter .open pour
+      // que la transition démarre depuis un état visible.
+      window_.style.display = "flex";
+      // Force reflow : le browser rend l'état initial (opacity:0) sur cette frame,
+      // puis on ajoute .open sur la frame suivante pour déclencher la transition.
       requestAnimationFrame(() => {
-        window_.style.display = "flex";
         requestAnimationFrame(() => window_.classList.add("open"));
       });
       if (bubble) bubble.querySelector(".badge").style.display = "none";
@@ -1783,7 +1792,7 @@
       inputEl.focus();
     } else {
       window_.classList.remove("open");
-      setTimeout(() => { window_.style.display = "none"; }, 300);
+      setTimeout(() => { window_.style.display = "none"; }, OPEN_DURATION_MS);
       _stopInactivityTimer();
     }
   });

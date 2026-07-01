@@ -1,9 +1,11 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// AgendaInline.tsx — section events sur la home (hiérarchie featured + petites)
+// AgendaInline.tsx — section agenda sur la home (v3)
 //
-// Layout : 1 grande card XL pour le prochain dîner (2/3 de la largeur en desktop)
-// + 2 petites cards en colonne à droite. Sous 3 events → adapte.
-// Lit /agenda_data.json (upcoming, chrono ascendant).
+// Layout aligné sur la page /agenda : fond blanc, titre + subtitle centrés,
+// filtres upcoming/past/all discrets, grille de cards verticales avec flyer,
+// date en or, titre, excerpt, CTA "Voir l'événement" en gold. Sur la home
+// on filtre "upcoming" par défaut et on garde la même palette que /agenda
+// pour la cohérence.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { useEffect, useState } from 'react'
@@ -41,116 +43,86 @@ function eventUrl(slug: string, lang: Language): string {
   return lang === 'fr' ? `/events/${slug}.html` : `/events/${lang}/${slug}.html`
 }
 
-function daysUntil(iso: string): number | null {
-  if (!iso) return null
-  const dt = new Date(iso)
-  if (isNaN(dt.getTime())) return null
-  const now = new Date()
-  const diff = Math.ceil((dt.getTime() - now.getTime()) / (1000 * 60 * 60 * 24))
-  return diff
-}
+type Filter = 'upcoming' | 'past' | 'all'
 
 export default function AgendaInline() {
-  const { t } = useTranslation(['agenda', 'home', 'common'])
+  const { t } = useTranslation(['agenda', 'common'])
   const { lang } = useAppLanguage()
-  const [events, setEvents] = useState<EventCard[]>([])
+  const [upcoming, setUpcoming] = useState<EventCard[]>([])
+  const [past, setPast] = useState<EventCard[]>([])
+  const [filter, setFilter] = useState<Filter>('upcoming')
 
   useEffect(() => {
     fetch('/agenda_data.json')
       .then(r => r.ok ? r.json() : Promise.reject())
-      .then(d => setEvents(d.upcoming || []))
-      .catch(() => setEvents([]))
+      .then(d => {
+        setUpcoming(d.upcoming || [])
+        setPast(d.past || [])
+      })
+      .catch(() => { setUpcoming([]); setPast([]) })
   }, [])
 
-  if (events.length === 0) return null
+  if (upcoming.length === 0 && past.length === 0) return null
 
   const prefix = lang === siteConfig.languages.default ? '' : `/${lang}`
-  const [featured, ...rest] = events
-  const sideEvents = rest.slice(0, 2)
-
-  const featuredDate = formatDate(featured.date_start, lang)
-  const featuredTitle = pickLang(featured.title, lang)
-  const featuredExcerpt = pickLang(featured.excerpt, lang)
-  const featuredDays = daysUntil(featured.date_start)
-
-  const daysLabel = (n: number): string => {
-    if (lang === 'en') return n === 1 ? 'in 1 day' : `in ${n} days`
-    if (lang === 'nl') return n === 1 ? 'over 1 dag' : `over ${n} dagen`
-    return n === 1 ? 'dans 1 jour' : `dans ${n} jours`
-  }
+  const visible: EventCard[] =
+    filter === 'upcoming' ? upcoming :
+    filter === 'past'     ? past :
+                            [...upcoming, ...past]
 
   return (
-    <section id="events-inline" className="bg-nuit py-16 md:py-24 text-bone">
-      <div className="max-w-6xl mx-auto px-6">
-        <header className="text-center mb-14">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold mb-3">
-            {siteConfig.brand.tagline}
-          </p>
-          <h2 className="font-display text-3xl md:text-5xl">
-            {t('agenda:title')}
-          </h2>
-          <p className="mt-3 text-bone/70 max-w-xl mx-auto">
-            {t('agenda:subtitle')}
-          </p>
+    <section id="agenda" className="bg-bone py-16 md:py-24">
+      <div className="max-w-5xl mx-auto px-6">
+        <header className="text-center mb-12">
+          <h2 className="font-display text-4xl md:text-5xl text-nuit">{t('agenda:title')}</h2>
+          <p className="mt-4 text-nuit/70 max-w-xl mx-auto">{t('agenda:subtitle')}</p>
         </header>
 
-        <div className="grid lg:grid-cols-3 gap-6">
-          {/* Featured — grande card XL sur 2 colonnes */}
-          <a
-            href={eventUrl(featured.slug, lang)}
-            className="lg:col-span-2 group rounded-3xl border border-bone/15 hover:border-gold transition-colors overflow-hidden bg-nuit-light flex flex-col"
-          >
-            {featured.flyer && (
-              <div className="aspect-[16/9] md:aspect-[16/10] overflow-hidden bg-nuit-dark">
-                <img
-                  src={featured.flyer}
-                  alt={featuredTitle}
-                  className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-500"
-                  style={{ backgroundColor: '#11192E' }}
-                />
-              </div>
-            )}
-            <div className="p-8 md:p-10 flex-1 flex flex-col">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs uppercase tracking-[0.25em] text-gold">{featuredDate}</span>
-                {featuredDays !== null && featuredDays >= 0 && (
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-gold/20 text-gold">
-                    {daysLabel(featuredDays)}
-                  </span>
-                )}
-              </div>
-              <h3 className="font-display text-2xl md:text-3xl leading-tight mb-4">{featuredTitle}</h3>
-              <p className="text-bone/75 leading-relaxed flex-1">{featuredExcerpt}</p>
-              <p className="mt-6 text-sm text-gold border-b border-gold/50 w-fit">
-                {t('agenda:card.see_more')} →
-              </p>
-            </div>
-          </a>
+        <div className="flex justify-center gap-2 mb-10">
+          {(['upcoming', 'past', 'all'] as const).map(key => (
+            <button
+              key={key}
+              onClick={() => setFilter(key)}
+              className={`px-4 py-1.5 rounded-full text-sm border transition-all ${
+                filter === key
+                  ? 'bg-nuit text-bone border-nuit'
+                  : 'bg-bone text-nuit/70 border-nuit/15 hover:border-gold hover:text-gold'
+              }`}
+            >
+              {t(`agenda:filter.${key}`)}
+            </button>
+          ))}
+        </div>
 
-          {/* 2 petites cards à droite */}
-          <div className="flex flex-col gap-6">
-            {sideEvents.map(event => {
-              const date = formatDate(event.date_start, lang)
+        {visible.length === 0 ? (
+          <p className="text-center text-nuit/50 py-12">{t('agenda:empty')}</p>
+        ) : (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {visible.map(event => {
               const title = pickLang(event.title, lang)
+              const excerpt = pickLang(event.excerpt, lang)
+              const date = formatDate(event.date_start, lang)
               return (
                 <a
                   key={event.slug}
                   href={eventUrl(event.slug, lang)}
-                  className="group rounded-2xl border border-bone/15 hover:border-gold transition-colors overflow-hidden bg-nuit-light flex flex-1"
+                  className="group rounded-2xl border border-nuit/10 hover:border-gold/60 transition-colors bg-bone overflow-hidden flex flex-col"
                 >
                   {event.flyer && (
-                    <div className="w-1/3 min-w-[120px] overflow-hidden bg-nuit-dark">
+                    <div className="aspect-[3/4] overflow-hidden bg-nuit/5">
                       <img
                         src={event.flyer}
                         alt={title}
-                        className="w-full h-full object-cover"
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                       />
                     </div>
                   )}
-                  <div className="p-5 flex-1 flex flex-col justify-center">
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-gold mb-2">{date}</p>
-                    <h3 className="font-display text-lg leading-tight text-bone">{title}</h3>
-                    <p className="mt-3 text-[11px] text-gold border-b border-gold/40 w-fit">
+                  <div className="p-5 flex-1 flex flex-col">
+                    <p className="text-xs uppercase tracking-[0.2em] text-gold mb-2">{date}</p>
+                    <h3 className="font-display text-xl text-nuit leading-tight mb-3">{title}</h3>
+                    <p className="text-nuit/70 text-sm leading-relaxed flex-1">{excerpt}</p>
+                    <p className="mt-4 text-xs text-gold border-b border-gold/40 w-fit">
                       {t('agenda:card.see_more')} →
                     </p>
                   </div>
@@ -158,16 +130,18 @@ export default function AgendaInline() {
               )
             })}
           </div>
-        </div>
+        )}
 
-        <div className="mt-14 text-center">
-          <Link
-            to={`${prefix}/agenda`}
-            className="inline-block px-8 py-3 rounded-full bg-gold text-nuit text-sm font-medium tracking-wide hover:bg-gold-light transition-colors"
-          >
-            {t('home:hero.cta_agenda')} →
-          </Link>
-        </div>
+        {filter === 'upcoming' && past.length > 0 && (
+          <div className="mt-12 text-center">
+            <Link
+              to={`${prefix}/agenda`}
+              className="inline-block px-5 py-2 rounded-full text-sm border border-nuit/30 text-nuit hover:border-gold hover:text-gold transition-colors"
+            >
+              {t('agenda:filter.past')} →
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   )

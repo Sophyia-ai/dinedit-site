@@ -1,12 +1,10 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// Scenes.tsx — Dinédit hero rotatif
+// Scenes.tsx — Dinédit hero rotatif (v2 : split gauche/droite sur desktop)
 //
-// Utilise les flyers events comme scènes hero : chaque flyer est une œuvre
-// de saison, présentée en portrait centrée sur fond nuit, avec l'excerpt
-// de l'event en overlay bas et un lien vers la page article statique.
-//
-// Lit /agenda_data.json (upcoming). Auto-rotation 8s. Sur < 3 upcoming,
-// tourne sur ce qu'il y a. Sur 0 upcoming, fallback vers page tagline sobre.
+// Desktop  : colonne gauche = texte (titre event + excerpt + CTA)
+//            colonne droite = flyer en portrait
+// Mobile   : stack vertical, flyer en haut, texte en bas
+// Auto-rotation 8 s. Lit /agenda_data.json (upcoming).
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { useEffect, useState } from 'react'
@@ -15,6 +13,7 @@ import { useTranslation } from 'react-i18next'
 import { siteConfig } from '../config/site'
 import { useAppLanguage, type Language } from '../context/LanguageContext'
 import LanguagePill from '../components/LanguagePill'
+import { openAnaisWithEvent } from '../lib/anaisIntent'
 
 interface SceneEvent {
   slug: string
@@ -24,12 +23,16 @@ interface SceneEvent {
   date_start: string
 }
 
-function eventUrl(slug: string, lang: Language) {
-  return lang === 'fr' ? `/events/${slug}.html` : `/events/${lang}/${slug}.html`
-}
-
 function pickLang(d: Record<string, string>, lang: string): string {
   return d[lang] || d.fr || Object.values(d)[0] || ''
+}
+
+function formatDate(iso: string, lang: Language): string {
+  if (!iso) return ''
+  const dt = new Date(iso)
+  if (isNaN(dt.getTime())) return iso
+  const locale = lang === 'en' ? 'en-GB' : lang === 'nl' ? 'nl-BE' : 'fr-BE'
+  return dt.toLocaleDateString(locale, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })
 }
 
 export default function Scenes() {
@@ -51,7 +54,7 @@ export default function Scenes() {
     return () => clearInterval(id)
   }, [scenes.length])
 
-  // Fallback pas d'events : hero tagline sobre
+  // Fallback : hero tagline sobre
   if (scenes.length === 0) {
     return (
       <section className="relative min-h-[88vh] bg-bone flex flex-col">
@@ -70,69 +73,82 @@ export default function Scenes() {
   }
 
   const scene = scenes[active]
+  const title = pickLang(scene.title, lang)
+  const excerpt = pickLang(scene.excerpt, lang)
+  const dateStr = formatDate(scene.date_start, lang)
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-nuit">
-      {/* Backdrop images (portrait, centrées, fond nuit sur les côtés) */}
-      {scenes.map((s, i) => (
+    <section className="relative min-h-screen w-full overflow-hidden bg-nuit text-bone">
+      {/* Backdrop léger : version blur du flyer actif (habille les vides) */}
+      {scene.flyer && (
         <div
-          key={s.slug}
-          className="absolute inset-0 transition-opacity ease-out flex items-center justify-center"
+          key={`bg-${scene.slug}`}
+          className="absolute inset-0"
           style={{
-            opacity: i === active ? 1 : 0,
-            transitionDuration: '1200ms',
+            backgroundImage: `url(${scene.flyer})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(60px) brightness(0.30) saturate(0.7)',
+            transform: 'scale(1.2)',
           }}
-        >
-          {/* Blur version en background pour habiller les côtés */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url(${s.flyer})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              filter: 'blur(40px) brightness(0.35) saturate(0.7)',
-              transform: 'scale(1.15)',
-            }}
-          />
-          {/* Flyer en portrait centré, hauteur 82vh, aspect ratio préservé */}
-          <img
-            src={s.flyer || ''}
-            alt={pickLang(s.title, lang)}
-            loading={i === 0 ? 'eager' : 'lazy'}
-            className="relative h-[82vh] w-auto max-w-[92vw] object-contain shadow-2xl"
-            style={{ boxShadow: '0 30px 80px -20px rgba(0,0,0,0.55)' }}
-          />
-        </div>
-      ))}
+        />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-r from-nuit-dark/85 via-nuit-dark/50 to-nuit-dark/70 pointer-events-none" />
 
-      {/* Vignette bas pour lire l'overlay */}
-      <div className="absolute inset-x-0 bottom-0 h-[45%] bg-gradient-to-t from-nuit-dark via-nuit-dark/70 to-transparent pointer-events-none" />
-
-      {/* Top bar : logo + LanguagePill */}
-      <div className="absolute top-0 inset-x-0 z-30 flex items-center justify-between px-6 md:px-10 py-6">
+      {/* Top bar : logo (gauche) + LanguagePill (droite) */}
+      <div className="absolute top-0 inset-x-0 z-30 flex items-center justify-between px-6 md:px-12 py-6">
         <a href={lang === siteConfig.languages.default ? '/' : `/${lang}`} aria-label={siteConfig.brand.name} className="transition-transform hover:scale-105">
           <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-12 md:h-16 w-auto brightness-0 invert opacity-95" />
         </a>
         <LanguagePill variant="overlay" />
       </div>
 
-      {/* Overlay bas : excerpt event + CTA vers page article */}
-      <div className="absolute inset-x-0 bottom-0 z-20 px-6 pb-16 md:pb-20 pointer-events-none">
-        <div key={`overlay-${active}-${lang}`} className="max-w-2xl mx-auto text-center animate-fade-in-up">
-          <p className="text-xs uppercase tracking-[0.3em] text-gold mb-4">{t('home:hero.tagline')}</p>
-          <p className="font-display text-2xl md:text-3xl leading-snug text-bone/95" style={{ textShadow: '0 2px 18px rgba(0,0,0,0.55)' }}>
-            {pickLang(scene.excerpt, lang)}
+      {/* Contenu split : texte gauche / flyer droite */}
+      <div className="relative z-10 min-h-screen grid lg:grid-cols-2 items-center gap-8 lg:gap-16 px-6 md:px-12 pt-28 lg:pt-0">
+        {/* GAUCHE — texte (bas sur mobile, gauche sur desktop) */}
+        <div key={`text-${active}-${lang}`} className="order-2 lg:order-1 max-w-xl mx-auto lg:mx-0 lg:pl-6 xl:pl-16 text-center lg:text-left animate-fade-in-up pb-12 lg:pb-0">
+          <p className="text-xs uppercase tracking-[0.3em] text-gold mb-4">
+            {dateStr}
           </p>
-          <a
-            href={eventUrl(scene.slug, lang)}
-            className="pointer-events-auto inline-block mt-8 px-7 py-2.5 text-bone/95 border border-bone/45 rounded-full backdrop-blur-sm hover:bg-gold hover:text-nuit hover:border-gold transition-all font-sans text-xs tracking-[0.25em] uppercase"
-          >
-            {t('home:hero.cta_agenda')}
-          </a>
+          <h1 className="font-display text-3xl md:text-4xl xl:text-5xl leading-tight text-bone mb-6" style={{ textShadow: '0 2px 20px rgba(0,0,0,0.4)' }}>
+            {title}
+          </h1>
+          <p className="font-display text-lg md:text-xl leading-snug text-bone/85 mb-8 italic">
+            {excerpt}
+          </p>
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <button
+              type="button"
+              onClick={() => openAnaisWithEvent(scene, lang)}
+              className="inline-block px-6 py-2.5 rounded-full bg-gold text-nuit text-sm font-medium tracking-wide hover:bg-gold-light transition-colors"
+            >
+              {t('home:hero.cta_agenda')} →
+            </button>
+            <a
+              href={lang === siteConfig.languages.default ? '/agenda' : `/${lang}/agenda`}
+              className="inline-block px-6 py-2.5 rounded-full border border-bone/45 text-bone/95 text-sm font-medium tracking-wide hover:border-gold hover:text-gold transition-colors"
+            >
+              {t('agenda:title', 'Agenda')}
+            </a>
+          </div>
+        </div>
+
+        {/* DROITE — flyer portrait (haut sur mobile, droite sur desktop) */}
+        <div className="order-1 lg:order-2 flex items-center justify-center lg:justify-start pt-4 lg:pt-0">
+          {scenes.map((s, i) => (
+            <img
+              key={s.slug}
+              src={s.flyer || ''}
+              alt={pickLang(s.title, lang)}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              className={`transition-opacity duration-1000 ${i === active ? 'opacity-100' : 'opacity-0 absolute'} max-h-[70vh] lg:max-h-[82vh] w-auto object-contain`}
+              style={{ boxShadow: '0 30px 90px -20px rgba(0,0,0,0.65)' }}
+            />
+          ))}
         </div>
       </div>
 
-      {/* Indicators */}
+      {/* Indicators bas */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2 items-center pointer-events-auto">
         {scenes.map((_, i) => (
           <button

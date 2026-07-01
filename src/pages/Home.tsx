@@ -1,10 +1,16 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// Home.tsx — Dinédit landing (Phase 4)
+// Home.tsx — Dinédit landing (v5)
 //
-// Structure : Scenes (hero flyers) → Intro 2-colonnes BtoC/BtoB → Gallery
-// (album photo, masqué tant que 0 photo) → AgendaInline (events featured XL
-// + 2 petites, chrono ascendant, section nuit) → CarnetInline (4 rubriques
-// éditoriales) → Footer.
+// Structure :
+//   Scenes (hero split flyer + texte)
+//   → Intro 2-colonnes "Deux façons de nous rejoindre" (Rejoindre un dîner
+//     inédit vs Composer votre propre événement — 2 voies distinctes)
+//   → AgendaInline (blog Dinédit par défaut, layout aligné sur /agenda,
+//     fond blanc, grille 3 cards)
+//   → Gallery (album, plus discret)
+//   → Footer
+//
+// La Gallery a id="gallery" — ancrable via href="#gallery" quand tu voudras.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { Link } from 'react-router-dom'
@@ -15,8 +21,8 @@ import { useAppLanguage } from '../context/LanguageContext'
 import Scenes from '../sections/Scenes'
 import Gallery from '../sections/Gallery'
 import AgendaInline from '../sections/AgendaInline'
-import CarnetInline from '../sections/CarnetInline'
 import Footer from '../sections/Footer'
+import { openAnaisWithArchitectes } from '../lib/anaisIntent'
 
 export default function Home() {
   const { t } = useTranslation(['home', 'common'])
@@ -33,41 +39,44 @@ export default function Home() {
             {t('home:intro.title')}
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
+            {/* Voie 1 — Rejoindre un dîner inédit (personnel OU groupe entreprise) */}
             <article className="p-8 rounded-2xl bg-nuit text-bone">
               <p className="text-xs uppercase tracking-[0.25em] text-gold mb-4">
-                {t('home:intro.btoc.label')}
+                {t('home:intro.voie_diner.label')}
               </p>
-              <p className="font-display text-xl leading-snug">
-                {t('home:intro.btoc.text')}
+              <p className="font-display text-lg md:text-xl leading-snug mb-6">
+                {t('home:intro.voie_diner.text')}
               </p>
               <Link
                 to={`${prefix}/agenda`}
-                className="inline-block mt-6 text-sm border-b border-gold text-gold hover:text-gold-light transition-colors"
+                className="inline-block text-sm border-b border-gold text-gold hover:text-gold-light transition-colors"
               >
-                {t('home:hero.cta_agenda')} →
+                {t('home:intro.voie_diner.cta')} →
               </Link>
             </article>
+
+            {/* Voie 2 — Composer un événement sur mesure (Anaïs prend la relève) */}
             <article className="p-8 rounded-2xl border border-nuit/15 bg-bone">
               <p className="text-xs uppercase tracking-[0.25em] text-gold mb-4">
-                {t('home:intro.btob.label')}
+                {t('home:intro.voie_compose.label')}
               </p>
-              <p className="font-display text-xl leading-snug text-nuit">
-                {t('home:intro.btob.text')}
+              <p className="font-display text-lg md:text-xl leading-snug text-nuit mb-6">
+                {t('home:intro.voie_compose.text')}
               </p>
-              <Link
-                to={`${prefix}/architectes`}
-                className="inline-block mt-6 text-sm border-b border-nuit/40 text-nuit hover:text-gold hover:border-gold transition-colors"
+              <button
+                type="button"
+                onClick={() => openAnaisWithArchitectes(lang)}
+                className="inline-block text-sm border-b border-nuit/40 text-nuit hover:text-gold hover:border-gold transition-colors"
               >
-                {t('common:nav.architectes')} →
-              </Link>
+                {t('home:intro.voie_compose.cta')} →
+              </button>
             </article>
           </div>
         </div>
       </section>
 
-      <Gallery />
       <AgendaInline />
-      <CarnetInline />
+      <Gallery />
 
       <Footer />
     </>
