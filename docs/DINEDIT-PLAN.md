@@ -557,3 +557,40 @@ Lu et noté. Récap exécution côté CC bonjour.sophyia :
 1. **DNS `dinedit.be`** — audit zone actuelle (registrar à identifier), CNAME `www` vers SWA, redirection 301 apex vers www. Pattern Villa.
 2. **Fenêtre `function_app.py`** (coordonnée avec CC bonjour) — branche events + câblage `live_search` pour `type=="events"`. À déclencher quand Raoul donne le créneau.
 3. **Phase 2** côté site : `events_engine.py` + `agenda_data.json` (généré au build) + `<Agenda />` inline sur la home (équivalent du `<Blog />` Villa).
+
+### 2026-07-01 — Phase 4 UI + fenêtre backend `function_app.py` LIVRÉE ✅
+
+**Côté site (repo `Sophyia-ai/dinedit-site`, commit `524baa9`) :**
+- **Widget master** : opt-in `data-open-duration-ms` (défaut 300 = La Gare INCHANGÉ). Villa + Dinédit à 2000ms. **Fix animation d'ouverture** (le browser ne sait pas transitionner FROM `display:none` → séquence `display:flex + opacity:0` d'abord, puis double `requestAnimationFrame`, puis `.open`). Fix backward-compatible — bénéficie à La Gare aussi.
+- **`src/lib/anaisIntent.ts`** : helpers `openAnaisWithEvent` + `openAnaisWithArchitectes` qui appellent `SophyiaChat.openWith(message)` avec message d'amorce **contextuel enrichi** (event : titre + date + excerpt localisés ; architectes : intention BtoC/BtoB + demande de qualification). Fallback poll si widget pas encore prêt.
+- **Scenes hero** : bouton "Voir l'événement" → ouvre Anaïs avec le contexte de l'event actif du carousel. Le bouton "Agenda" secondaire navigue toujours vers `/agenda`.
+- **Home bloc BtoB** : bouton "Rencontrer les Architectes" → ouvre Anaïs avec l'intention (présente concept + qualifie + propose contact Serge/Fany).
+- **Renommage** Agenda → « Agenda & réservation » (3 langues, nav + page + composants).
+- **AgendaInline v3** : layout aligné sur page `/agenda` (fond blanc, chips upcoming/past/all discrets, grille 3 cards). Le bloc featured XL fond nuit précédent est retiré.
+- **Bulle Anaïs Dinédit** : CSS local injecté (opacity 92% + backdrop-blur 2px, retour 100% au hover). N'affecte QUE Dinédit — autres clients ne chargent pas ce stylesheet.
+
+**Côté backend (repo `Sophyia-ai/sophyia-chat-api`, commits `21639d2` + `a070d10`) :**
+- `_build_events_system_prompt(config)` implémenté aligné sur `SPEC-PROMPT-anais-events.md`. Miroir structurel de `_build_villa_system_prompt` sans aucun ADN restaurant.
+- `build_system_prompt` : ajout branche `elif type=="events"` avant restaurant. Restaurant intact.
+- `NAV_SECTION_META_EVENTS` : **5 rubriques finales** (agenda, architectes, sur-mesure, lieux-insolites, bon-cadeau — le bon-cadeau ajouté après retour CC bonjour : levier BtoC fort acté dès Phase 0). 3 langues portants FR/EN/NL, fallbacks anglais pour de/it/ru/he (aucune casse itération multi-lang admin).
+- `_init_nav_from_template` : ajout `elif events` avec 3 langues.
+- **Gating tools** : `has_function_calling = is_villa or is_events`. Anaïs a **`live_search` UNIQUEMENT** (villa_tools.TOOL_DEFINITIONS filtré — météo Callas et itinéraires villa n'ont aucun sens pour un bot Bruxelles). `_proactive_web_fetch` désactivé pour events comme pour villa.
+
+**Non-régression validée byte-per-byte (tests Python obligatoires) :**
+- La Gare Cully : prompt sha `d3e0adb1fa61` INCHANGÉ.
+- Villa Olive You (Olivia) : prompt sha `36a0e127eb41` INCHANGÉ.
+- Anaïs (events) : prompt sha `b3dadfb232fb`, propre — zéro fuite (0 mention de CHF, Chef Jean-Luc, Lavaux, Dezaley, Chasselas, Cornalin, Gamay, menu du jour). Identity présente : Bruxelles, Serge, Fany, €, Anaïs, Dinédit.
+
+**Reste côté CC bonjour :** ré-appeler `_init_nav_from_template("dinedit")` (snapshot avant) pour écrire les 5 nav_items propres. Après ça la nav restaurant fuitée dans le widget Dinédit disparaît et la branche events est vraiment stable.
+
+## Répartition des rôles CC — actée 2026-07-01
+
+**CC bonjour (`bonjour.sophyia.io`)** = **la plateforme d'onboarding et d'admin**. Panel admin, rubriques dynamiques, workflows de catapultage rapide (site+chatbot ou juste chatbot pour un nouveau client), briefs de spec des branches métier, templates de bots. Backend transversal.
+
+**CC site (moi, Dinédit ici — mais aussi Villa Olive You, La Gare Cully, futurs)** = **les sites clients**. Contenu, UI/UX, moteurs de contenu (blog / events / gallery), SEO, DNS, intégration widget côté site. Je touche `function_app.py` **uniquement** pour les fonctions spécifiques à un client précis (comme la branche `events` pour Anaïs, la branche `villa` pour Olivia) et **toujours en coordination** avec CC bonjour.
+
+**Zone commune** = `function_app.py`. Fenêtres coordonnées obligatoires. Snapshots + tests byte-per-byte + verrous verbaux avant d'y toucher.
+
+**Sync** = doc partagé `sites/<client>/docs/<CLIENT>-PLAN.md` (journaux CC bonjour + CC site côte-à-côte, comme ce fichier).
+
+**Ce que Raoul attend de cette répartition** : *« il faut vraiment resserrer les tafs »* — chacun sur son territoire pour aller vite, coordination explicite quand on croise. Pas de dispersion.
