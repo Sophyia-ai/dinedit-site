@@ -1,0 +1,83 @@
+{
+  "_comment": "Sources HTML scannées par recommendations_engine.py pour nourrir 'Nos recommandations'. 10 sources — 7 offices de tourisme + 3 portails curés (Wallonie / Flandre / national). Chaque source pointe vers une page listing d'événements. Le LLM extrait les candidats, filtre les insolites, rejette les événements de masse. Chaque reco publiée cite la source (attribution) et intègre la constellation Dinédit (lien home + agenda + Anaïs).",
+
+  "_config": {
+    "target_langs": ["fr", "en", "nl"],
+    "max_candidates_per_source": 4,
+    "priority_weight": true,
+    "purge_days_after_event": 30
+  },
+
+  "sources": [
+    {
+      "name": "visit.brussels",
+      "region": "Bruxelles",
+      "url": "https://visit.brussels/fr",
+      "priority": 1,
+      "notes": "Office du tourisme Bruxelles-Capitale (racine, LLM extrait depuis la home)"
+    },
+    {
+      "name": "visitgent.be",
+      "region": "Gand",
+      "url": "https://visit.gent.be/fr",
+      "priority": 1,
+      "notes": "Office du tourisme Gand"
+    },
+    {
+      "name": "visitantwerpen.be",
+      "region": "Anvers",
+      "url": "https://www.visitantwerpen.be",
+      "priority": 1,
+      "notes": "Office du tourisme Anvers"
+    },
+    {
+      "name": "visitbruges.be",
+      "region": "Bruges",
+      "url": "https://www.visitbruges.be/fr",
+      "priority": 1,
+      "notes": "Office du tourisme Bruges"
+    },
+    {
+      "name": "visitezliege.be",
+      "region": "Liège",
+      "url": "https://www.visitezliege.be",
+      "priority": 2,
+      "notes": "Office du tourisme Liège"
+    },
+    {
+      "name": "namurtourisme.be",
+      "region": "Namur",
+      "url": "https://www.namurtourisme.be/fr/agenda",
+      "priority": 2,
+      "notes": "Office du tourisme Namur (URL agenda vérifiée)"
+    },
+    {
+      "name": "visitmons.be",
+      "region": "Mons",
+      "url": "https://www.visitmons.be",
+      "priority": 2,
+      "notes": "Office du tourisme Mons"
+    },
+    {
+      "name": "visitwallonia.be",
+      "region": "Wallonie",
+      "url": "https://visitwallonia.be/fr-be/3/jaime/wallonie-insolite/evenements?cookie_lang=fr-be",
+      "priority": 1,
+      "notes": "Portail Wallonie curé insolite"
+    },
+    {
+      "name": "out.be",
+      "region": "Belgique",
+      "url": "https://www.out.be/fr/",
+      "priority": 1,
+      "notes": "Agenda national culturel Belgique"
+    },
+    {
+      "name": "coeurdeflandre.fr",
+      "region": "Flandre",
+      "url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+      "priority": 2,
+      "notes": "Portail Flandre pour public francophone"
+    }
+  ]
+}

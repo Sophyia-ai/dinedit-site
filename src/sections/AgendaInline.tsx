@@ -27,6 +27,17 @@ interface EventCard {
   excerpt: Record<string, string>
 }
 
+interface RecoCard {
+  slug: string
+  published: string
+  event_date: string
+  source_name: string
+  source_url: string
+  region: string
+  title: Record<string, string>
+  excerpt: Record<string, string>
+}
+
 function pickLang(d: Record<string, string>, lang: Language): string {
   return d[lang] || d.fr || Object.values(d)[0] || ''
 }
@@ -43,13 +54,18 @@ function eventUrl(slug: string, lang: Language): string {
   return lang === 'fr' ? `/events/${slug}.html` : `/events/${lang}/${slug}.html`
 }
 
-type Filter = 'upcoming' | 'past' | 'all'
+function recoUrl(slug: string, lang: Language): string {
+  return lang === 'fr' ? `/recommendations/${slug}.html` : `/recommendations/${lang}/${slug}.html`
+}
+
+type Filter = 'upcoming' | 'past' | 'all' | 'reco'
 
 export default function AgendaInline() {
   const { t } = useTranslation(['agenda', 'common'])
   const { lang } = useAppLanguage()
   const [upcoming, setUpcoming] = useState<EventCard[]>([])
   const [past, setPast] = useState<EventCard[]>([])
+  const [recos, setRecos] = useState<RecoCard[]>([])
   const [filter, setFilter] = useState<Filter>('upcoming')
 
   useEffect(() => {
@@ -60,6 +76,10 @@ export default function AgendaInline() {
         setPast(d.past || [])
       })
       .catch(() => { setUpcoming([]); setPast([]) })
+    fetch('/reco_data.json')
+      .then(r => r.ok ? r.json() : Promise.reject())
+      .then(d => setRecos(Array.isArray(d) ? d : []))
+      .catch(() => setRecos([]))
   }, [])
 
   if (upcoming.length === 0 && past.length === 0) return null
@@ -68,6 +88,7 @@ export default function AgendaInline() {
   const visible: EventCard[] =
     filter === 'upcoming' ? upcoming :
     filter === 'past'     ? past :
+    filter === 'reco'     ? upcoming :
                             [...upcoming, ...past]
 
   return (
@@ -78,8 +99,8 @@ export default function AgendaInline() {
           <p className="mt-4 text-nuit/70 max-w-xl mx-auto">{t('agenda:subtitle')}</p>
         </header>
 
-        <div className="flex justify-center gap-2 mb-10">
-          {(['upcoming', 'past', 'all'] as const).map(key => (
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
+          {(['upcoming', 'past', 'all', 'reco'] as const).map(key => (
             <button
               key={key}
               onClick={() => setFilter(key)}
@@ -129,6 +150,43 @@ export default function AgendaInline() {
                 </a>
               )
             })}
+          </div>
+        )}
+
+        {filter === 'reco' && (
+          <div className="mt-16 pt-10 border-t border-nuit/10">
+            <p className="text-center text-xs uppercase tracking-[0.25em] text-gold mb-8">
+              {t('agenda:filter.reco')}
+            </p>
+            {recos.length === 0 ? (
+              <p className="text-center text-sm text-nuit/60 italic max-w-2xl mx-auto leading-relaxed">
+                {t('agenda:reco.coming_soon')}
+              </p>
+            ) : (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {recos.map(reco => {
+                  const title = pickLang(reco.title, lang)
+                  const excerpt = pickLang(reco.excerpt, lang)
+                  const evDate = reco.event_date ? formatDate(reco.event_date, lang) : ''
+                  return (
+                    <a
+                      key={reco.slug}
+                      href={recoUrl(reco.slug, lang)}
+                      className="group rounded-2xl border border-nuit/10 hover:border-gold/60 transition-colors bg-bone overflow-hidden flex flex-col p-5"
+                    >
+                      <p className="text-[10px] uppercase tracking-[0.2em] text-gold mb-2">
+                        {reco.region}{evDate && ' · '}{evDate}
+                      </p>
+                      <h3 className="font-display text-lg text-nuit leading-tight mb-3">{title}</h3>
+                      <p className="text-nuit/70 text-sm leading-relaxed flex-1">{excerpt}</p>
+                      <p className="mt-4 text-[11px] text-nuit/50">
+                        {t('agenda:filter.reco')} · {reco.source_name}
+                      </p>
+                    </a>
+                  )
+                })}
+              </div>
+            )}
           </div>
         )}
 

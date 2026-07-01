@@ -1,0 +1,83 @@
+name: Recommendations auto-generation
+
+# Cadence :
+#   - Lundi 06:30 UTC (08:30 Bruxelles) : 1 reco par source active (cadence normale).
+#   - Jeudi 06:30 UTC : 1 reco par source (2ᵉ passage semaine).
+#   - Le 1er de chaque mois 05:00 UTC : purge des recos passées (>30 jours).
+# Déclenchement manuel via "Run workflow" pour l'initial burst (per_source_or_burst).
+
+on:
+  schedule:
+    - cron: '30 6 * * 1'
+    - cron: '30 6 * * 4'
+    - cron: '0 5 1 * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Mode : per-source (2/semaine) | burst (initial 20) | purge'
+        required: true
+        default: 'per-source'
+        type: choice
+        options:
+          - per-source
+          - burst
+          - purge
+      value:
+        description: 'per-source: N par source (défaut 1) — burst: total cible (défaut 20)'
+        required: false
+        default: '1'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine mode
+        id: mode
+        run: |
+          schedule="${{ github.event.schedule }}"
+          if [ -n "${{ github.event.inputs.mode }}" ]; then
+            echo "mode=${{ github.event.inputs.mode }}" >> "$GITHUB_OUTPUT"
+            echo "value=${{ github.event.inputs.value }}" >> "$GITHUB_OUTPUT"
+          elif [ "$schedule" = "0 5 1 * *" ]; then
+            echo "mode=purge" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=per-source" >> "$GITHUB_OUTPUT"
+            echo "value=1" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install --quiet openai beautifulsoup4 python-slugify
+
+      - name: Configure git author
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run recommendations engine
+        env:
+          AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          AZURE_OPENAI_ENDPOINT: 'https://sophyia.cognitiveservices.azure.com/'
+          AZURE_OPENAI_API_VERSION: '2024-12-01-preview'
+        run: |
+          MODE="${{ steps.mode.outputs.mode }}"
+          VALUE="${{ steps.mode.outputs.value || '1' }}"
+          if [ "$MODE" = "purge" ]; then
+            python3 automation/recommendations_engine.py --purge --push
+          elif [ "$MODE" = "burst" ]; then
+            python3 automation/recommendations_engine.py --initial-burst "$VALUE" --max "$VALUE" --push
+          else
+            python3 automation/recommendations_engine.py --per-source "$VALUE" --max 20 --push
+          fi

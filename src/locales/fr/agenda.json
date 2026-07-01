@@ -4,7 +4,11 @@
   "filter": {
     "upcoming": "À venir",
     "past": "Passés",
-    "all": "Tous"
+    "all": "Tous",
+    "reco": "Nos recommandations"
+  },
+  "reco": {
+    "coming_soon": "Nos recommandations arrivent bientôt — la sélection d'événements insolites qu'on aime dans les autres coins de Belgique."
   },
   "card": {
     "from": "à partir de",

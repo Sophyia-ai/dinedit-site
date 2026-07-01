@@ -4,7 +4,11 @@
   "filter": {
     "upcoming": "Komend",
     "past": "Voorbij",
-    "all": "Alle"
+    "all": "Alle",
+    "reco": "Onze tips"
+  },
+  "reco": {
+    "coming_soon": "Onze tips komen eraan — een gecureerde selectie van bijzondere evenementen die we elders in België waarderen."
   },
   "card": {
     "from": "vanaf",

@@ -4,7 +4,11 @@
   "filter": {
     "upcoming": "Upcoming",
     "past": "Past",
-    "all": "All"
+    "all": "All",
+    "reco": "Our picks"
+  },
+  "reco": {
+    "coming_soon": "Our picks are coming soon — a curated selection of the singular events we love elsewhere in Belgium."
   },
   "card": {
     "from": "from",

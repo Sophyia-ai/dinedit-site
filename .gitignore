@@ -15,8 +15,10 @@ __pycache__/
 # Artefacts générés par automation/*.py au build
 # (régénérés en CI à chaque déploiement, pas besoin de versionner)
 public/events/
+public/recommendations/
 public/agenda_data.json
 public/carnet_data.json
+public/reco_data.json
 public/sitemap.xml
 public/images/gallery/
 public/gallery_data.json
