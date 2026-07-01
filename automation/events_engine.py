@@ -25,11 +25,16 @@ from pathlib import Path
 APP_ROOT      = Path(__file__).resolve().parent.parent
 EVENTS_UP     = APP_ROOT / "events" / "upcoming"
 EVENTS_PAST   = APP_ROOT / "events" / "past"
+ARTICLES_DIR  = APP_ROOT / "articles"                    # carnet éditorial (JSON manuels curés)
 PUBLIC_DIR    = APP_ROOT / "public"
 EVENTS_OUT    = PUBLIC_DIR / "events"
 AGENDA_INDEX  = PUBLIC_DIR / "agenda_data.json"
+CARNET_INDEX  = PUBLIC_DIR / "carnet_data.json"          # index carnet lu par <CarnetInline />
 SITEMAP_PATH  = PUBLIC_DIR / "sitemap.xml"
 TEMPLATE_PATH = Path(__file__).resolve().parent / "template_event.html"
+
+# Rubriques du carnet éditorial (alignées Phase 4)
+CARNET_RUBRICS = ("portraits", "carnet-de-cave", "comment-se-rendre", "agenda-quartier")
 
 BASE_URL      = "https://www.dinedit.be"
 TARGET_LANGS  = ("fr", "en", "nl")
@@ -286,6 +291,53 @@ def _build_jsonld_event(event, lang, title, excerpt):
     return js
 
 
+# ── Index carnet_data.json (articles éditoriaux, 4 rubriques) ─────────
+def build_carnet_index():
+    """Compile les articles JSON du dossier articles/ en carnet_data.json.
+    Chaque article est classé par rubrique. Ordre : date décroissante par rubrique.
+    """
+    articles = []
+    if ARTICLES_DIR.exists():
+        for f in sorted(ARTICLES_DIR.glob("*.json")):
+            try:
+                a = json.loads(f.read_text(encoding="utf-8"))
+                if a.get("type") == "article":
+                    articles.append(a)
+            except Exception as e:
+                print(f"[ERROR] article {f.name}: {e}")
+
+    # Sérialisation minimale pour la page React
+    def serialize(a):
+        return {
+            "slug": a.get("slug"),
+            "rubric": a.get("rubric"),
+            "date": a.get("date"),
+            "linked_event": a.get("linked_event"),
+            "hero_image": a.get("hero_image"),
+            "title": a.get("title", {}),
+            "excerpt": a.get("excerpt", {}),
+            "tags": a.get("tags", []),
+            "author": a.get("author", "Dinédit"),
+        }
+
+    by_rubric = {}
+    for rub in CARNET_RUBRICS:
+        by_rubric[rub] = sorted(
+            [serialize(a) for a in articles if a.get("rubric") == rub],
+            key=lambda x: x.get("date") or "",
+            reverse=True,
+        )
+    data = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "by_rubric": by_rubric,
+        "rubrics": list(CARNET_RUBRICS),
+    }
+    PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
+    CARNET_INDEX.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    total = sum(len(v) for v in by_rubric.values())
+    print(f"[CARNET] {total} articles répartis sur {len(CARNET_RUBRICS)} rubriques → {CARNET_INDEX.name}")
+
+
 # ── Index agenda_data.json (lu par la page React Agenda) ─────────────
 def build_agenda_index(upcoming, past):
     def serialize(ev, status):
@@ -393,6 +445,7 @@ def main():
         total_html += generate_html(ev)
 
     build_agenda_index(upcoming, past)
+    build_carnet_index()
     regenerate_sitemap(upcoming, past)
 
     print(f"\n[DONE] {len(upcoming)+len(past)} events × {len(TARGET_LANGS)} langues = {total_html} HTML générés")

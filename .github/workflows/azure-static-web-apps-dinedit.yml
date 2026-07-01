@@ -24,8 +24,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Generate events (HTML statiques + agenda_data.json + sitemap)
+      - name: Install Python deps (Pillow pour gallery)
+        run: pip install --quiet Pillow
+      - name: Generate events + carnet (HTML + agenda_data + carnet_data + sitemap)
         run: python3 automation/events_engine.py
+      - name: Generate gallery (compression + gallery_data.json — no-op si photos/ vide)
+        run: python3 automation/gallery_engine.py
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

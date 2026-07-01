@@ -1,8 +1,10 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// Home.tsx — Dinédit landing (Phase 3 : Scenes hero + AgendaInline)
+// Home.tsx — Dinédit landing (Phase 4)
 //
-// Structure : Scenes (hero rotatif flyers events, plein écran) → Intro
-// 2-colonnes BtoC/BtoB → AgendaInline (3 cards events) → Footer.
+// Structure : Scenes (hero flyers) → Intro 2-colonnes BtoC/BtoB → Gallery
+// (album photo, masqué tant que 0 photo) → AgendaInline (events featured XL
+// + 2 petites, chrono ascendant, section nuit) → CarnetInline (4 rubriques
+// éditoriales) → Footer.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { Link } from 'react-router-dom'
@@ -11,7 +13,9 @@ import { useTranslation } from 'react-i18next'
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
 import Scenes from '../sections/Scenes'
+import Gallery from '../sections/Gallery'
 import AgendaInline from '../sections/AgendaInline'
+import CarnetInline from '../sections/CarnetInline'
 import Footer from '../sections/Footer'
 
 export default function Home() {
@@ -61,7 +65,9 @@ export default function Home() {
         </div>
       </section>
 
+      <Gallery />
       <AgendaInline />
+      <CarnetInline />
 
       <Footer />
     </>

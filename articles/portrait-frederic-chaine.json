@@ -1,0 +1,25 @@
+{
+  "slug": "portrait-frederic-chaine",
+  "type": "article",
+  "rubric": "portraits",
+  "date": "2026-07-10",
+  "linked_event": "2026-07-25-frederic-chaine-rafael-gouirand",
+  "hero_image": null,
+  "title": {
+    "fr": "Frédéric Chaine — du Koninklijk Conservatorium aux campagnes de lupins",
+    "en": "Frédéric Chaine — from the Koninklijk Conservatorium to the fields of lupines",
+    "nl": "Frédéric Chaine — van het Koninklijk Conservatorium naar de lupinevelden"
+  },
+  "excerpt": {
+    "fr": "Comment un violoniste classique formé à Bruxelles est devenu la voix du jazz manouche des dîners inédits.",
+    "en": "How a classical violinist trained in Brussels became the voice of gypsy jazz for our singular dinners.",
+    "nl": "Hoe een klassiek geschoolde violist uit Brussel de stem van de gipsyjazz werd van onze unieke diners."
+  },
+  "body_md": {
+    "fr": "*Article éditorial en construction — à enrichir par Serge et Fany.*",
+    "en": "*Editorial article under construction — to be enriched by Serge and Fany.*",
+    "nl": "*Redactioneel artikel in opbouw — wordt verrijkt door Serge en Fany.*"
+  },
+  "tags": ["portrait", "violon", "jazz manouche", "avant l'événement"],
+  "author": "Dinédit"
+}

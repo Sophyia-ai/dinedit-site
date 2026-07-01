@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "events": "python3 automation/events_engine.py",
-    "prebuild": "python3 automation/events_engine.py",
+    "gallery": "python3 automation/gallery_engine.py",
+    "prebuild": "python3 automation/events_engine.py && python3 automation/gallery_engine.py",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },

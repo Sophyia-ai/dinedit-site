@@ -1,0 +1,25 @@
+{
+  "slug": "carnet-de-cave-rose-provence",
+  "type": "article",
+  "rubric": "carnet-de-cave",
+  "date": "2026-07-05",
+  "linked_event": "2026-07-25-frederic-chaine-rafael-gouirand",
+  "hero_image": null,
+  "title": {
+    "fr": "Un rosé de Provence dans un dîner belge : le pari du 25 juillet",
+    "en": "A Provence rosé at a Belgian dinner: the bet of July 25",
+    "nl": "Een rosé uit de Provence op een Belgisch diner: de gok van 25 juli"
+  },
+  "excerpt": {
+    "fr": "Le rosé n'est pas juste un vin d'été — c'est un dialogue entre la garrigue et le nord. Notre sommelier explique le choix pour la table sous les lupins.",
+    "en": "A rosé is not just a summer wine — it's a dialogue between the garrigue and the north. Our sommelier explains the choice for the table under the lupines.",
+    "nl": "Een rosé is niet zomaar een zomerwijn — het is een gesprek tussen de garrigue en het noorden. Onze sommelier legt de keuze uit voor de tafel onder de lupines."
+  },
+  "body_md": {
+    "fr": "*Article éditorial en construction — à enrichir par Serge et Fany avec le sommelier invité.*",
+    "en": "*Editorial article under construction — to be enriched by Serge and Fany with the guest sommelier.*",
+    "nl": "*Redactioneel artikel in opbouw — wordt verrijkt door Serge en Fany met de gastsommelier.*"
+  },
+  "tags": ["vin", "rosé", "sommelier", "avant l'événement"],
+  "author": "Dinédit"
+}
