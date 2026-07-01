@@ -412,6 +412,25 @@ def regenerate_sitemap(upcoming, past):
         for _, url in alts:
             add(url, last, "monthly", "0.6", alts)
 
+    # Recommendations × langues (générées par recommendations_engine.py, GHA cron).
+    # Merge ici pour que le build Azure SWA préserve l'index reco dans le sitemap.
+    reco_path = PUBLIC_DIR / "reco_data.json"
+    if reco_path.exists():
+        try:
+            recos = json.loads(reco_path.read_text(encoding="utf-8"))
+        except Exception:
+            recos = []
+        for p in recos:
+            slug = p.get("slug")
+            if not slug: continue
+            last = p.get("published", today)[:10]
+            alts = []
+            for l in TARGET_LANGS:
+                url = f"{BASE_URL}/recommendations/{slug}.html" if l == "fr" else f"{BASE_URL}/recommendations/{l}/{slug}.html"
+                alts.append((l, url))
+            for _, url in alts:
+                add(url, last, "weekly", "0.7", alts)
+
     lines.append("</urlset>")
     SITEMAP_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"[SITEMAP] {sum(1 for l in lines if l.strip().startswith('<loc>'))} URLs → {SITEMAP_PATH.name}")

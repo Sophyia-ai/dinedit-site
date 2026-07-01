@@ -28,7 +28,8 @@
       "region": "Anvers",
       "url": "https://www.visitantwerpen.be",
       "priority": 1,
-      "notes": "Office du tourisme Anvers"
+      "disabled": true,
+      "notes": "Office du tourisme Anvers — SPA JS-rendered, HTML statique quasi vide. Réactiver quand endpoint API ou rendu headless disponible."
     },
     {
       "name": "visitbruges.be",
@@ -70,7 +71,8 @@
       "region": "Belgique",
       "url": "https://www.out.be/fr/",
       "priority": 1,
-      "notes": "Agenda national culturel Belgique"
+      "disabled": true,
+      "notes": "Agenda national culturel Belgique — timeout persistant. Réactiver quand endpoint plus rapide (ex. RSS)."
     },
     {
       "name": "coeurdeflandre.fr",

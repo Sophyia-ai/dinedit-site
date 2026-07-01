@@ -14,14 +14,16 @@ __pycache__/
 
 # Artefacts générés par automation/*.py au build
 # (régénérés en CI à chaque déploiement, pas besoin de versionner)
+# Events statiques régénérés à chaque build Azure (prebuild events_engine.py)
 public/events/
-public/recommendations/
 public/agenda_data.json
 public/carnet_data.json
-public/reco_data.json
-public/sitemap.xml
+# Gallery : source lourde, régénérée en CI
 public/images/gallery/
 public/gallery_data.json
+# NOTE : public/recommendations/, public/reco_data.json et public/sitemap.xml
+# sont TRACKÉS car générés par le workflow GHA reco (LLM) et doivent être
+# préservés entre les builds Azure. Le sitemap unifie events + recos.
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

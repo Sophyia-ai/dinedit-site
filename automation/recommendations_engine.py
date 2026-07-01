@@ -762,29 +762,35 @@ def main():
         return
 
     sources_cfg = json.loads(SOURCES_PATH.read_text(encoding="utf-8"))
-    sources = sources_cfg.get("sources", [])
+    all_sources = sources_cfg.get("sources", [])
+    # Filtre : ignore les sources désactivées (SPA / timeout persistants)
+    sources = [s for s in all_sources if not s.get("disabled")]
     if args.source:
-        sources = [s for s in sources if s["name"] == args.source]
+        sources = [s for s in all_sources if s["name"] == args.source]
         if not sources:
             print(f"[ERROR] source '{args.source}' introuvable")
             return
+    print(f"[SOURCES] {len(sources)} actives sur {len(all_sources)}")
 
     # Calcule le quota par source
     if args.initial_burst:
-        # Répartit N sur toutes les sources, pondéré par priorité
+        target = min(args.initial_burst, args.max)
+        per_source_map = {s["name"]: 0 for s in sources}
+        # Garantit min 1 par source active, puis distribue le reste pondéré priorité
+        for s in sources:
+            per_source_map[s["name"]] = 1
+        remaining = max(0, target - len(sources))
+        # Répartition pondérée par priorité (priorité 1 → poids 3, priorité 2 → poids 2, …)
         weighted = []
         for s in sources:
             w = 4 - int(s.get("priority", 2))
             weighted.extend([s] * max(w, 1))
         random.shuffle(weighted)
-        # Cap total via args.initial_burst, per-source dérivé
-        target = min(args.initial_burst, args.max)
-        per_source_map = {s["name"]: 0 for s in sources}
-        # Distribution proportionnelle (round-robin weighted)
         i = 0
-        while sum(per_source_map.values()) < target and i < len(weighted) * 4:
+        while remaining > 0 and i < len(weighted) * 6:
             s = weighted[i % len(weighted)]
             per_source_map[s["name"]] += 1
+            remaining -= 1
             i += 1
         print(f"[BURST] cible {target} recos — répartition : {per_source_map}")
     else:
