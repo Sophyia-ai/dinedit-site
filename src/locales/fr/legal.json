@@ -1,0 +1,98 @@
+{
+  "updated": "Dernière mise à jour",
+  "titles": {
+    "mentions": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "cgu": "Conditions générales d'utilisation"
+  },
+  "mentions": {
+    "publisher": {
+      "title": "Éditeur du site",
+      "body": "Le site dinedit.be est édité par Monsieur Serge Vanmol, indépendant en personne physique de droit belge, exerçant sous l'enseigne « Dinédit ». Siège d'activité : [adresse complète], Bruxelles, Belgique. Numéro d'entreprise (BCE / TVA) : [BE 0XXX.XXX.XXX]. Contact : anais@dinedit.be. Directeur de la publication : Serge Vanmol."
+    },
+    "design": {
+      "title": "Conception et développement",
+      "body": "Conception, design, développement du site et intégration du chatbot Anaïs : Raoul Baudlez (raoulbaudlez.com) & Sophyia.io®. Le site et le chatbot forment un ensemble éditorial unique dont la responsabilité éditoriale reste à Serge Vanmol / Dinédit."
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "body": "Le site web est hébergé par Microsoft Azure Static Web Apps, région Europe. Le chatbot conversationnel Anaïs — moteur, journaux techniques et base de connaissances — est intégralement hébergé en Suisse, sur infrastructure Microsoft Azure région Switzerland North (Zurich). Aucune donnée conversationnelle n'est stockée hors territoire suisse."
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "body": "L'ensemble des éléments présents sur le site (textes, photographies, illustrations, logo, identité graphique, mise en page, code) est protégé par le droit d'auteur et le droit des marques. La marque « Dinédit » et le concept de dîners inédits sont la propriété exclusive de Serge Vanmol. Toute reproduction, représentation, adaptation ou exploitation, totale ou partielle, sans autorisation écrite préalable, est strictement interdite et constitue une contrefaçon sanctionnée par les articles XI.164 et suivants du Code de droit économique belge."
+    },
+    "law": {
+      "title": "Droit applicable et juridiction",
+      "body": "Les présentes mentions sont régies par le droit belge. Tout litige relatif au site, à son contenu ou aux services associés relève de la compétence exclusive des tribunaux de l'arrondissement judiciaire de Bruxelles, section francophone, sauf disposition légale impérative contraire."
+    }
+  },
+  "privacy": {
+    "controller": {
+      "title": "Responsable du traitement",
+      "body": "Le responsable du traitement des données à caractère personnel est Monsieur Serge Vanmol, indépendant en personne physique, sous l'enseigne « Dinédit », dont les coordonnées figurent dans les mentions légales. Pour toute question relative au traitement de vos données, contactez : anais@dinedit.be. La présente politique est établie conformément au Règlement (UE) 2016/679 (RGPD) et à la loi belge du 30 juillet 2018 relative à la protection des personnes physiques à l'égard des traitements de données."
+    },
+    "data": {
+      "title": "Données collectées",
+      "body": "Nous collectons uniquement les données que vous nous transmettez volontairement : identité (prénom, nom), coordonnées (email, téléphone), préférences liées à la participation à un dîner inédit, échanges conversationnels avec Anaïs. Nous ne collectons ni données bancaires directes, ni catégories sensibles au sens de l'article 9 RGPD. Aucun profilage à finalité publicitaire n'est réalisé."
+    },
+    "reservation": {
+      "title": "Réservation d'un dîner inédit",
+      "body": "Les données transmises lors d'une demande de participation sont utilisées exclusivement pour organiser votre présence à la soirée concernée : confirmation, informations pratiques, allergies déclarées, comptabilité de la maison. Base légale : exécution d'un contrat (art. 6.1.b RGPD) et intérêt légitime pour la bonne tenue de l'événement. Conservation : 10 ans après la soirée pour les obligations comptables belges, puis suppression."
+    },
+    "processors": {
+      "title": "Sous-traitants et destinataires",
+      "body": "Les données peuvent être transmises à des sous-traitants strictement encadrés par contrat : Microsoft Azure Switzerland North (Zurich) pour l'hébergement du chatbot et des journaux techniques ; Microsoft Azure Europe pour l'hébergement du site vitrine ; Sophyia.io® (Suisse) pour l'exploitation technique du chatbot Anaïs. Aucune donnée n'est cédée, vendue ou louée à des tiers à des fins commerciales."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "Le site n'utilise que des cookies strictement nécessaires à son fonctionnement (préférence de langue, session du chatbot). Aucun cookie tiers de mesure d'audience, publicitaire ou de traçage n'est déposé. Aucun consentement n'est requis dès lors qu'ils sont indispensables au service demandé (art. 129 de la loi du 13 juin 2005)."
+    },
+    "anais": {
+      "title": "Chatbot Anaïs — assistant conversationnel",
+      "body": "Anaïs est l'assistante conversationnelle de Dinédit. Les échanges avec Anaïs sont traités et hébergés exclusivement en Suisse, sur infrastructure Microsoft Azure région Switzerland North (Zurich). Les conversations sont éphémères : elles ne sont ni utilisées pour entraîner un modèle, ni cédées à des tiers. Serge Vanmol reste seul responsable éditorial des propos tenus par Anaïs dans le cadre de la présentation du concept, des soirées et de leurs modalités."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "body": "Vous disposez à tout moment d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits en écrivant à anais@dinedit.be. Vous disposez également du droit d'introduire une réclamation auprès de l'Autorité de protection des données belge (APD / GBA — www.autoriteprotectiondonnees.be, rue de la Presse 35, 1000 Bruxelles)."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Pour toute question relative à la présente politique : anais@dinedit.be. Nous nous engageons à répondre dans un délai maximal d'un mois à compter de la réception de la demande."
+    }
+  },
+  "cgu": {
+    "description": {
+      "title": "Objet",
+      "body": "Les présentes conditions générales régissent l'utilisation du site dinedit.be, du chatbot conversationnel Anaïs, ainsi que la relation entre Serge Vanmol / Dinédit et toute personne consultant le site ou sollicitant sa participation à un dîner inédit."
+    },
+    "nature": {
+      "title": "Nature de la prestation",
+      "body": "Dinédit organise, à intervalles irréguliers, des dîners événementiels curés associant gastronomie, art et lieux insolites en Belgique. Chaque soirée est unique : nombre de convives limité, sélection éditoriale, tarif communiqué au moment de l'annonce. Les prestations sont fournies à titre personnel par Serge Vanmol, indépendant en personne physique."
+    },
+    "bookings": {
+      "title": "Demande de participation et réservation",
+      "body": "Toute demande de participation à une soirée est adressée via le site, le chatbot Anaïs ou par courriel. La confirmation de participation n'est effective qu'après validation écrite par Dinédit et réception, le cas échéant, de l'acompte ou du règlement demandé. Les conditions particulières (montant, échéance, politique d'annulation) sont communiquées lors de la confirmation et prévalent sur toute information générale du site."
+    },
+    "liability": {
+      "title": "Responsabilité",
+      "body": "Dinédit s'engage à mettre en œuvre les moyens raisonnables pour la tenue de chaque soirée. La responsabilité de Serge Vanmol ne saurait être engagée en cas de force majeure (fermeture administrative, catastrophe, pandémie, indisponibilité d'un lieu ou d'un intervenant, etc.). Les informations diffusées sur le site ou par le chatbot Anaïs sont indicatives ; seule la confirmation écrite fait foi. Aucune obligation de résultat n'est due au titre de la valeur artistique ou expérientielle subjectivement perçue."
+    },
+    "use": {
+      "title": "Bonne utilisation du site et du chatbot",
+      "body": "L'utilisateur s'engage à faire un usage loyal du site et du chatbot Anaïs, à ne pas tenter d'en détourner le fonctionnement (extraction automatisée, injection de code, contenus illicites ou injurieux) et à respecter les tiers cités. Tout usage abusif pourra entraîner un refus de participation aux soirées et, le cas échéant, des poursuites."
+    },
+    "ip": {
+      "title": "Propriété intellectuelle",
+      "body": "Le concept Dinédit, la marque, les visuels, les textes, la voix et la personnalité éditoriale du chatbot Anaïs, ainsi que les contenus produits autour des soirées, sont la propriété exclusive de Serge Vanmol. Toute réutilisation nécessite un accord écrit préalable."
+    },
+    "law": {
+      "title": "Droit applicable",
+      "body": "Les présentes conditions sont régies par le droit belge. Tout litige sera soumis à la compétence exclusive des tribunaux de l'arrondissement judiciaire de Bruxelles, section francophone, sauf disposition légale impérative contraire."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Toute réclamation ou question relative aux présentes conditions peut être adressée à : anais@dinedit.be."
+    }
+  }
+}

@@ -13,11 +13,13 @@
 // La Gallery a id="gallery" — ancrable via href="#gallery" quand tu voudras.
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
+import VideoHero from '../sections/VideoHero'
 import Scenes from '../sections/Scenes'
 import Gallery from '../sections/Gallery'
 import AgendaInline from '../sections/AgendaInline'
@@ -27,10 +29,23 @@ import { openAnaisWithArchitectes } from '../lib/anaisIntent'
 export default function Home() {
   const { t } = useTranslation(['home', 'common'])
   const { lang } = useAppLanguage()
+  const location = useLocation()
   const prefix = lang === siteConfig.languages.default ? '' : `/${lang}`
+
+  useEffect(() => {
+    if (location.hash === '#agenda') {
+      const scroll = () => {
+        const el = document.getElementById('agenda')
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+      const id = window.setTimeout(scroll, 120)
+      return () => window.clearTimeout(id)
+    }
+  }, [location.hash])
 
   return (
     <>
+      <VideoHero />
       <Scenes />
 
       <section className="bg-bone py-16 md:py-24">

@@ -1,0 +1,98 @@
+{
+  "updated": "Last updated",
+  "titles": {
+    "mentions": "Legal notice",
+    "privacy": "Privacy policy",
+    "cgu": "Terms of use"
+  },
+  "mentions": {
+    "publisher": {
+      "title": "Publisher",
+      "body": "The website dinedit.be is published by Mr Serge Vanmol, self-employed natural person under Belgian law, operating under the trading name «Dinédit». Registered address: [full address], Brussels, Belgium. Belgian company / VAT number: [BE 0XXX.XXX.XXX]. Contact: anais@dinedit.be. Publication director: Serge Vanmol."
+    },
+    "design": {
+      "title": "Design and development",
+      "body": "Design, development and integration of the Anaïs chatbot: Raoul Baudlez (raoulbaudlez.com) & Sophyia.io®. The website and the chatbot form a single editorial whole for which Serge Vanmol / Dinédit remains the sole editorial authority."
+    },
+    "hosting": {
+      "title": "Hosting",
+      "body": "The website is hosted by Microsoft Azure Static Web Apps, European region. The Anaïs conversational chatbot — engine, technical logs and knowledge base — is hosted entirely in Switzerland, on Microsoft Azure Switzerland North (Zurich) infrastructure. No conversational data is stored outside Swiss territory."
+    },
+    "ip": {
+      "title": "Intellectual property",
+      "body": "All elements on the website (texts, photographs, illustrations, logo, graphic identity, layout, code) are protected by copyright and trademark law. The «Dinédit» brand and the singular-dinner concept are the exclusive property of Serge Vanmol. Any reproduction, representation, adaptation or exploitation, in whole or in part, without prior written authorisation, is strictly prohibited and constitutes infringement under Articles XI.164 et seq. of the Belgian Code of Economic Law."
+    },
+    "law": {
+      "title": "Applicable law and jurisdiction",
+      "body": "These notices are governed by Belgian law. Any dispute relating to the website, its content or associated services falls under the exclusive jurisdiction of the courts of the judicial district of Brussels (French-speaking division), save for mandatory provisions to the contrary."
+    }
+  },
+  "privacy": {
+    "controller": {
+      "title": "Data controller",
+      "body": "The controller for the processing of personal data is Mr Serge Vanmol, self-employed natural person, trading as «Dinédit», whose contact details appear in the legal notice. For any question relating to your data: anais@dinedit.be. This policy is drawn up in accordance with Regulation (EU) 2016/679 (GDPR) and the Belgian Act of 30 July 2018 on the protection of natural persons with regard to the processing of personal data."
+    },
+    "data": {
+      "title": "Data collected",
+      "body": "We only collect data you voluntarily provide: identity (first name, last name), contact details (email, phone), preferences related to participating in a singular dinner, and conversational exchanges with Anaïs. We do not collect direct banking data, nor sensitive categories within the meaning of Article 9 GDPR. No profiling for advertising purposes is carried out."
+    },
+    "reservation": {
+      "title": "Booking a singular dinner",
+      "body": "Data submitted through a participation request is used solely to organise your presence at the relevant evening: confirmation, practical information, declared allergies, house accounting. Legal basis: performance of a contract (Art. 6.1.b GDPR) and legitimate interest in running the event. Retention: 10 years after the evening for Belgian accounting obligations, then deletion."
+    },
+    "processors": {
+      "title": "Sub-processors and recipients",
+      "body": "Data may be transmitted to sub-processors strictly bound by contract: Microsoft Azure Switzerland North (Zurich) for hosting the chatbot and technical logs; Microsoft Azure Europe for hosting the public website; Sophyia.io® (Switzerland) for the technical operation of the Anaïs chatbot. No data is transferred, sold or rented to third parties for commercial purposes."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "The website uses only cookies strictly necessary for its operation (language preference, chatbot session). No third-party analytics, advertising or tracking cookies are set. No consent is required as they are essential to the service requested (Art. 129 of the Belgian Act of 13 June 2005)."
+    },
+    "anais": {
+      "title": "Anaïs chatbot — conversational assistant",
+      "body": "Anaïs is Dinédit's conversational assistant. Exchanges with Anaïs are processed and hosted exclusively in Switzerland, on Microsoft Azure Switzerland North (Zurich) infrastructure. Conversations are ephemeral: they are neither used to train a model nor shared with third parties. Serge Vanmol remains the sole editorial authority for what Anaïs says regarding the concept, the evenings and their conditions."
+    },
+    "rights": {
+      "title": "Your rights",
+      "body": "You have the right to access, rectify, erase, restrict, object to and port your data at any time. You may exercise these rights by writing to anais@dinedit.be. You may also lodge a complaint with the Belgian Data Protection Authority (APD / GBA — www.autoriteprotectiondonnees.be, rue de la Presse 35, 1000 Brussels)."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "For any question relating to this policy: anais@dinedit.be. We undertake to respond within a maximum of one month from receipt of the request."
+    }
+  },
+  "cgu": {
+    "description": {
+      "title": "Purpose",
+      "body": "These terms of use govern the use of the dinedit.be website, the Anaïs conversational chatbot, and the relationship between Serge Vanmol / Dinédit and any person consulting the website or seeking to participate in a singular dinner."
+    },
+    "nature": {
+      "title": "Nature of the service",
+      "body": "Dinédit organises, at irregular intervals, curated evening dinners combining gastronomy, art and unusual venues in Belgium. Each evening is unique: limited number of guests, editorial selection, price communicated at the time of announcement. Services are provided personally by Serge Vanmol, self-employed natural person."
+    },
+    "bookings": {
+      "title": "Participation request and booking",
+      "body": "Any participation request is sent via the website, the Anaïs chatbot or by email. Confirmation is only effective upon written validation by Dinédit and, where applicable, receipt of the requested deposit or payment. The specific conditions (amount, deadline, cancellation policy) are communicated upon confirmation and prevail over any general information on the website."
+    },
+    "liability": {
+      "title": "Liability",
+      "body": "Dinédit undertakes to use reasonable means to hold each evening. Serge Vanmol's liability cannot be engaged in the event of force majeure (administrative closure, disaster, pandemic, unavailability of a venue or performer, etc.). Information published on the website or via the Anaïs chatbot is indicative; only written confirmation is authoritative. No obligation of result is owed with regard to the artistic or experiential value subjectively perceived."
+    },
+    "use": {
+      "title": "Proper use of the website and chatbot",
+      "body": "The user agrees to make fair use of the website and the Anaïs chatbot, not to attempt to divert its operation (automated extraction, code injection, illegal or abusive content) and to respect the third parties mentioned. Any abusive use may result in refusal of participation and, where appropriate, legal proceedings."
+    },
+    "ip": {
+      "title": "Intellectual property",
+      "body": "The Dinédit concept, the brand, visuals, texts, the voice and editorial personality of the Anaïs chatbot, and the content produced around the evenings, are the exclusive property of Serge Vanmol. Any reuse requires prior written agreement."
+    },
+    "law": {
+      "title": "Applicable law",
+      "body": "These terms are governed by Belgian law. Any dispute shall be subject to the exclusive jurisdiction of the courts of the judicial district of Brussels (French-speaking division), save for mandatory provisions to the contrary."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Any complaint or question regarding these terms may be addressed to: anais@dinedit.be."
+    }
+  }
+}

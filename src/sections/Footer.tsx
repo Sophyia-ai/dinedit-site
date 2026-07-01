@@ -71,13 +71,16 @@ export default function Footer() {
                 {t('nav.agenda')}
               </Link>
               <Link to={`${prefix}/architectes`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('nav.architectes')}
+                {t('footer.sources')}
               </Link>
               <button onClick={() => openLegal('mentions')} className="block text-nuit/70 hover:text-gold transition-colors text-left">
-                Mentions légales
+                {t('footer.mentions')}
               </button>
               <button onClick={() => openLegal('privacy')} className="block text-nuit/70 hover:text-gold transition-colors text-left">
-                Confidentialité
+                {t('footer.privacy')}
+              </button>
+              <button onClick={() => openLegal('cgu')} className="block text-nuit/70 hover:text-gold transition-colors text-left">
+                {t('footer.cgu')}
               </button>
             </div>
           </div>

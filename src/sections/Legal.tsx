@@ -13,7 +13,7 @@ interface LegalProps {
 
 const SECTIONS: Record<LegalProps['type'], string[]> = {
   mentions: ['publisher', 'design', 'hosting', 'ip', 'law'],
-  privacy: ['controller', 'data', 'reservation', 'processors', 'cookies', 'olivia', 'rights', 'contact'],
+  privacy: ['controller', 'data', 'reservation', 'processors', 'cookies', 'anais', 'rights', 'contact'],
   cgu: ['description', 'nature', 'bookings', 'liability', 'use', 'ip', 'law', 'contact'],
 }
 

@@ -12,7 +12,6 @@ import { useTranslation } from 'react-i18next'
 
 import { siteConfig } from '../config/site'
 import { useAppLanguage, type Language } from '../context/LanguageContext'
-import LanguagePill from '../components/LanguagePill'
 import { openAnaisWithEvent } from '../lib/anaisIntent'
 
 interface SceneEvent {
@@ -58,9 +57,6 @@ export default function Scenes() {
   if (scenes.length === 0) {
     return (
       <section className="relative min-h-[88vh] bg-bone flex flex-col">
-        <div className="absolute top-5 right-6 z-10">
-          <LanguagePill variant="overlay" />
-        </div>
         <div className="flex-1 flex flex-col items-center justify-center px-6 text-center">
           <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-24 md:h-32 w-auto mb-8 opacity-95" />
           <p className="font-display text-2xl md:text-4xl leading-snug max-w-2xl text-nuit/90">
@@ -78,7 +74,7 @@ export default function Scenes() {
   const dateStr = formatDate(scene.date_start, lang)
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-nuit text-bone">
+    <section id="scenes-hero" className="relative min-h-screen w-full overflow-hidden bg-nuit text-bone">
       {/* Backdrop léger : version blur du flyer actif (habille les vides) */}
       {scene.flyer && (
         <div
@@ -95,12 +91,11 @@ export default function Scenes() {
       )}
       <div className="absolute inset-0 bg-gradient-to-r from-nuit-dark/85 via-nuit-dark/50 to-nuit-dark/70 pointer-events-none" />
 
-      {/* Top bar : logo (gauche) + LanguagePill (droite) */}
-      <div className="absolute top-0 inset-x-0 z-30 flex items-center justify-between px-6 md:px-12 py-6">
+      {/* Top bar : logo (gauche) uniquement — la langue reste sur le VideoHero au-dessus */}
+      <div className="absolute top-0 inset-x-0 z-30 flex items-center px-6 md:px-12 py-6">
         <a href={lang === siteConfig.languages.default ? '/' : `/${lang}`} aria-label={siteConfig.brand.name} className="transition-transform hover:scale-105">
           <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-12 md:h-16 w-auto brightness-0 invert opacity-95" />
         </a>
-        <LanguagePill variant="overlay" />
       </div>
 
       {/* Contenu split : texte gauche / flyer droite */}
@@ -125,7 +120,7 @@ export default function Scenes() {
               {t('home:hero.cta_agenda')} →
             </button>
             <a
-              href={lang === siteConfig.languages.default ? '/agenda' : `/${lang}/agenda`}
+              href="#agenda"
               className="inline-block px-6 py-2.5 rounded-full border border-bone/45 text-bone/95 text-sm font-medium tracking-wide hover:border-gold hover:text-gold transition-colors"
             >
               {t('agenda:title', 'Agenda')}

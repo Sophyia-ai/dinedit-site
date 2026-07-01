@@ -1,0 +1,98 @@
+{
+  "updated": "Laatst bijgewerkt",
+  "titles": {
+    "mentions": "Wettelijke vermeldingen",
+    "privacy": "Privacyverklaring",
+    "cgu": "Algemene gebruiksvoorwaarden"
+  },
+  "mentions": {
+    "publisher": {
+      "title": "Uitgever",
+      "body": "De website dinedit.be wordt uitgegeven door de heer Serge Vanmol, zelfstandige natuurlijke persoon naar Belgisch recht, actief onder de handelsnaam «Dinédit». Vestigingsadres: [volledig adres], Brussel, België. Ondernemingsnummer (KBO / btw): [BE 0XXX.XXX.XXX]. Contact: anais@dinedit.be. Verantwoordelijke uitgever: Serge Vanmol."
+    },
+    "design": {
+      "title": "Ontwerp en ontwikkeling",
+      "body": "Ontwerp, ontwikkeling van de website en integratie van de chatbot Anaïs: Raoul Baudlez (raoulbaudlez.com) & Sophyia.io®. De website en de chatbot vormen één redactioneel geheel; de redactionele eindverantwoordelijkheid ligt bij Serge Vanmol / Dinédit."
+    },
+    "hosting": {
+      "title": "Hosting",
+      "body": "De website wordt gehost door Microsoft Azure Static Web Apps, regio Europa. De conversationele chatbot Anaïs — motor, technische logs en kennisbank — wordt integraal gehost in Zwitserland, op Microsoft Azure Switzerland North (Zürich) infrastructuur. Er worden geen conversationele gegevens buiten het Zwitserse grondgebied opgeslagen."
+    },
+    "ip": {
+      "title": "Intellectueel eigendom",
+      "body": "Alle elementen op de website (teksten, foto's, illustraties, logo, huisstijl, lay-out, code) worden beschermd door het auteursrecht en het merkenrecht. Het merk «Dinédit» en het concept van unieke diners zijn de exclusieve eigendom van Serge Vanmol. Elke reproductie, weergave, aanpassing of exploitatie, geheel of gedeeltelijk, zonder voorafgaande schriftelijke toestemming is strikt verboden en vormt een inbreuk in de zin van de artikelen XI.164 e.v. van het Belgische Wetboek van economisch recht."
+    },
+    "law": {
+      "title": "Toepasselijk recht en rechtsmacht",
+      "body": "Deze vermeldingen worden beheerst door het Belgische recht. Elk geschil met betrekking tot de website, de inhoud ervan of de daaraan verbonden diensten valt onder de exclusieve bevoegdheid van de rechtbanken van het gerechtelijk arrondissement Brussel (Nederlandstalige afdeling), behoudens dwingende andersluidende wettelijke bepaling."
+    }
+  },
+  "privacy": {
+    "controller": {
+      "title": "Verwerkingsverantwoordelijke",
+      "body": "De verwerkingsverantwoordelijke voor persoonsgegevens is de heer Serge Vanmol, zelfstandige natuurlijke persoon, handel drijvend onder de naam «Dinédit», wiens gegevens zijn opgenomen in de wettelijke vermeldingen. Voor elke vraag over de verwerking van uw gegevens: anais@dinedit.be. Deze verklaring is opgesteld conform Verordening (EU) 2016/679 (AVG/GDPR) en de Belgische wet van 30 juli 2018 betreffende de bescherming van natuurlijke personen met betrekking tot de verwerking van persoonsgegevens."
+    },
+    "data": {
+      "title": "Verzamelde gegevens",
+      "body": "Wij verzamelen enkel de gegevens die u vrijwillig verstrekt: identiteit (voornaam, familienaam), contactgegevens (e-mail, telefoon), voorkeuren met betrekking tot deelname aan een uniek diner, en gespreksuitwisselingen met Anaïs. Wij verzamelen geen rechtstreekse bankgegevens, noch gevoelige categorieën in de zin van artikel 9 AVG. Er wordt geen profilering met een reclamedoel uitgevoerd."
+    },
+    "reservation": {
+      "title": "Reservatie van een uniek diner",
+      "body": "De gegevens die u verstrekt bij een deelnameverzoek worden uitsluitend gebruikt om uw aanwezigheid tijdens de betreffende avond te organiseren: bevestiging, praktische info, opgegeven allergieën, boekhouding van het huis. Rechtsgrond: uitvoering van een overeenkomst (art. 6.1.b AVG) en gerechtvaardigd belang voor het goede verloop van het evenement. Bewaartermijn: 10 jaar na de avond conform de Belgische boekhoudkundige verplichtingen, daarna wissing."
+    },
+    "processors": {
+      "title": "Onderaannemers en ontvangers",
+      "body": "Gegevens kunnen worden overgedragen aan onderaannemers die strikt contractueel gebonden zijn: Microsoft Azure Switzerland North (Zürich) voor de hosting van de chatbot en technische logs; Microsoft Azure Europe voor de hosting van de publieke website; Sophyia.io® (Zwitserland) voor de technische exploitatie van de chatbot Anaïs. Er worden geen gegevens overgedragen, verkocht of verhuurd aan derden voor commerciële doeleinden."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": "De website gebruikt uitsluitend cookies die strikt noodzakelijk zijn voor de werking (taalvoorkeur, chatbot-sessie). Er worden geen cookies van derden voor analyse, reclame of tracking geplaatst. Er is geen toestemming vereist aangezien zij onmisbaar zijn voor de gevraagde dienst (art. 129 van de wet van 13 juni 2005)."
+    },
+    "anais": {
+      "title": "Chatbot Anaïs — conversationele assistent",
+      "body": "Anaïs is de conversationele assistent van Dinédit. Uitwisselingen met Anaïs worden uitsluitend in Zwitserland verwerkt en gehost, op Microsoft Azure Switzerland North (Zürich) infrastructuur. De gesprekken zijn kortstondig: zij worden niet gebruikt om een model te trainen en niet aan derden overgedragen. Serge Vanmol blijft als enige redactioneel verantwoordelijk voor wat Anaïs zegt over het concept, de avonden en hun modaliteiten."
+    },
+    "rights": {
+      "title": "Uw rechten",
+      "body": "U hebt op elk moment recht op inzage, verbetering, wissing, beperking, bezwaar en overdraagbaarheid van uw gegevens. U kan deze rechten uitoefenen door te schrijven naar anais@dinedit.be. U hebt tevens het recht een klacht in te dienen bij de Belgische Gegevensbeschermingsautoriteit (GBA / APD — www.gegevensbeschermingsautoriteit.be, Drukpersstraat 35, 1000 Brussel)."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Voor elke vraag met betrekking tot deze verklaring: anais@dinedit.be. Wij verbinden ons ertoe binnen een termijn van maximaal één maand na ontvangst van uw verzoek te antwoorden."
+    }
+  },
+  "cgu": {
+    "description": {
+      "title": "Voorwerp",
+      "body": "Deze algemene voorwaarden regelen het gebruik van de website dinedit.be, de conversationele chatbot Anaïs, en de relatie tussen Serge Vanmol / Dinédit en elke persoon die de website raadpleegt of aan een uniek diner wenst deel te nemen."
+    },
+    "nature": {
+      "title": "Aard van de dienst",
+      "body": "Dinédit organiseert, op onregelmatige tijdstippen, gecureerde avondlijke diners die gastronomie, kunst en ongewone locaties in België verbinden. Elke avond is uniek: beperkt aantal gasten, redactionele selectie, prijs meegedeeld bij aankondiging. De diensten worden persoonlijk verzorgd door Serge Vanmol, zelfstandige natuurlijke persoon."
+    },
+    "bookings": {
+      "title": "Deelnameverzoek en reservatie",
+      "body": "Elk deelnameverzoek wordt ingediend via de website, de chatbot Anaïs of per e-mail. Bevestiging is pas geldig na schriftelijke validatie door Dinédit en, in voorkomend geval, ontvangst van het gevraagde voorschot of de betaling. De bijzondere voorwaarden (bedrag, vervaltermijn, annulatiebeleid) worden bij de bevestiging meegedeeld en primeren op elke algemene informatie op de website."
+    },
+    "liability": {
+      "title": "Aansprakelijkheid",
+      "body": "Dinédit verbindt zich ertoe redelijke middelen aan te wenden voor de organisatie van elke avond. De aansprakelijkheid van Serge Vanmol kan niet worden ingeroepen in geval van overmacht (administratieve sluiting, ramp, pandemie, onbeschikbaarheid van een locatie of gast, enz.). Informatie op de website of via de chatbot Anaïs is indicatief; enkel de schriftelijke bevestiging is bindend. Er is geen resultaatsverbintenis met betrekking tot de subjectief ervaren artistieke of experiëntiële waarde."
+    },
+    "use": {
+      "title": "Correct gebruik van de website en de chatbot",
+      "body": "De gebruiker verbindt zich ertoe de website en de chatbot Anaïs op loyale wijze te gebruiken, geen pogingen te ondernemen om de werking te omzeilen (geautomatiseerde extractie, code-injectie, onwettige of beledigende inhoud) en de vermelde derden te respecteren. Elk misbruik kan aanleiding geven tot weigering van deelname en, in voorkomend geval, gerechtelijke stappen."
+    },
+    "ip": {
+      "title": "Intellectueel eigendom",
+      "body": "Het concept Dinédit, het merk, de visuals, de teksten, de stem en redactionele persoonlijkheid van de chatbot Anaïs, en de inhoud gecreëerd rond de avonden, zijn de exclusieve eigendom van Serge Vanmol. Elk hergebruik vereist voorafgaand schriftelijk akkoord."
+    },
+    "law": {
+      "title": "Toepasselijk recht",
+      "body": "Deze voorwaarden worden beheerst door het Belgische recht. Elk geschil valt onder de exclusieve bevoegdheid van de rechtbanken van het gerechtelijk arrondissement Brussel (Nederlandstalige afdeling), behoudens dwingende andersluidende wettelijke bepaling."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Elke klacht of vraag met betrekking tot deze voorwaarden kan worden gericht aan: anais@dinedit.be."
+    }
+  }
+}
