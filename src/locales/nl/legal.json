@@ -8,7 +8,7 @@
   "mentions": {
     "publisher": {
       "title": "Uitgever",
-      "body": "De website dinedit.events wordt uitgegeven door de heer Serge Vanmol, zelfstandige natuurlijke persoon naar Belgisch recht, actief onder de handelsnaam «Dinédit». Vestigingsadres: [volledig adres], Brussel, België. Ondernemingsnummer (KBO / btw): [BE 0XXX.XXX.XXX]. Contact: anais@dinedit.be. Verantwoordelijke uitgever: Serge Vanmol."
+      "body": "De website dinedit.events wordt uitgegeven door de heer Serge Vanmol, zelfstandige natuurlijke persoon naar Belgisch recht, actief onder de handelsnaam «Dinédit». Vestigingsadres: [volledig adres], Brussel, België. Ondernemingsnummer (KBO / btw): [BE 0XXX.XXX.XXX]. Contact: info@dinedit.be. Verantwoordelijke uitgever: Serge Vanmol."
     },
     "design": {
       "title": "Ontwerp en ontwikkeling",
@@ -30,7 +30,7 @@
   "privacy": {
     "controller": {
       "title": "Verwerkingsverantwoordelijke",
-      "body": "De verwerkingsverantwoordelijke voor persoonsgegevens is de heer Serge Vanmol, zelfstandige natuurlijke persoon, handel drijvend onder de naam «Dinédit», wiens gegevens zijn opgenomen in de wettelijke vermeldingen. Voor elke vraag over de verwerking van uw gegevens: anais@dinedit.be. Deze verklaring is opgesteld conform Verordening (EU) 2016/679 (AVG/GDPR) en de Belgische wet van 30 juli 2018 betreffende de bescherming van natuurlijke personen met betrekking tot de verwerking van persoonsgegevens."
+      "body": "De verwerkingsverantwoordelijke voor persoonsgegevens is de heer Serge Vanmol, zelfstandige natuurlijke persoon, handel drijvend onder de naam «Dinédit», wiens gegevens zijn opgenomen in de wettelijke vermeldingen. Voor elke vraag over de verwerking van uw gegevens: info@dinedit.be. Deze verklaring is opgesteld conform Verordening (EU) 2016/679 (AVG/GDPR) en de Belgische wet van 30 juli 2018 betreffende de bescherming van natuurlijke personen met betrekking tot de verwerking van persoonsgegevens."
     },
     "data": {
       "title": "Verzamelde gegevens",
@@ -54,11 +54,11 @@
     },
     "rights": {
       "title": "Uw rechten",
-      "body": "U hebt op elk moment recht op inzage, verbetering, wissing, beperking, bezwaar en overdraagbaarheid van uw gegevens. U kan deze rechten uitoefenen door te schrijven naar anais@dinedit.be. U hebt tevens het recht een klacht in te dienen bij de Belgische Gegevensbeschermingsautoriteit (GBA / APD — www.gegevensbeschermingsautoriteit.be, Drukpersstraat 35, 1000 Brussel)."
+      "body": "U hebt op elk moment recht op inzage, verbetering, wissing, beperking, bezwaar en overdraagbaarheid van uw gegevens. U kan deze rechten uitoefenen door te schrijven naar info@dinedit.be. U hebt tevens het recht een klacht in te dienen bij de Belgische Gegevensbeschermingsautoriteit (GBA / APD — www.gegevensbeschermingsautoriteit.be, Drukpersstraat 35, 1000 Brussel)."
     },
     "contact": {
       "title": "Contact",
-      "body": "Voor elke vraag met betrekking tot deze verklaring: anais@dinedit.be. Wij verbinden ons ertoe binnen een termijn van maximaal één maand na ontvangst van uw verzoek te antwoorden."
+      "body": "Voor elke vraag met betrekking tot deze verklaring: info@dinedit.be. Wij verbinden ons ertoe binnen een termijn van maximaal één maand na ontvangst van uw verzoek te antwoorden."
     }
   },
   "cgu": {
@@ -92,7 +92,7 @@
     },
     "contact": {
       "title": "Contact",
-      "body": "Elke klacht of vraag met betrekking tot deze voorwaarden kan worden gericht aan: anais@dinedit.be."
+      "body": "Elke klacht of vraag met betrekking tot deze voorwaarden kan worden gericht aan: info@dinedit.be."
     }
   }
 }

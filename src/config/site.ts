@@ -53,7 +53,7 @@ const brand = {
   logoPath: '/images/brand/logo-dinedit.png',
   domain: 'dinedit.events',
   siteUrl: 'https://www.dinedit.events',
-  email: 'anais@dinedit.be',
+  email: 'info@dinedit.be',
   phone: '', // pas de téléphone public — qualification via Anaïs / form
 }
 
@@ -69,7 +69,7 @@ const agenda = {
 // btob : mail simple + hook CRM no-op (architecture prête pour Notion/HubSpot plus tard).
 const participation = {
   btocCheckoutEndpoint: '/api/checkout', // /api/checkout?event=<slug>
-  btobLeadEmail: 'anais@dinedit.be',
+  btobLeadEmail: 'info@dinedit.be',
   stripeMode: 'simulate' as 'simulate' | 'live', // 'simulate' au démarrage tant que credentials non récupérés
 }
 

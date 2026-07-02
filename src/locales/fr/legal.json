@@ -8,7 +8,7 @@
   "mentions": {
     "publisher": {
       "title": "Éditeur du site",
-      "body": "Le site dinedit.events est édité par Monsieur Serge Vanmol, indépendant en personne physique de droit belge, exerçant sous l'enseigne « Dinédit ». Siège d'activité : [adresse complète], Bruxelles, Belgique. Numéro d'entreprise (BCE / TVA) : [BE 0XXX.XXX.XXX]. Contact : anais@dinedit.be. Directeur de la publication : Serge Vanmol."
+      "body": "Le site dinedit.events est édité par Monsieur Serge Vanmol, indépendant en personne physique de droit belge, exerçant sous l'enseigne « Dinédit ». Siège d'activité : [adresse complète], Bruxelles, Belgique. Numéro d'entreprise (BCE / TVA) : [BE 0XXX.XXX.XXX]. Contact : info@dinedit.be. Directeur de la publication : Serge Vanmol."
     },
     "design": {
       "title": "Conception et développement",
@@ -30,7 +30,7 @@
   "privacy": {
     "controller": {
       "title": "Responsable du traitement",
-      "body": "Le responsable du traitement des données à caractère personnel est Monsieur Serge Vanmol, indépendant en personne physique, sous l'enseigne « Dinédit », dont les coordonnées figurent dans les mentions légales. Pour toute question relative au traitement de vos données, contactez : anais@dinedit.be. La présente politique est établie conformément au Règlement (UE) 2016/679 (RGPD) et à la loi belge du 30 juillet 2018 relative à la protection des personnes physiques à l'égard des traitements de données."
+      "body": "Le responsable du traitement des données à caractère personnel est Monsieur Serge Vanmol, indépendant en personne physique, sous l'enseigne « Dinédit », dont les coordonnées figurent dans les mentions légales. Pour toute question relative au traitement de vos données, contactez : info@dinedit.be. La présente politique est établie conformément au Règlement (UE) 2016/679 (RGPD) et à la loi belge du 30 juillet 2018 relative à la protection des personnes physiques à l'égard des traitements de données."
     },
     "data": {
       "title": "Données collectées",
@@ -54,11 +54,11 @@
     },
     "rights": {
       "title": "Vos droits",
-      "body": "Vous disposez à tout moment d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits en écrivant à anais@dinedit.be. Vous disposez également du droit d'introduire une réclamation auprès de l'Autorité de protection des données belge (APD / GBA — www.autoriteprotectiondonnees.be, rue de la Presse 35, 1000 Bruxelles)."
+      "body": "Vous disposez à tout moment d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité de vos données. Vous pouvez exercer ces droits en écrivant à info@dinedit.be. Vous disposez également du droit d'introduire une réclamation auprès de l'Autorité de protection des données belge (APD / GBA — www.autoriteprotectiondonnees.be, rue de la Presse 35, 1000 Bruxelles)."
     },
     "contact": {
       "title": "Contact",
-      "body": "Pour toute question relative à la présente politique : anais@dinedit.be. Nous nous engageons à répondre dans un délai maximal d'un mois à compter de la réception de la demande."
+      "body": "Pour toute question relative à la présente politique : info@dinedit.be. Nous nous engageons à répondre dans un délai maximal d'un mois à compter de la réception de la demande."
     }
   },
   "cgu": {
@@ -92,7 +92,7 @@
     },
     "contact": {
       "title": "Contact",
-      "body": "Toute réclamation ou question relative aux présentes conditions peut être adressée à : anais@dinedit.be."
+      "body": "Toute réclamation ou question relative aux présentes conditions peut être adressée à : info@dinedit.be."
     }
   }
 }

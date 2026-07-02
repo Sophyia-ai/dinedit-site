@@ -8,7 +8,7 @@
   "mentions": {
     "publisher": {
       "title": "Publisher",
-      "body": "The website dinedit.events is published by Mr Serge Vanmol, self-employed natural person under Belgian law, operating under the trading name «Dinédit». Registered address: [full address], Brussels, Belgium. Belgian company / VAT number: [BE 0XXX.XXX.XXX]. Contact: anais@dinedit.be. Publication director: Serge Vanmol."
+      "body": "The website dinedit.events is published by Mr Serge Vanmol, self-employed natural person under Belgian law, operating under the trading name «Dinédit». Registered address: [full address], Brussels, Belgium. Belgian company / VAT number: [BE 0XXX.XXX.XXX]. Contact: info@dinedit.be. Publication director: Serge Vanmol."
     },
     "design": {
       "title": "Design and development",
@@ -30,7 +30,7 @@
   "privacy": {
     "controller": {
       "title": "Data controller",
-      "body": "The controller for the processing of personal data is Mr Serge Vanmol, self-employed natural person, trading as «Dinédit», whose contact details appear in the legal notice. For any question relating to your data: anais@dinedit.be. This policy is drawn up in accordance with Regulation (EU) 2016/679 (GDPR) and the Belgian Act of 30 July 2018 on the protection of natural persons with regard to the processing of personal data."
+      "body": "The controller for the processing of personal data is Mr Serge Vanmol, self-employed natural person, trading as «Dinédit», whose contact details appear in the legal notice. For any question relating to your data: info@dinedit.be. This policy is drawn up in accordance with Regulation (EU) 2016/679 (GDPR) and the Belgian Act of 30 July 2018 on the protection of natural persons with regard to the processing of personal data."
     },
     "data": {
       "title": "Data collected",
@@ -54,11 +54,11 @@
     },
     "rights": {
       "title": "Your rights",
-      "body": "You have the right to access, rectify, erase, restrict, object to and port your data at any time. You may exercise these rights by writing to anais@dinedit.be. You may also lodge a complaint with the Belgian Data Protection Authority (APD / GBA — www.autoriteprotectiondonnees.be, rue de la Presse 35, 1000 Brussels)."
+      "body": "You have the right to access, rectify, erase, restrict, object to and port your data at any time. You may exercise these rights by writing to info@dinedit.be. You may also lodge a complaint with the Belgian Data Protection Authority (APD / GBA — www.autoriteprotectiondonnees.be, rue de la Presse 35, 1000 Brussels)."
     },
     "contact": {
       "title": "Contact",
-      "body": "For any question relating to this policy: anais@dinedit.be. We undertake to respond within a maximum of one month from receipt of the request."
+      "body": "For any question relating to this policy: info@dinedit.be. We undertake to respond within a maximum of one month from receipt of the request."
     }
   },
   "cgu": {
@@ -92,7 +92,7 @@
     },
     "contact": {
       "title": "Contact",
-      "body": "Any complaint or question regarding these terms may be addressed to: anais@dinedit.be."
+      "body": "Any complaint or question regarding these terms may be addressed to: info@dinedit.be."
     }
   }
 }
