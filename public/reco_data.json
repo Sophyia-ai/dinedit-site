@@ -123,6 +123,47 @@
     }
   },
   {
+    "slug": "brusk-refik-anadol-latent-city",
+    "published": "2026-07-02",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Découvrez l'exposition immersive de Refik Anadol à Bruges",
+      "en": "Discover the immersive exhibition by Refik Anadol in Bruges",
+      "nl": "Ontdek de meeslepende tentoonstelling van Refik Anadol in Brugge"
+    },
+    "excerpt": {
+      "fr": "L'exposition de Refik Anadol, intitulée 'Latent City', transforme l'espace en un univers visuel captivant. À cette occasion, Dinédit vous invite à savourer la rencontre entre l'art et la gastronomie dans la belle ville de Bruges.",
+      "en": "Refik Anadol's exhibition, titled 'Latent City', transforms the space into a captivating visual universe. On this occasion, Dinédit invites you to savor the meeting of art and gastronomy in the beautiful city of Bruges.",
+      "nl": "De tentoonstelling van Refik Anadol, getiteld 'Latent City', transformeert de ruimte in een boeiende visuele wereld. Dinédit nodigt je uit om de ontmoeting tussen kunst en gastronomie in de prachtige stad Brugge te proeven."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art numérique",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "digital art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "digitale kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -281,6 +322,47 @@
         "confidentiële expo",
         "gastronomie",
         "toerisme"
+      ]
+    }
+  },
+  {
+    "slug": "liege-litteraire-en-rouge-et-blanc-le-standard-dans-les-roma",
+    "published": "2026-07-02",
+    "event_date": "2026-07-04",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Exploration littéraire à Liège : le Standard sous les projecteurs",
+      "en": "Literary Exploration in Liège: The Standard in the Spotlight",
+      "nl": "Literaire Verkenning in Luik: De Standard in de Spotlight"
+    },
+    "excerpt": {
+      "fr": "Le 4 juillet 2026, Liège invite les passionnés de littérature à découvrir le Standard dans les romans. Une belle occasion de savourer la culture belge en harmonie avec l'esprit Dinédit.",
+      "en": "On July 4, 2026, Liège invites literature enthusiasts to discover the Standard in novels. A great opportunity to savor Belgian culture in harmony with Dinédit's spirit.",
+      "nl": "Op 4 juli 2026 nodigt Luik literatuurliefhebbers uit om de Standard in romans te ontdekken. Een mooie kans om de Belgische cultuur in harmonie met de geest van Dinédit te proeven."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "littérature",
+        "culture",
+        "événements"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "literature",
+        "culture",
+        "events"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "literatuur",
+        "cultuur",
+        "evenementen"
       ]
     }
   },
