@@ -512,20 +512,27 @@
       #sophyia-site-header nav button { padding: 4px 8px; font-size: 10px; }
       #sophyia-site-header nav button.accent { padding: 6px 12px; font-size: 10px; }
       #sophyia-site-hero h1 { top: 12px; left: 12px; font-size: 14px; max-width: 200px; }
-      /* Bubble mobile — peek discret : 40vh initial, 50vh max en expanded.
-         Le visiteur voit le site sous la fenêtre, Anaïs/Olivia ne prend
-         jamais plus de la moitié de l'écran. */
-      #sophyia-chat-window {
+      /* Bubble mobile — 2 états :
+         - normal : 70vh max (batttre spécificité admin size-medium/large qui vaut 65-80vh)
+         - .sophyia-peek : premier coucou auto-open discret à 50vh */
+      #sophyia-chat-window,
+      #sophyia-chat-window.sophyia-expanded,
+      #sophyia-chat-window.sophyia-expanded.sophyia-size-small,
+      #sophyia-chat-window.sophyia-expanded.sophyia-size-medium,
+      #sophyia-chat-window.sophyia-expanded.sophyia-size-large {
         width: calc(100% - 16px) !important; right: 8px !important;
-        bottom: 44px !important; height: 40vh !important;
-        max-height: 50vh !important;
+        bottom: 44px !important;
+        height: 70vh !important;
+        max-height: 70vh !important;
         border-radius: 12px !important;
       }
-      #sophyia-chat-window.sophyia-expanded {
-        width: calc(100% - 16px) !important;
+      #sophyia-chat-window.sophyia-peek,
+      #sophyia-chat-window.sophyia-peek.sophyia-expanded,
+      #sophyia-chat-window.sophyia-peek.sophyia-expanded.sophyia-size-small,
+      #sophyia-chat-window.sophyia-peek.sophyia-expanded.sophyia-size-medium,
+      #sophyia-chat-window.sophyia-peek.sophyia-expanded.sophyia-size-large {
         height: 50vh !important;
         max-height: 50vh !important;
-        border-radius: 12px !important;
       }
       #sophyia-site-footer { padding: 6px 12px; }
     }
@@ -2324,6 +2331,8 @@
   function _cancelAutoClose() {
     if (_autoCloseTimer) { clearTimeout(_autoCloseTimer); _autoCloseTimer = null; }
     _wasAutoOpened = false;
+    // Retire le mode peek : l'utilisateur interagit → passe à la taille normale (70vh).
+    if (window_) window_.classList.remove("sophyia-peek");
   }
 
   if (AUTO_OPEN_MS > 0 && IS_BUBBLE && bubble) {
@@ -2331,6 +2340,10 @@
       _autoOpenTimer = null;
       if (isOpen) return;
       _wasAutoOpened = true;
+      // Coucou discret mobile : classe .sophyia-peek → 50vh au lieu de 70vh
+      // sur ≤640px. La classe est retirée dès la 1ère interaction utilisateur
+      // (via _cancelAutoClose ci-dessus) ou au sendMessage.
+      window_.classList.add("sophyia-peek");
       bubble.click();
       // Programmer auto-close si configuré
       if (AUTO_CLOSE_MS > 0) {
