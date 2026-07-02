@@ -18,9 +18,10 @@ __pycache__/
 public/events/
 public/agenda_data.json
 public/carnet_data.json
-# Gallery : source lourde, régénérée en CI
-public/images/gallery/
-public/gallery_data.json
+# NOTE : public/images/gallery/ + public/gallery_data.json sont TRACKÉS
+# (générés par automation/gallery_engine.py local — Oryx build Azure n'a pas
+# Pillow, et il n'y a pas de workflow GHA gallery pour l'instant). Les sources
+# sous photos/ sont aussi trackées (~4-8 MB par photo).
 # NOTE : public/recommendations/, public/reco_data.json et public/sitemap.xml
 # sont TRACKÉS car générés par le workflow GHA reco (LLM) et doivent être
 # préservés entre les builds Azure. Le sitemap unifie events + recos.

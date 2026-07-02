@@ -55,16 +55,20 @@ def _tags_for(path_rel_photos):
     parts = path_rel_photos.parts
     if not parts:
         return [], None
-    head = parts[0]
-    if head == "events" and len(parts) >= 3:
+    # Case-insensitive : `Portraits/` == `portraits/`, `EVENTS/` == `events/`.
+    # macOS/Windows sont case-insensitive côté FS mais Python compare des strings —
+    # on normalise pour éviter les surprises quand un contributeur nomme un dossier
+    # avec majuscule initiale.
+    head_lc = parts[0].lower()
+    if head_lc == "events" and len(parts) >= 3:
         event_slug = parts[1]
         filename = path_rel_photos.name.lower()
         # préfixe avant premier tiret ou premier chiffre
         prefix = filename.split("-", 1)[0].split(".", 1)[0]
         theme = EVENT_PREFIX_TO_THEME.get(prefix)
         return ([theme] if theme else []), event_slug
-    if head in THEMES:
-        return [head], None
+    if head_lc in THEMES:
+        return [head_lc], None
     return [], None
 
 
