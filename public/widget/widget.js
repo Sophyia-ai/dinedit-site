@@ -269,6 +269,26 @@
       transform: translateY(0) scale(1);
     }
 
+    /* Mobile ≤640px (global, tous modes) — 2 états :
+       - normal : 70vh max (bat les valeurs defaults width:440px height:650px)
+       - .sophyia-peek : premier coucou auto-open discret à 50vh */
+    @media (max-width: 640px) {
+      #sophyia-chat-window {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        right: 8px !important;
+        ${POSITION === "bottom-left" ? "left: 8px !important;" : ""}
+        bottom: 20px !important;
+        height: 70vh !important;
+        max-height: 70vh !important;
+        border-radius: 16px !important;
+      }
+      #sophyia-chat-window.sophyia-peek {
+        height: 50vh !important;
+        max-height: 50vh !important;
+      }
+    }
+
     /* Mode: fullpage — site immersif, image plein ecran */
     ${IS_FULLPAGE ? `
     #sophyia-chat-bubble { display: none !important; }
@@ -512,27 +532,15 @@
       #sophyia-site-header nav button { padding: 4px 8px; font-size: 10px; }
       #sophyia-site-header nav button.accent { padding: 6px 12px; font-size: 10px; }
       #sophyia-site-hero h1 { top: 12px; left: 12px; font-size: 14px; max-width: 200px; }
-      /* Bubble mobile — 2 états :
-         - normal : 70vh max (batttre spécificité admin size-medium/large qui vaut 65-80vh)
-         - .sophyia-peek : premier coucou auto-open discret à 50vh */
-      #sophyia-chat-window,
-      #sophyia-chat-window.sophyia-expanded,
-      #sophyia-chat-window.sophyia-expanded.sophyia-size-small,
-      #sophyia-chat-window.sophyia-expanded.sophyia-size-medium,
-      #sophyia-chat-window.sophyia-expanded.sophyia-size-large {
+      #sophyia-chat-window {
         width: calc(100% - 16px) !important; right: 8px !important;
-        bottom: 44px !important;
-        height: 70vh !important;
-        max-height: 70vh !important;
+        bottom: 44px !important; height: 260px !important;
         border-radius: 12px !important;
       }
-      #sophyia-chat-window.sophyia-peek,
-      #sophyia-chat-window.sophyia-peek.sophyia-expanded,
-      #sophyia-chat-window.sophyia-peek.sophyia-expanded.sophyia-size-small,
-      #sophyia-chat-window.sophyia-peek.sophyia-expanded.sophyia-size-medium,
-      #sophyia-chat-window.sophyia-peek.sophyia-expanded.sophyia-size-large {
-        height: 50vh !important;
-        max-height: 50vh !important;
+      #sophyia-chat-window.sophyia-expanded {
+        width: calc(100% - 16px) !important;
+        height: 65vh !important;
+        border-radius: 12px !important;
       }
       #sophyia-site-footer { padding: 6px 12px; }
     }
