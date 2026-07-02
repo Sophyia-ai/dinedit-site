@@ -1338,7 +1338,7 @@
       <div id="sophyia-chat-messages"></div>
 
       <div id="sophyia-chat-input-area">
-        <input id="sophyia-chat-input" type="text" placeholder="${t.placeholder}" autocomplete="off" />
+        <input id="sophyia-chat-input" type="text" name="sophyia-chat-message" placeholder="${t.placeholder}" autocomplete="off" autocorrect="off" autocapitalize="sentences" spellcheck="true" inputmode="text" enterkeyhint="send" />
         <button id="sophyia-chat-send" aria-label="${t.send}">
           <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
         </button>
