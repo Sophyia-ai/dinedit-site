@@ -512,14 +512,19 @@
       #sophyia-site-header nav button { padding: 4px 8px; font-size: 10px; }
       #sophyia-site-header nav button.accent { padding: 6px 12px; font-size: 10px; }
       #sophyia-site-hero h1 { top: 12px; left: 12px; font-size: 14px; max-width: 200px; }
+      /* Bubble mobile — peek discret : 40vh initial, 50vh max en expanded.
+         Le visiteur voit le site sous la fenêtre, Anaïs/Olivia ne prend
+         jamais plus de la moitié de l'écran. */
       #sophyia-chat-window {
         width: calc(100% - 16px) !important; right: 8px !important;
-        bottom: 44px !important; height: 260px !important;
+        bottom: 44px !important; height: 40vh !important;
+        max-height: 50vh !important;
         border-radius: 12px !important;
       }
       #sophyia-chat-window.sophyia-expanded {
         width: calc(100% - 16px) !important;
-        height: 65vh !important;
+        height: 50vh !important;
+        max-height: 50vh !important;
         border-radius: 12px !important;
       }
       #sophyia-site-footer { padding: 6px 12px; }
