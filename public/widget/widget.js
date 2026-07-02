@@ -1624,6 +1624,29 @@
     };
   }
 
+  // Ajuste le salut initial du welcome selon l'heure locale du visiteur.
+  // Le welcome tenant est stocké avec un salut figé (« Bonsoir... ») — cette
+  // fonction remplace UNIQUEMENT le premier mot si le welcome commence par
+  // un salut connu. Si le welcome ne commence pas par un salut (ex.
+  // « Bienvenue... » de La Gare), il est renvoyé tel quel.
+  function _adjustGreetingByHour(text, lang) {
+    if (!text || typeof text !== "string") return text;
+    const h = new Date().getHours();
+    const morning = h < 12, afternoon = h >= 12 && h < 18, evening = !morning && !afternoon;
+    const RULES = {
+      fr: { match: /^\s*(Bonjour|Bonsoir|Bonne\s?nuit)\b/i, pick: (h < 18 ? "Bonjour" : "Bonsoir") },
+      en: { match: /^\s*(Good\s+morning|Good\s+afternoon|Good\s+evening|Good\s+day)\b/i, pick: (morning ? "Good morning" : (afternoon ? "Good afternoon" : "Good evening")) },
+      nl: { match: /^\s*(Goedemorgen|Goedemiddag|Goedenavond)\b/i, pick: (morning ? "Goedemorgen" : (afternoon ? "Goedemiddag" : "Goedenavond")) },
+      de: { match: /^\s*(Guten\s+Morgen|Guten\s+Tag|Guten\s+Abend)\b/i, pick: (morning ? "Guten Morgen" : (afternoon ? "Guten Tag" : "Guten Abend")) },
+      it: { match: /^\s*(Buongiorno|Buonasera|Buonanotte)\b/i, pick: (h < 18 ? "Buongiorno" : "Buonasera") },
+      he: { match: /^\s*(בוקר\s+טוב|צהריים\s+טובים|ערב\s+טוב)\b/, pick: (morning ? "בוקר טוב" : (afternoon ? "צהריים טובים" : "ערב טוב")) },
+      ru: { match: /^\s*(Доброе\s+утро|Добрый\s+день|Добрый\s+вечер)\b/i, pick: (morning ? "Доброе утро" : (afternoon ? "Добрый день" : "Добрый вечер")) },
+    };
+    const rule = RULES[lang];
+    if (!rule) return text;
+    return text.replace(rule.match, rule.pick);
+  }
+
   // Crée ou met à jour la PREMIÈRE bulle bot (zone welcome).
   // Quand SKIP_DEFAULT_WELCOME est actif, aucune bulle n'est créée au boot ;
   // les fetches (settings + generate_welcome) doivent donc CRÉER la bulle si
@@ -2272,7 +2295,7 @@
           nl: p.welcome_nl || welcomeDict.nl || "",
           he: p.welcome_he || welcomeDict.he || "",
         };
-        const welcomeMsg = loc(welcomeI18n);
+        const welcomeMsg = _adjustGreetingByHour(loc(welcomeI18n), USER_LANG);
         // Si le welcome dynamique a deja remplace, on ne re-ecrase pas avec
         // la version statique (qui arriverait apres, par malchance d'ordre async).
         // Si l'utilisateur a deja engage la conversation (switch de langue en
