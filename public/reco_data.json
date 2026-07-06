@@ -1,5 +1,46 @@
 [
   {
+    "slug": "pierre-kroll-celebre-et-prolifique-caricaturiste-liegeois",
+    "published": "2026-07-06",
+    "event_date": "2024-09-13",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "À la rencontre de l'humour de Pierre Kroll à Liège",
+      "en": "Meeting the Humor of Pierre Kroll in Liège",
+      "nl": "De humor van Pierre Kroll ontmoeten in Luik"
+    },
+    "excerpt": {
+      "fr": "L'exposition dédiée à Pierre Kroll nous invite à redécouvrir l'art de la caricature. Une belle manière de croiser art et gastronomie, comme nous le faisons chez Dinédit.",
+      "en": "The exhibition dedicated to Pierre Kroll invites us to rediscover the art of caricature. A beautiful way to blend art and gastronomy, as we do at Dinédit.",
+      "nl": "De tentoonstelling gewijd aan Pierre Kroll nodigt ons uit om de kunst van de karikatuur opnieuw te ontdekken. Een mooie manier om kunst en gastronomie te combineren, zoals we doen bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "caricature",
+        "art"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "caricature",
+        "art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "karikatuur",
+        "kunst"
+      ]
+    }
+  },
+  {
     "slug": "regards-pluriels-lart-belge-et-lutopie-communiste-au-xxe-sie",
     "published": "2026-07-01",
     "event_date": "2026-04-11",
@@ -164,6 +205,47 @@
     }
   },
   {
+    "slug": "exposition-brusk-vision-large",
+    "published": "2026-07-06",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Redécouvrez Bruges à travers l'exposition BRUSK VISION LARGE",
+      "en": "Rediscover Bruges through the BRUSK VISION LARGE Exhibition",
+      "nl": "Herontdek Brugge via de BRUSK VISION LARGE Tentoonstelling"
+    },
+    "excerpt": {
+      "fr": "À Bruges, l'exposition BRUSK VISION LARGE nous invite à explorer les mondes interconnectés de la ville médiévale. Un moment immersif qui résonne avec l'esprit de Dinédit.",
+      "en": "In Bruges, the BRUSK VISION LARGE exhibition invites us to explore the interconnected worlds of the medieval city. An immersive moment that resonates with the spirit of Dinédit.",
+      "nl": "In Brugge nodigt de tentoonstelling BRUSK VISION LARGE ons uit om de onderling verbonden werelden van de middeleeuwse stad te verkennen. Een meeslepende ervaring die resoneert met de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -281,6 +363,47 @@
         "confidentiële expo",
         "hedendaagse kunst",
         "zintuiglijke ervaring"
+      ]
+    }
+  },
+  {
+    "slug": "festival-au-carre-bysolveig",
+    "published": "2026-07-06",
+    "event_date": "2026-07-01",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "Festival au Carré : une expérience immersive à Mons",
+      "en": "Festival au Carré: An Immersive Experience in Mons",
+      "nl": "Festival au Carré: Een meeslepende ervaring in Mons"
+    },
+    "excerpt": {
+      "fr": "Du 1er au 10 juillet 2026, le Festival au Carré à Mons promet une immersion sensorielle unique. Dans cet esprit de créativité, Dinédit s'illustre par des dîners qui célèbrent l'art culinaire et l'échange.",
+      "en": "From July 1 to 10, 2026, the Festival au Carré in Mons promises a unique sensory immersion. In this spirit of creativity, Dinédit shines with dinners that celebrate culinary art and exchange.",
+      "nl": "Van 1 tot 10 juli 2026 belooft het Festival au Carré in Mons een unieke sensorische onderdompeling. In deze geest van creativiteit schittert Dinédit met diners die de culinaire kunst en uitwisseling vieren."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "art contemporain"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "gastronomy",
+        "contemporary art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "gastronomie",
+        "hedendaagse kunst"
       ]
     }
   },
