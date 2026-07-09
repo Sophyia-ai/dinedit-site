@@ -531,6 +531,47 @@
     }
   },
   {
+    "slug": "cactusfestival-2026",
+    "published": "2026-07-09",
+    "event_date": "2026-07-10",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Un moment musical à Bruges : Cactusfestival 2026",
+      "en": "A Musical Moment in Bruges: Cactusfestival 2026",
+      "nl": "Een Muzikaal Moment in Brugge: Cactusfestival 2026"
+    },
+    "excerpt": {
+      "fr": "Le Cactusfestival s'installe dans le cadre enchanteur du Minnewaterpark à Bruges. Cet événement musical à taille humaine invite à savourer des instants de partage, en écho à l'esprit de Dinédit.",
+      "en": "The Cactusfestival takes place in the enchanting setting of Minnewaterpark in Bruges. This intimate musical event invites you to savor moments of sharing, echoing the spirit of Dinédit.",
+      "nl": "Het Cactusfestival vindt plaats in de betoverende omgeving van het Minnewaterpark in Brugge. Dit intieme muzikale evenement nodigt je uit om momenten van samenzijn te proeven, in de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "festival",
+        "musique",
+        "Bruges"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "festival",
+        "music",
+        "Bruges"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "festival",
+        "muziek",
+        "Brugge"
+      ]
+    }
+  },
+  {
     "slug": "visites-guidees-de-l-office-de-tourisme-le-grand-tour-de-lie",
     "published": "2026-07-01",
     "event_date": "2026-08-16",
@@ -568,6 +609,47 @@
         "gastronomie",
         "natuur",
         "cultuur"
+      ]
+    }
+  },
+  {
+    "slug": "parcours-famille-au-musee-de-flandre-le-cirque-endormi",
+    "published": "2026-07-09",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "Découvrez le cirque endormi au Musée de Flandre en famille",
+      "en": "Discover the Sleeping Circus at the Museum of Flanders with Your Family",
+      "nl": "Ontdek de Slapende Circus in het Museum van Vlaanderen met je Gezin"
+    },
+    "excerpt": {
+      "fr": "Le Musée de Flandre propose un parcours famille captivant autour du cirque endormi. Une belle occasion de s'immerger dans un univers fascinant, avant ou après un dîner Dinédit.",
+      "en": "The Museum of Flanders offers a captivating family tour around the sleeping circus. A wonderful opportunity to immerse yourself in a fascinating world, before or after a Dinédit dinner.",
+      "nl": "Het Museum van Vlaanderen biedt een boeiende gezinsrondleiding rond het slapende circus. Een mooie gelegenheid om je onder te dompelen in een fascinerende wereld, voor of na een Dinédit-diner."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "culture",
+        "famille"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "culture",
+        "family"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "cultuur",
+        "gezin"
       ]
     }
   }
