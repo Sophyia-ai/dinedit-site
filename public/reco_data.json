@@ -246,6 +246,47 @@
     }
   },
   {
+    "slug": "exposition-art-brusk-refik-anadol-latent-city",
+    "published": "2026-07-13",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Une immersion sensorielle avec Refik Anadol à Bruges",
+      "en": "A Sensory Immersion with Refik Anadol in Bruges",
+      "nl": "Een sensorische onderdompeling met Refik Anadol in Brugge"
+    },
+    "excerpt": {
+      "fr": "L'exposition de Refik Anadol à BRUSK nous transporte dans un univers visuel fascinant, où l'art et la technologie fusionnent. Avec Dinédit, nous aimons explorer ces expériences qui éveillent les sens.",
+      "en": "Refik Anadol's exhibition at BRUSK transports us into a fascinating visual universe where art and technology merge. At Dinédit, we love exploring these experiences that awaken the senses.",
+      "nl": "De tentoonstelling van Refik Anadol in BRUSK neemt ons mee naar een fascinerend visueel universum waar kunst en technologie samensmelten. Bij Dinédit verkennen we graag deze ervaringen die de zintuigen prikkelen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -568,6 +609,47 @@
         "festival",
         "muziek",
         "Brugge"
+      ]
+    }
+  },
+  {
+    "slug": "affiche-politique-50-ans-de-triennales",
+    "published": "2026-07-13",
+    "event_date": "2026-07-11",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "Célébrons l'art engagé : 50 ans de Triennales à Mons",
+      "en": "Celebrating Engaged Art: 50 Years of Triennials in Mons",
+      "nl": "Vier de Betrokken Kunst: 50 Jaar Triennales in Mons"
+    },
+    "excerpt": {
+      "fr": "Une exposition qui invite à la réflexion sur l'art et la politique, à travers des œuvres audacieuses. Dinédit vous propose de découvrir cette résonance entre créativité et gastronomie à Bruxelles.",
+      "en": "An exhibition that invites reflection on art and politics through bold works. Dinédit invites you to discover the resonance between creativity and gastronomy in Brussels.",
+      "nl": "Een tentoonstelling die uitnodigt tot reflectie over kunst en politiek, door middel van gedurfde werken. Dinédit nodigt je uit om de resonantie tussen creativiteit en gastronomie in Brussel te ontdekken."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art engagé",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "engaged art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "betrokken kunst",
+        "gastronomie"
       ]
     }
   },
