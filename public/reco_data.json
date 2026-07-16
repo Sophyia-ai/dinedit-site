@@ -41,6 +41,47 @@
     }
   },
   {
+    "slug": "dali-cybernetics",
+    "published": "2026-07-16",
+    "event_date": "2025-08-19",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Explorez l'univers surréaliste de Dalí à Bruges en 2025",
+      "en": "Explore the Surreal Universe of Dalí in Brussels in 2025",
+      "nl": "Verken het surrealistische universum van Dalí in Brussel in 2025"
+    },
+    "excerpt": {
+      "fr": "L'exposition Dalí Cybernetics à Bruges nous invite à découvrir un monde où l'art et le numérique fusionnent. En écho à l'esprit curé de Dinédit, cette expérience enrichissante promet de stimuler vos sens.",
+      "en": "The Dalí Cybernetics exhibition in Brussels invites us to discover a world where art and digital merge. In the warm spirit of Dinédit, this enriching experience promises to stimulate your senses.",
+      "nl": "De Dalí Cybernetics tentoonstelling in Brussel nodigt ons uit om een wereld te ontdekken waar kunst en digitaal samensmelten. In de warme geest van Dinédit belooft deze verrijkende ervaring uw zintuigen te prikkelen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "regards-pluriels-lart-belge-et-lutopie-communiste-au-xxe-sie",
     "published": "2026-07-01",
     "event_date": "2026-04-11",
@@ -654,6 +695,47 @@
     }
   },
   {
+    "slug": "fetes-de-gand",
+    "published": "2026-07-16",
+    "event_date": "2026-07-17",
+    "source_name": "visitgent.be",
+    "source_url": "https://visit.gent.be/fr",
+    "region": "Gand",
+    "title": {
+      "fr": "Venez vibrer aux Fêtes de Gand en juillet 2026",
+      "en": "Come Experience the Ghent Festivities in July 2026",
+      "nl": "Kom de Feesten van Gent in juli 2026 beleven"
+    },
+    "excerpt": {
+      "fr": "Les Fêtes de Gand s'annoncent comme une véritable ode à la créativité et à la convivialité. Un moment vibrant à vivre qui résonne avec l'esprit de Dinédit.",
+      "en": "The Ghent Festivities promise to be a true ode to creativity and conviviality. A vibrant moment to experience that resonates with the spirit of Dinédit.",
+      "nl": "De Feesten van Gent beloven een ware ode aan creativiteit en gezelligheid te worden. Een bruisend moment om te beleven dat weerklank vindt bij de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "culture",
+        "festivals",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "culture",
+        "festivals",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "cultuur",
+        "festivals",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "visites-guidees-de-l-office-de-tourisme-le-grand-tour-de-lie",
     "published": "2026-07-01",
     "event_date": "2026-08-16",
@@ -695,6 +777,47 @@
     }
   },
   {
+    "slug": "visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre",
+    "published": "2026-07-16",
+    "event_date": "2026-08-20",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Voyage dans le temps au Port autonome de Liège",
+      "en": "A Journey Through Time at the Liège Autonomous Port",
+      "nl": "Een Reis Door de Tijd in de Autonome Haven van Luik"
+    },
+    "excerpt": {
+      "fr": "Le 20 août 2026, embarquez pour une visite inédite des lieux emblématiques du Port autonome de Liège à bord d'un bus d'époque. Une belle occasion de savourer l'authenticité de notre patrimoine tout en restant fidèle à l'esprit de Dinédit.",
+      "en": "On August 20, 2026, embark on a unique tour of the iconic sites of the Liège Autonomous Port aboard a vintage bus. A wonderful opportunity to savor the authenticity of our heritage while staying true to the spirit of Dinédit.",
+      "nl": "Op 20 augustus 2026, stap aan boord van een unieke rondleiding door de iconische locaties van de Autonome Haven van Luik in een vintage bus. Een prachtige gelegenheid om de authenticiteit van ons erfgoed te proeven, terwijl we trouw blijven aan de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "artisanat",
+        "patrimoine",
+        "visite guidée"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "craftsmanship",
+        "heritage",
+        "guided tour"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "ambacht",
+        "erfgoed",
+        "rondleiding"
+      ]
+    }
+  },
+  {
     "slug": "parcours-famille-au-musee-de-flandre-le-cirque-endormi",
     "published": "2026-07-09",
     "event_date": "",
@@ -732,6 +855,47 @@
         "confidentiële tentoonstelling",
         "cultuur",
         "gezin"
+      ]
+    }
+  },
+  {
+    "slug": "exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb",
+    "published": "2026-07-16",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "Une exposition captivante sur l'art singulier à découvrir près de Bruxelles",
+      "en": "A Captivating Exhibition on Singular Art to Discover Near Brussels",
+      "nl": "Een Boeiende Tentoonstelling over Singuliere Kunst te Ontdekken in de Buurt van Brussel"
+    },
+    "excerpt": {
+      "fr": "L'exposition l'Art au singulier au Musée des Augustins nous invite à explorer des œuvres troublantes et émouvantes. Une belle occasion de marier culture et gastronomie lors d'un dîner Dinédit.",
+      "en": "The exhibition Singular Art at the Musée des Augustins invites us to explore unsettling and moving works. A wonderful opportunity to blend culture and gastronomy during a Dinédit dinner.",
+      "nl": "De tentoonstelling Singuliere Kunst in het Musée des Augustins nodigt ons uit om ontroerende en aangrijpende werken te verkennen. Een mooie gelegenheid om cultuur en gastronomie te combineren tijdens een Dinédit-diner."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "art"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "kunst"
       ]
     }
   }

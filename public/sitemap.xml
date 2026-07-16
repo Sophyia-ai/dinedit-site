@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.dinedit.events/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/" />
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/en/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/" />
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/nl/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/" />
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/agenda</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/agenda" />
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/en/agenda</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/agenda" />
@@ -52,7 +52,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/nl/agenda</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/agenda" />
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/architectes</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/architectes" />
@@ -72,7 +72,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/en/architectes</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/architectes" />
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/nl/architectes</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/architectes" />
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/2026-07-25-frederic-chaine-rafael-gouirand.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-07-25-frederic-chaine-rafael-gouirand.html" />
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/en/2026-07-25-frederic-chaine-rafael-gouirand.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-07-25-frederic-chaine-rafael-gouirand.html" />
@@ -112,7 +112,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/nl/2026-07-25-frederic-chaine-rafael-gouirand.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-07-25-frederic-chaine-rafael-gouirand.html" />
@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/2026-08-29-the-past-the-present-the-future.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-08-29-the-past-the-present-the-future.html" />
@@ -132,7 +132,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/en/2026-08-29-the-past-the-present-the-future.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-08-29-the-past-the-present-the-future.html" />
@@ -142,7 +142,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/nl/2026-08-29-the-past-the-present-the-future.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-08-29-the-past-the-present-the-future.html" />
@@ -152,7 +152,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/2026-09-25-j-adore-c-est-quoi.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-09-25-j-adore-c-est-quoi.html" />
@@ -162,7 +162,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/en/2026-09-25-j-adore-c-est-quoi.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-09-25-j-adore-c-est-quoi.html" />
@@ -172,7 +172,7 @@
   </url>
   <url>
     <loc>https://www.dinedit.events/events/nl/2026-09-25-j-adore-c-est-quoi.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/events/2026-09-25-j-adore-c-est-quoi.html" />
@@ -209,6 +209,36 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/pierre-kroll-celebre-et-prolifique-caricaturiste-liegeois.html" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/pierre-kroll-celebre-et-prolifique-caricaturiste-liegeois.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/pierre-kroll-celebre-et-prolifique-caricaturiste-liegeois.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/dali-cybernetics.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/dali-cybernetics.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/en/dali-cybernetics.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/dali-cybernetics.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/nl/dali-cybernetics.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/dali-cybernetics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/dali-cybernetics.html" />
   </url>
   <url>
     <loc>https://www.dinedit.events/recommendations/regards-pluriels-lart-belge-et-lutopie-communiste-au-xxe-sie.html</loc>
@@ -661,6 +691,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/affiche-politique-50-ans-de-triennales.html" />
   </url>
   <url>
+    <loc>https://www.dinedit.events/recommendations/fetes-de-gand.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/fetes-de-gand.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/en/fetes-de-gand.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/fetes-de-gand.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/nl/fetes-de-gand.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/fetes-de-gand.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/fetes-de-gand.html" />
+  </url>
+  <url>
     <loc>https://www.dinedit.events/recommendations/visites-guidees-de-l-office-de-tourisme-le-grand-tour-de-lie.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -691,6 +751,36 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/visites-guidees-de-l-office-de-tourisme-le-grand-tour-de-lie.html" />
   </url>
   <url>
+    <loc>https://www.dinedit.events/recommendations/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/en/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/nl/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre.html" />
+  </url>
+  <url>
     <loc>https://www.dinedit.events/recommendations/parcours-famille-au-musee-de-flandre-le-cirque-endormi.html</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -719,5 +809,35 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/parcours-famille-au-musee-de-flandre-le-cirque-endormi.html" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/parcours-famille-au-musee-de-flandre-le-cirque-endormi.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/parcours-famille-au-musee-de-flandre-le-cirque-endormi.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/en/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+  </url>
+  <url>
+    <loc>https://www.dinedit.events/recommendations/nl/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.dinedit.events/recommendations/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.dinedit.events/recommendations/en/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.dinedit.events/recommendations/nl/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.dinedit.events/recommendations/exposition-l-art-au-singulier-au-musee-des-augustins-a-hazeb.html" />
   </url>
 </urlset>
