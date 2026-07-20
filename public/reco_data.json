@@ -328,6 +328,47 @@
     }
   },
   {
+    "slug": "brusk-vision-large-les-mondes-interconnectes-de-bruges-900-1",
+    "published": "2026-07-20",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "À la découverte des mondes interconnectés de Bruges au Moyen-Âge",
+      "en": "Discovering the Interconnected Worlds of Bruges in the Middle Ages",
+      "nl": "Ontdek de Onderling Verbonden Werelden van Brugge in de Middeleeuwen"
+    },
+    "excerpt": {
+      "fr": "L'exposition BRUSK VISION LARGE nous plonge dans l'effervescence médiévale de Bruges, un véritable carrefour de culture et de commerce. Ce moment d'histoire fait écho à l'esprit curé de Dinédit, où la gastronomie rencontre l'art à Bruxelles.",
+      "en": "The BRUSK VISION LARGE exhibition immerses us in the medieval vibrancy of Bruges, a true crossroads of culture and commerce. This moment in history resonates with the warm spirit of Dinédit, where gastronomy meets art in Brussels.",
+      "nl": "De tentoonstelling BRUSK VISION LARGE dompelt ons onder in de middeleeuwse levendigheid van Brugge, een echte kruispunt van cultuur en handel. Dit moment in de geschiedenis weerklinkt met de warme geest van Dinédit, waar gastronomie kunst ontmoet in Brussel."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "ambacht"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -777,6 +818,47 @@
     }
   },
   {
+    "slug": "balade-au-crepuscule",
+    "published": "2026-07-20",
+    "event_date": "2026-08-19",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Une échappée belle à Liège : Balade au crépuscule avec Dinédit",
+      "en": "A Beautiful Escape in Liège: Twilight Stroll with Dinédit",
+      "nl": "Een Mooie Ontsnapping in Luik: Wandeling bij Schemering met Dinédit"
+    },
+    "excerpt": {
+      "fr": "Le crépuscule à Liège offre un spectacle de couleurs et de lumière. Nous vous invitons à découvrir cette ambiance chaleureuse, tout comme nos dîners inédits chez Dinédit.",
+      "en": "Twilight in Liège offers a spectacle of colors and light. We invite you to discover this warm atmosphere, just like our unique dinners at Dinédit.",
+      "nl": "De schemering in Luik biedt een spektakel van kleuren en licht. We nodigen u uit om deze warme sfeer te ontdekken, net als onze unieke diners bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "visites guidées",
+        "gastronomie",
+        "Liège"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "guided tours",
+        "gastronomy",
+        "Liège"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "rondleidingen",
+        "gastronomie",
+        "Luik"
+      ]
+    }
+  },
+  {
     "slug": "visite-exclusive-du-port-autonome-de-liege-en-bus-ancetre",
     "published": "2026-07-16",
     "event_date": "2026-08-20",
@@ -896,6 +978,47 @@
         "confidentiële tentoonstelling",
         "gastronomie",
         "kunst"
+      ]
+    }
+  },
+  {
+    "slug": "exposition-la-mercerie-des-illusions-au-musee-benoit-de-puyd",
+    "published": "2026-07-20",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "À la découverte des illusions : une exposition à Bailleul",
+      "en": "Discovering Illusions: An Exhibition in Bailleul",
+      "nl": "Op ontdekking naar illusies: een tentoonstelling in Bailleul"
+    },
+    "excerpt": {
+      "fr": "L’exposition La Mercerie des Illusions nous invite à explorer le monde fascinant de la perception. Ici, l’art et la créativité se rencontrent, offrant une expérience sensorielle enrichissante qui résonne avec l’esprit de Dinédit.",
+      "en": "The exhibition La Mercerie des Illusions invites us to explore the fascinating world of perception. Here, art and creativity meet, offering a rich sensory experience that resonates with the spirit of Dinédit.",
+      "nl": "De tentoonstelling La Mercerie des Illusions nodigt ons uit om de fascinerende wereld van perceptie te verkennen. Hier ontmoeten kunst en creativiteit elkaar, wat een verrijkende zintuiglijke ervaring biedt die resoneert met de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "ambacht"
       ]
     }
   }
