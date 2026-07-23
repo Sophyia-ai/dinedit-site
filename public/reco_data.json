@@ -369,6 +369,47 @@
     }
   },
   {
+    "slug": "exposition-brusk-vision-large-les-mondes-interconnectes-de-b",
+    "published": "2026-07-23",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "À la découverte des mondes interconnectés de Bruges au Moyen-Âge",
+      "en": "Exploring the Interconnected Worlds of Bruges in the Middle Ages",
+      "nl": "De verbonden werelden van Brugge in de Middeleeuwen verkennen"
+    },
+    "excerpt": {
+      "fr": "L'exposition 'BRUSK VISION LARGE' nous plonge dans l'effervescence de Bruges au Moyen-Âge. À travers des œuvres fascinantes, Dinédit vous propose de relier art et gastronomie dans un cadre inspirant.",
+      "en": "The exhibition 'BRUSK VISION LARGE' immerses us in the vibrancy of Bruges in the Middle Ages. Through fascinating works, Dinédit invites you to connect art and gastronomy in an inspiring setting.",
+      "nl": "De tentoonstelling 'BRUSK VISION LARGE' dompelt ons onder in de bruisende sfeer van Brugge in de Middeleeuwen. Via fascinerende werken nodigt Dinédit u uit om kunst en gastronomie in een inspirerende omgeving te verbinden."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "art"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "kunst"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -732,6 +773,47 @@
         "confidentiële tentoonstelling",
         "betrokken kunst",
         "gastronomie"
+      ]
+    }
+  },
+  {
+    "slug": "elephant-parade",
+    "published": "2026-07-23",
+    "event_date": "2026-07-16",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "Elephant Parade : une célébration artistique à Mons",
+      "en": "Elephant Parade: An Artistic Celebration in Mons",
+      "nl": "Elephant Parade: Een Artistieke Viering in Mons"
+    },
+    "excerpt": {
+      "fr": "Du 16 juillet au 16 août 2026, Mons se transforme en galerie à ciel ouvert avec l'Elephant Parade. Un événement où art et sensibilisation se rencontrent, tout comme dans nos dîners Dinédit.",
+      "en": "From July 16 to August 16, 2026, Mons transforms into an open-air gallery with the Elephant Parade. An event where art and awareness meet, just like in our Dinédit dinners.",
+      "nl": "Van 16 juli tot 16 augustus 2026 verandert Mons in een openluchtgalerie met de Elephant Parade. Een evenement waar kunst en bewustwording samenkomen, net zoals bij onze Dinédit-diners."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "cultuur"
       ]
     }
   },
