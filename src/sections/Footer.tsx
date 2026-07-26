@@ -68,10 +68,13 @@ export default function Footer() {
             <h4 className="text-xs font-semibold text-nuit uppercase tracking-wider mb-3">Navigation</h4>
             <div className="space-y-2 text-sm">
               <Link to={`${prefix}/agenda`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('nav.agenda')}
+                {t('nav.diners')}
               </Link>
-              <Link to={`${prefix}/architectes`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('footer.sources')}
+              <Link to={`${prefix}/a-propos`} className="block text-nuit/70 hover:text-gold transition-colors">
+                {t('nav.apropos')}
+              </Link>
+              <Link to={`${prefix}/faq`} className="block text-nuit/70 hover:text-gold transition-colors">
+                {t('nav.faq')}
               </Link>
               <button onClick={() => openLegal('mentions')} className="block text-nuit/70 hover:text-gold transition-colors text-left">
                 {t('footer.mentions')}

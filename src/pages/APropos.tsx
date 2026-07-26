@@ -1,17 +1,17 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// Architectes.tsx — Serge & Fany, fondateurs Dinédit (2017)
+// APropos.tsx — « À propos » Dinédit : Serge & Fany, fondateurs (2017) + genèse.
 //
-// Phase 1 squelette : 2 portraits + récit de genèse. Photos individuelles à
-// récupérer auprès de Serge — placeholders pour l'instant.
+// Refonte Track 1 de l'ancien Architectes.tsx (route /architectes → /a-propos).
+// Contenu conservé (namespace i18n 'architectes') — raffinage copy = Track 2.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { useTranslation } from 'react-i18next'
 
-export default function Architectes() {
+export default function APropos() {
   const { t } = useTranslation('architectes')
 
   return (
-    <main className="bg-bone min-h-screen pt-24 pb-24">
+    <div className="pb-24">
       <div className="max-w-4xl mx-auto px-6">
         <header className="text-center mb-16">
           <h1 className="font-display text-4xl md:text-5xl text-nuit">{t('title')}</h1>
@@ -44,6 +44,6 @@ export default function Architectes() {
           </p>
         </section>
       </div>
-    </main>
+    </div>
   )
 }

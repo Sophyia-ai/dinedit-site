@@ -1,124 +1,198 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// Navigation.tsx — Dinédit top nav (3 rubrics)
+// Navigation.tsx — Dinédit header global (icône menu + drawer latéral, 5 onglets)
+//
+// Rendu par Root (routing.tsx) → présent sur TOUTES les pages, home incluse.
+// - Menu derrière une icône sur tous les viewports → panneau latéral (droite).
+// - LanguagePill + icône compte toujours visibles (hors drawer), états ouvert/fermé.
+// - Variant transparent en haut de la home (overlay sur VideoHero), solide au
+//   scroll / sur les autres pages (préserve l'immersif).
+// - Drawer accessible : Échap, clic overlay, scroll-lock body, focus trap, retour focus.
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react'
+import { Menu, X, User } from 'lucide-react'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
-import { openAnaisWithArchitectes } from '../lib/anaisIntent'
 import LanguagePill from './LanguagePill'
 
 export default function Navigation() {
   const { t } = useTranslation('common')
   const { lang } = useAppLanguage()
   const location = useLocation()
-  const navigate = useNavigate()
-  const [isMobileOpen, setIsMobileOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const menuBtnRef = useRef<HTMLButtonElement>(null)
+  const panelRef = useRef<HTMLDivElement>(null)
 
   const prefix = lang === siteConfig.languages.default ? '' : `/${lang}`
   const homeHref = prefix || '/'
-
-  const scrollToAgenda = () => {
-    const el = document.getElementById('agenda')
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
-
-  const handleAgendaClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    setIsMobileOpen(false)
-    if (location.pathname === homeHref) {
-      scrollToAgenda()
-    } else {
-      navigate(homeHref)
-      setTimeout(scrollToAgenda, 120)
-    }
-  }
-
-  const handleArchitectesClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    setIsMobileOpen(false)
-    openAnaisWithArchitectes(lang)
-  }
+  const isHome = location.pathname === homeHref
+  const solid = !isHome || scrolled || isOpen
 
   const navItems = [
-    { label: t('nav.home'),         href: homeHref },
-    { label: t('nav.agenda'),       href: `${homeHref}#agenda`, accent: true, onClick: handleAgendaClick },
-    { label: t('nav.architectes'),  href: '#anais', onClick: handleArchitectesClick },
-  ] as const
+    { label: t('nav.diners'),      href: `${prefix}/agenda` },
+    { label: t('nav.membre'),      href: `${prefix}/devenir-membre` },
+    { label: t('nav.entreprises'), href: `${prefix}/entreprises` },
+    { label: t('nav.apropos'),     href: `${prefix}/a-propos` },
+    { label: t('nav.contact'),     href: `${prefix}/contact` },
+  ]
 
-  const isActive = (href: string) => {
-    if (href === homeHref) return location.pathname === homeHref
-    if (href.includes('#')) return false
-    return location.pathname === href || location.pathname.startsWith(href + '/')
-  }
+  const isActive = (href: string) =>
+    location.pathname === href || location.pathname.startsWith(href + '/')
+
+  // Le header se solidifie au scroll (pertinent surtout sur la home immersive).
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  // Drawer : scroll-lock body + Échap + focus trap + retour focus sur l'icône menu.
+  useEffect(() => {
+    if (!isOpen) return
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false)
+        return
+      }
+      if (e.key !== 'Tab') return
+      const panel = panelRef.current
+      if (!panel) return
+      const focusables = panel.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      )
+      if (focusables.length === 0) return
+      const first = focusables[0]
+      const last = focusables[focusables.length - 1]
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault()
+        last.focus()
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault()
+        first.focus()
+      }
+    }
+    document.addEventListener('keydown', onKeyDown)
+
+    // Focus le premier élément focusable du panneau à l'ouverture.
+    const firstFocusable = panelRef.current?.querySelector<HTMLElement>(
+      'a[href], button:not([disabled])',
+    )
+    firstFocusable?.focus()
+
+    return () => {
+      document.body.style.overflow = prevOverflow
+      document.removeEventListener('keydown', onKeyDown)
+      menuBtnRef.current?.focus()
+    }
+  }, [isOpen])
+
+  // Ferme le drawer à chaque changement de route.
+  useEffect(() => {
+    setIsOpen(false)
+  }, [location.pathname])
+
+  const iconBtnCls = `p-2 rounded-full transition-colors ${
+    solid ? 'text-nuit hover:text-gold' : 'text-bone hover:text-gold'
+  }`
 
   return (
-    <nav className="fixed top-0 inset-x-0 z-40 bg-bone/95 backdrop-blur-md border-b border-nuit/10">
+    <nav
+      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
+        solid ? 'bg-bone/95 backdrop-blur-md border-b border-nuit/10' : 'bg-transparent'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between gap-4">
           <Link to={homeHref} className="shrink-0" aria-label={siteConfig.brand.name}>
-            <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-9 w-auto" />
+            <img
+              src={siteConfig.brand.logoPath}
+              alt={siteConfig.brand.name}
+              className={`h-9 md:h-10 w-auto transition-all ${solid ? '' : 'brightness-0 invert opacity-95'}`}
+            />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
-            {navItems.map(item => {
-              const cls = `text-sm font-medium tracking-wide transition-colors ${
-                isActive(item.href)
-                  ? 'text-gold'
-                  : 'accent' in item && item.accent
-                    ? 'text-gold hover:text-gold-dark'
-                    : 'text-nuit/70 hover:text-nuit'
-              }`
-              return 'onClick' in item && item.onClick ? (
-                <a key={item.href} href={item.href} onClick={item.onClick} className={cls}>
-                  {item.label}
-                </a>
-              ) : (
-                <Link key={item.href} to={item.href} className={cls}>
-                  {item.label}
-                </Link>
-              )
-            })}
-            <LanguagePill variant="inline" />
-          </div>
+          <div className="flex items-center gap-1 sm:gap-2">
+            <LanguagePill variant={solid ? 'inline' : 'overlay'} />
 
-          <button
-            onClick={() => setIsMobileOpen(o => !o)}
-            className="lg:hidden p-2 text-nuit hover:text-gold transition-colors"
-            aria-label="Toggle menu"
-          >
-            {isMobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
-        </div>
+            <Link
+              to={`${prefix}/devenir-membre`}
+              aria-label={t('nav.account')}
+              className={iconBtnCls}
+            >
+              <User className="w-5 h-5" strokeWidth={1.5} />
+            </Link>
 
-        <div className={`lg:hidden overflow-hidden transition-all duration-300 ${isMobileOpen ? 'max-h-[600px] mt-3' : 'max-h-0'}`}>
-          <div className="rounded-2xl bg-bone/95 border border-nuit/10 p-3 space-y-1">
-            {navItems.map(item => {
-              const cls = `block px-3 py-2 rounded-xl transition-all ${
-                isActive(item.href)
-                  ? 'bg-gold/10 text-gold'
-                  : 'text-nuit/70 hover:text-nuit hover:bg-nuit/5'
-              }`
-              return 'onClick' in item && item.onClick ? (
-                <a key={item.href} href={item.href} onClick={item.onClick} className={cls}>
-                  {item.label}
-                </a>
-              ) : (
-                <Link key={item.href} to={item.href} onClick={() => setIsMobileOpen(false)} className={cls}>
-                  {item.label}
-                </Link>
-              )
-            })}
-            <div className="pt-2 flex">
-              <LanguagePill variant="inline" />
-            </div>
+            <button
+              ref={menuBtnRef}
+              type="button"
+              onClick={() => setIsOpen(o => !o)}
+              aria-label={t('nav.menu')}
+              aria-expanded={isOpen}
+              aria-controls="main-drawer"
+              className={iconBtnCls}
+            >
+              <Menu className="w-6 h-6" strokeWidth={1.5} />
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Drawer latéral + overlay */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50">
+          <div
+            className="absolute inset-0 bg-nuit/60 backdrop-blur-sm animate-fade-in"
+            onClick={() => setIsOpen(false)}
+            aria-hidden="true"
+          />
+          <div
+            ref={panelRef}
+            id="main-drawer"
+            role="dialog"
+            aria-modal="true"
+            aria-label={t('nav.menu')}
+            className="absolute top-0 right-0 h-full w-full max-w-sm bg-bone shadow-2xl flex flex-col animate-slide-in-right"
+          >
+            <div className="flex items-center justify-between px-6 py-5 border-b border-nuit/10">
+              <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-8 w-auto" />
+              <button
+                type="button"
+                onClick={() => setIsOpen(false)}
+                aria-label={t('nav.close')}
+                className="p-2 rounded-full text-nuit hover:text-gold transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto px-6 py-8">
+              <ul className="space-y-1">
+                {navItems.map(item => (
+                  <li key={item.href}>
+                    <Link
+                      to={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className={`block py-3 font-display text-2xl transition-colors ${
+                        isActive(item.href) ? 'text-gold' : 'text-nuit hover:text-gold'
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }

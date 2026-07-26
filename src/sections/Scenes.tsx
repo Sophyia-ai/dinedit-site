@@ -91,12 +91,7 @@ export default function Scenes() {
       )}
       <div className="absolute inset-0 bg-gradient-to-r from-nuit-dark/85 via-nuit-dark/50 to-nuit-dark/70 pointer-events-none" />
 
-      {/* Top bar : logo (gauche) uniquement — la langue reste sur le VideoHero au-dessus */}
-      <div className="absolute top-0 inset-x-0 z-30 flex items-center px-6 md:px-12 py-6">
-        <a href={lang === siteConfig.languages.default ? '/' : `/${lang}`} aria-label={siteConfig.brand.name} className="transition-transform hover:scale-105">
-          <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-12 md:h-16 w-auto brightness-0 invert opacity-95" />
-        </a>
-      </div>
+      {/* Header global (logo + langue + menu) fourni par Navigation via Root — pas de top bar local. */}
 
       {/* Contenu split : texte gauche / flyer droite */}
       <div className="relative z-10 min-h-screen grid lg:grid-cols-2 items-center gap-8 lg:gap-16 px-6 md:px-12 pt-28 lg:pt-0">
