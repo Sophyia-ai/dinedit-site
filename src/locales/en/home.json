@@ -5,17 +5,35 @@
     "cta_agenda": "Tell me about it",
     "cta_btob": "Compose an event"
   },
+  "identity": {
+    "kicker": "The alchemy of the encounter, the art of creating unique experiences.",
+    "p1": "We design bespoke events for companies and individuals, and run our own programme of signature dinners. Refusing off-the-shelf events, every project is conceived so that the alchemy of the encounter goes beyond the event itself.",
+    "p2": "Every month, Dinédit hosts an exclusive dinner in an unusual venue for around twenty guests. Each edition puts an artist, a chef and a place in the spotlight, for an intimate, convivial experience that awakens the imagination and encourages genuine exchange.",
+    "closing": "Dinédit turns your encounters into human, aesthetic and professional added value."
+  },
   "intro": {
     "title": "Two ways to join us",
     "voie_diner": {
-      "label": "Join a singular dinner",
-      "text": "Book your seat at one of the upcoming singular dinners. In a personal capacity — or as a group for your company (same price per person, tailored hospitality arranged with the house in advance).",
-      "cta": "See the agenda"
+      "label": "See the programme",
+      "text": "Discover our next programme: a secret venue, a chef, an artist, around twenty guests.",
+      "cta": "Book your seat"
     },
     "voie_compose": {
-      "label": "Compose your own event",
-      "text": "Serge and Fany compose a bespoke event with you: afterwork, product launch, private evening, wedding. Our methodology, in three words: intimacy, surprise, circularity.",
-      "cta": "Meet the Architects"
+      "label": "Organise an event",
+      "text": "Privatise one of our evenings, or let's design a fully bespoke Dinédit together.",
+      "cta": "Contact us"
     }
+  },
+  "testimonials": {
+    "title": "What our guests say",
+    "items": [
+      { "quote": "Congratulations! The evening was a wonderful experience. I love your concept. You exceeded my expectations. The menu, the wines, the service and the atmosphere were flawless.", "author": "Claire S." },
+      { "quote": "A huge thank you for this absolutely magical evening! You created a moment that blended art, emotion and gastronomy with real finesse. I was genuinely moved by the atmosphere you managed to create. Thank you for the connections!", "author": "Laurent" },
+      { "quote": "Wonderful evening! It was a total success and we thank you for it. Excellent food, superb atmosphere and a most interesting crowd. We can't wait for the next invitations.", "author": "Hugues" },
+      { "quote": "Bravo again for organising the dinner at KoolKoor, it was a great success!", "author": "Claire M." },
+      { "quote": "Thank you again for your welcome, your passion and the generosity that defines you.", "author": "Danièle" },
+      { "quote": "A big thank you for the organisation and the experience last night, it was top-notch!", "author": "Géraldine" },
+      { "quote": "Thank you so much for this magnificent evening. Everything was perfect!", "author": "Myleen" }
+    ]
   }
 }

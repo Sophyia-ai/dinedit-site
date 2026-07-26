@@ -3,17 +3,22 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { useEffect, useState } from 'react'
-import { createBrowserRouter, Outlet } from 'react-router-dom'
+import { createBrowserRouter, Navigate, Outlet } from 'react-router-dom'
 
 import { siteConfig } from './config/site'
 import { AppLanguageSync } from './context/LanguageContext'
 import Layout from './components/Layout'
+import Navigation from './components/Navigation'
 import AnaisBubble from './components/AnaisBubble'
 import CookieBanner from './components/CookieBanner'
 import Legal from './sections/Legal'
 import Home from './pages/Home'
 import Agenda from './pages/Agenda'
-import Architectes from './pages/Architectes'
+import APropos from './pages/APropos'
+import DevenirMembre from './pages/DevenirMembre'
+import Entreprises from './pages/Entreprises'
+import Contact from './pages/Contact'
+import Faq from './pages/Faq'
 
 type LegalKind = 'mentions' | 'privacy' | 'cgu'
 
@@ -28,6 +33,7 @@ function Root() {
 
   return (
     <AppLanguageSync>
+      <Navigation />
       <Outlet />
       <AnaisBubble />
       <CookieBanner />
@@ -42,7 +48,13 @@ export function buildRouter() {
 
   const contentRoutes = [
     { path: 'agenda', element: <Agenda /> },
-    { path: 'architectes', element: <Architectes /> },
+    { path: 'devenir-membre', element: <DevenirMembre /> },
+    { path: 'entreprises', element: <Entreprises /> },
+    { path: 'a-propos', element: <APropos /> },
+    { path: 'contact', element: <Contact /> },
+    { path: 'faq', element: <Faq /> },
+    // Ancienne route → redirection SPA (le vrai 301 SEO est dans staticwebapp.config.json)
+    { path: 'architectes', element: <Navigate to="a-propos" replace /> },
   ]
 
   return createBrowserRouter([

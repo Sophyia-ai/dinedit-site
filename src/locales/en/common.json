@@ -3,7 +3,15 @@
     "home": "Home",
     "agenda": "Agenda & booking",
     "architectes": "The Architects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "diners": "Signature dinners",
+    "membre": "Become a member",
+    "entreprises": "Companies",
+    "apropos": "About",
+    "faq": "FAQ",
+    "account": "Member area",
+    "menu": "Menu",
+    "close": "Close"
   },
   "common": {
     "loading": "Loading…",
@@ -22,5 +30,8 @@
     "mentions": "Legal notice",
     "privacy": "Privacy",
     "cgu": "Terms of use"
+  },
+  "stub": {
+    "soon": "Coming soon"
   }
 }

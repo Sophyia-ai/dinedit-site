@@ -9,6 +9,8 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
+import { useSeo } from '../lib/useSeo'
+
 type Lang = 'fr' | 'en' | 'nl'
 type Status = 'upcoming' | 'past'
 type Filter = Status | 'all'
@@ -53,6 +55,8 @@ function eventUrl(slug: string, lang: Lang): string {
 export default function Agenda() {
   const { t, i18n } = useTranslation(['agenda', 'common'])
   const lang = (i18n.language as Lang) || 'fr'
+
+  useSeo({ title: t('agenda:title'), description: t('agenda:subtitle'), path: '/agenda' })
 
   const [data, setData] = useState<AgendaData | null>(null)
   const [filter, setFilter] = useState<Filter>('upcoming')

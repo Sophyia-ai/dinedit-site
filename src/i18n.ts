@@ -15,23 +15,26 @@ import frHome         from './locales/fr/home.json'
 import frAgenda       from './locales/fr/agenda.json'
 import frArchitectes  from './locales/fr/architectes.json'
 import frLegal        from './locales/fr/legal.json'
+import frPages        from './locales/fr/pages.json'
 
 import enCommon       from './locales/en/common.json'
 import enHome         from './locales/en/home.json'
 import enAgenda       from './locales/en/agenda.json'
 import enArchitectes  from './locales/en/architectes.json'
 import enLegal        from './locales/en/legal.json'
+import enPages        from './locales/en/pages.json'
 
 import nlCommon       from './locales/nl/common.json'
 import nlHome         from './locales/nl/home.json'
 import nlAgenda       from './locales/nl/agenda.json'
 import nlArchitectes  from './locales/nl/architectes.json'
 import nlLegal        from './locales/nl/legal.json'
+import nlPages        from './locales/nl/pages.json'
 
 const resources = {
-  fr: { common: frCommon, home: frHome, agenda: frAgenda, architectes: frArchitectes, legal: frLegal },
-  en: { common: enCommon, home: enHome, agenda: enAgenda, architectes: enArchitectes, legal: enLegal },
-  nl: { common: nlCommon, home: nlHome, agenda: nlAgenda, architectes: nlArchitectes, legal: nlLegal },
+  fr: { common: frCommon, home: frHome, agenda: frAgenda, architectes: frArchitectes, legal: frLegal, pages: frPages },
+  en: { common: enCommon, home: enHome, agenda: enAgenda, architectes: enArchitectes, legal: enLegal, pages: enPages },
+  nl: { common: nlCommon, home: nlHome, agenda: nlAgenda, architectes: nlArchitectes, legal: nlLegal, pages: nlPages },
 }
 
 // Pas de RTL pour Dinédit. (Kept the helper signature for the chassis.)
@@ -44,7 +47,7 @@ void i18n
     resources,
     fallbackLng: siteConfig.languages.default,
     defaultNS: 'common',
-    ns: ['common', 'home', 'agenda', 'architectes', 'legal'],
+    ns: ['common', 'home', 'agenda', 'architectes', 'legal', 'pages'],
     supportedLngs: siteConfig.languages.supported as unknown as string[],
     interpolation: { escapeValue: false },
     react: { useSuspense: false },

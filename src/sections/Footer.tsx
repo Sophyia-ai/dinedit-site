@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
+import BrandLogo from '../components/BrandLogo'
 
 export default function Footer() {
   const { t } = useTranslation('common')
@@ -27,7 +28,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-12 w-auto mb-4" />
+            <BrandLogo className="h-12 mb-4" tone="nuit" label={siteConfig.brand.name} />
             <p className="text-xs uppercase tracking-[0.25em] text-gold">{t('footer.tagline')}</p>
             <p className="mt-2 text-sm text-nuit/60">{t('footer.founded')}</p>
             <div className="flex gap-3 mt-4">
@@ -68,10 +69,13 @@ export default function Footer() {
             <h4 className="text-xs font-semibold text-nuit uppercase tracking-wider mb-3">Navigation</h4>
             <div className="space-y-2 text-sm">
               <Link to={`${prefix}/agenda`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('nav.agenda')}
+                {t('nav.diners')}
               </Link>
-              <Link to={`${prefix}/architectes`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('footer.sources')}
+              <Link to={`${prefix}/a-propos`} className="block text-nuit/70 hover:text-gold transition-colors">
+                {t('nav.apropos')}
+              </Link>
+              <Link to={`${prefix}/faq`} className="block text-nuit/70 hover:text-gold transition-colors">
+                {t('nav.faq')}
               </Link>
               <button onClick={() => openLegal('mentions')} className="block text-nuit/70 hover:text-gold transition-colors text-left">
                 {t('footer.mentions')}

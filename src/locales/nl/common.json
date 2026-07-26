@@ -3,7 +3,15 @@
     "home": "Home",
     "agenda": "Agenda & reservering",
     "architectes": "De Architecten",
-    "contact": "Contact"
+    "contact": "Contact",
+    "diners": "Bijzondere diners",
+    "membre": "Lid worden",
+    "entreprises": "Bedrijven",
+    "apropos": "Over ons",
+    "faq": "FAQ",
+    "account": "Ledenzone",
+    "menu": "Menu",
+    "close": "Sluiten"
   },
   "common": {
     "loading": "Laden…",
@@ -22,5 +30,8 @@
     "mentions": "Wettelijke vermeldingen",
     "privacy": "Privacy",
     "cgu": "Gebruiksvoorwaarden"
+  },
+  "stub": {
+    "soon": "Binnenkort beschikbaar"
   }
 }

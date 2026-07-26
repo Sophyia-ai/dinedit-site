@@ -75,7 +75,7 @@ const participation = {
 
 // ── Social / footer ──────────────────────────────────────────────────────────
 const social = {
-  instagram: '', // TODO Dinédit
+  instagram: 'https://www.instagram.com/dineditbxl', // @dineditbxl (brief V2)
   facebook: '',  // TODO Dinédit
 }
 

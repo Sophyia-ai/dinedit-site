@@ -1,4 +1,9 @@
 {
+  "routes": [
+    { "route": "/architectes", "redirect": "/a-propos", "statusCode": 301 },
+    { "route": "/en/architectes", "redirect": "/en/a-propos", "statusCode": 301 },
+    { "route": "/nl/architectes", "redirect": "/nl/a-propos", "statusCode": 301 }
+  ],
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [

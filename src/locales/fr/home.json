@@ -5,17 +5,35 @@
     "cta_agenda": "Parle-moi de l'événement",
     "cta_btob": "Composer un événement"
   },
+  "identity": {
+    "kicker": "L'alchimie de la rencontre, l'art de créer des expériences uniques.",
+    "p1": "Nous imaginons des événements sur mesure pour entreprises et particuliers et proposons notre propre programmation de dîners inédits. Refusant le prêt-à-porter événementiel, chaque projet est pensé pour que l'alchimie de la rencontre dépasse le simple événement.",
+    "p2": "Tous les mois, Dinédit organise un dîner exclusif dans un lieu insolite pour une vingtaine de convives. Chaque édition met en lumière un artiste, un chef et un lieu, pour une expérience intime et conviviale qui éveille l'imaginaire et encourage des échanges authentiques.",
+    "closing": "Dinédit transforme vos rencontres en plus-value humaine, esthétique et professionnelle."
+  },
   "intro": {
     "title": "Deux façons de nous rejoindre",
     "voie_diner": {
-      "label": "Rejoindre un dîner inédit",
-      "text": "Réservez votre place à l'un des dîners inédits en cours de programmation. À titre personnel — ou en groupe pour votre entreprise (même prix par personne, prestation adaptée en amont avec la maison).",
-      "cta": "Voir l'agenda"
+      "label": "Voir la programmation",
+      "text": "Découvrez notre prochaine programmation : un lieu secret, un chef, un artiste, une vingtaine de convives.",
+      "cta": "Réservez votre place"
     },
     "voie_compose": {
-      "label": "Composer votre propre événement",
-      "text": "Serge et Fany composent avec vous un événement sur mesure : afterwork, lancement, soirée privée, mariage. Notre méthodologie tient en trois mots : intimité, surprise, circularité.",
-      "cta": "Rencontrer les Architectes"
+      "label": "Organiser un événement",
+      "text": "Privatisez une de nos soirées ou concevons ensemble un Dinédit entièrement sur mesure.",
+      "cta": "Contactez-nous"
     }
+  },
+  "testimonials": {
+    "title": "Ce que disent nos convives",
+    "items": [
+      { "quote": "Félicitations ! La soirée a été une belle expérience. J'adore votre concept. Vous avez dépassé mes attentes. Le menu, les vins, le service et l'ambiance étaient irréprochables.", "author": "Claire S." },
+      { "quote": "Un immense merci pour cette soirée absolument magique ! Vous avez créé un moment mêlant avec justesse art, émotion et gastronomie. J'ai été sincèrement touché par l'atmosphère que vous avez su créer. Merci pour les mises en connexions !", "author": "Laurent" },
+      { "quote": "Superbe soirée ! C'était une réussite totale et nous vous en remercions. Repas excellent, ambiance superbe et public très intéressant. On attend avec impatience les prochaines invitations.", "author": "Hugues" },
+      { "quote": "Encore bravo pour l'organisation du dîner chez KoolKoor, c'était très réussi !", "author": "Claire M." },
+      { "quote": "Encore merci pour votre accueil, votre passion et cette générosité qui vous caractérise.", "author": "Danièle" },
+      { "quote": "Un tout grand merci pour l'organisation et l'expérience d'hier soir, c'était top !", "author": "Géraldine" },
+      { "quote": "Merci beaucoup pour cette soirée magnifique. Tout était parfait !", "author": "Myleen" }
+    ]
   }
 }

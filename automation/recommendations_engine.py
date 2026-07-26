@@ -635,7 +635,12 @@ def update_sitemap():
     static_pages = [
         ("/", "1.0", "weekly"),
         ("/agenda", "0.8", "daily"),
-        ("/architectes", "0.7", "monthly"),
+        ("/devenir-membre", "0.8", "monthly"),
+        ("/entreprises", "0.8", "monthly"),
+        ("/a-propos", "0.7", "monthly"),
+        ("/faq", "0.6", "monthly"),
+        ("/contact", "0.6", "monthly"),
+        # /architectes → 301 vers /a-propos → hors sitemap.
     ]
     for path, priority, changefreq in static_pages:
         alts = []

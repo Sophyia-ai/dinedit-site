@@ -1,35 +1,43 @@
 # Dinédit
 
-> Marque belge d'événements art × gastronomie en lieux insolites. Fondée en 2017 à Bruxelles par Serge Van Mol et Fany Ramadier. Dîners inédits ~20 convives (150–185 € par personne), événements sur mesure BtoB et BtoC. Site multilingue (FR, EN, NL) avec maîtresse de cérémonie IA Anaïs.
+> Marque belge d'événements art × gastronomie en lieux insolites. Fondée en 2017 à Bruxelles par Serge Van Mol et Fany Ramadier. Dîners inédits pour ~20 à 30 convives (cible ~150 € TTC/personne, certaines éditions plus élevées), événements sur mesure et privatisations BtoB, statut membre payant. Site multilingue (FR, EN, NL) avec maîtresse de cérémonie IA Anaïs.
 
 ## Pages principales
 
-- [Accueil](https://www.dinedit.events/): scènes rotatives des dîners à venir, intro BtoC/BtoB, aperçu de l'agenda
-- [Agenda](https://www.dinedit.events/agenda): dîners inédits à venir et archive des soirées passées
-- [Les Architectes](https://www.dinedit.events/architectes): portraits de Serge Van Mol et Fany Ramadier, genèse 2017
+- [Accueil](https://www.dinedit.events/): hero, « Dinédit, c'est quoi », aiguillage particuliers/entreprises, carrousel des prochains dîners, témoignages
+- [Dîners inédits / Agenda](https://www.dinedit.events/agenda): dîners à venir et archive des soirées passées ; chaque titre mène à la fiche événement
+- [Devenir membre](https://www.dinedit.events/devenir-membre): statut membre (75 €/an) — -15 % sur chaque dîner, accès aux photos des soirées, mise en relation entre membres, nouveautés en priorité
+- [Entreprises](https://www.dinedit.events/entreprises): privatisation d'une soirée de la programmation ou Dinédit entièrement sur mesure (team building, dîner corporate) ; sur devis, jamais de paiement en ligne
+- [À propos](https://www.dinedit.events/a-propos): histoire des fondateurs Serge Van Mol et Fany Ramadier, genèse 2017, charte ESG (environnement, social, gouvernance)
+- [Contact](https://www.dinedit.events/contact): e-mail et Instagram, formulaire de demande
+- [FAQ](https://www.dinedit.events/faq): questions fréquentes (participation, lieux, tarifs, régimes alimentaires, membre, langues)
+
+## Langues
+
+Site disponible en 3 langues, préfixe d'URL par langue :
+- Français (par défaut) : https://www.dinedit.events/
+- English : https://www.dinedit.events/en/
+- Nederlands : https://www.dinedit.events/nl/
 
 ## Détails
 
-- Localisation : Bruxelles, Belgique (sièges Ixelles et Stalle)
-- Format dîner inédit : ~20 convives dans un lieu insolite révélé à l'inscription, art et table se répondent, ambiance intimiste
-- Format sur mesure : afterworks entreprises, lancements produits, dîners privés, mariages intimes — composition avec Serge et Fany
-- Prix BtoC : 150–185 € par personne selon la soirée ; bons-cadeaux à partir de 150 €
-- Prix BtoB : sur demande, se compose avec la maison
-- Concierge / maîtresse de cérémonie IA : Anaïs (widget chat bas-droite, 3 langues FR/EN/NL)
+- Localisation : Bruxelles, Belgique
+- Format dîner inédit : ~20 à 30 convives dans un lieu insolite (atelier d'artiste, chapelle, ancienne usine, galerie…) révélé quelques jours avant, un chef et un artiste invités par édition, ambiance intimiste
+- Format sur mesure / entreprises : privatisation d'une date programmée ou événement conçu de A à Z (lieu secret, chef, dimension artistique, prestataires engagés, accompagnement, ESG) — sur devis
+- Tarif dîner : cible ~150 € TTC/personne, variable selon l'artiste, le chef et le lieu ; -15 % pour les membres, appliqué automatiquement à la réservation
+- Cotisation membre : 75 €/an, reconduction tacite, résiliable avant renouvellement
+- Fréquence : environ un dîner par mois (10 à 12 par an)
+- Mention réservation : les places ne sont ni échangeables ni remboursables, mais non nominatives
+- Concierge / maîtresse de cérémonie IA : Anaïs (widget chat bas-droite, 3 langues FR/EN/NL) — la fiche informe, le chat accompagne
 - Signature : « Meeting Alchemy » — l'alchimie du lieu, de l'art et de la table
-
-## Prochains dîners inédits (illustratifs, voir agenda pour la liste à jour)
-
-- 25 juillet 2026 — Frédéric Chaine (violon) et Rafael Gouirand (guitare manouche), table dressée dans un champ de lupins
-- 29 août 2026 — The Past, the Present & the Future : buste antique en dialogue avec une table
-- 25 septembre 2026 — J'adore c'est quoi ? Parfumerie et table dialoguent autour des accords floraux
 
 ## Fondateurs
 
 - **Serge Van Mol** : bruxellois, formé aux Beaux-Arts, entrepreneur événementiel. Réseau d'artistes, collectionneurs et chefs.
-- **Fany Ramadier** : parisienne, expérience client, consultante freelance en stratégies durables et projets circulaires.
+- **Fany Ramadier** : parisienne, issue de l'expérience client, consultante freelance en stratégies durables et projets circulaires.
 
 ## Contact
 
-- Email : anais@dinedit.be
+- E-mail : info@dinedit.be
+- Instagram : @dineditbxl
 - Ville : Bruxelles, Belgique
