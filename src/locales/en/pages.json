@@ -34,7 +34,6 @@
     },
     "cta": "Become a member"
   },
-
   "entreprises": {
     "hero": {
       "title": "A Dinédit for your company",
@@ -67,11 +66,30 @@
     "partners": {
       "title": "They trusted us",
       "list": [
-        "Actiris", "Beliris", "The European Commission", "VUB", "Siekkens",
-        "Transition Network", "The Lemon Spoon", "Brussels Rock School", "Innoviris",
-        "ValueBugs", "Fruitcollect", "Club33", "Promethea", "Screen Brussels",
-        "Elzenhof", "Butterfly & Co", "CommPass", "Betuned", "CIEP", "ULB",
-        "Marcolini", "Belgium Travel Company", "FGTB", "Groupe De Cloedt",
+        "Actiris",
+        "Beliris",
+        "The European Commission",
+        "VUB",
+        "Siekkens",
+        "Transition Network",
+        "The Lemon Spoon",
+        "Brussels Rock School",
+        "Innoviris",
+        "ValueBugs",
+        "Fruitcollect",
+        "Club33",
+        "Promethea",
+        "Screen Brussels",
+        "Elzenhof",
+        "Butterfly & Co",
+        "CommPass",
+        "Betuned",
+        "CIEP",
+        "ULB",
+        "Marcolini",
+        "Belgium Travel Company",
+        "FGTB",
+        "Groupe De Cloedt",
         "Les Sorbiers – Les Tourelles"
       ]
     },
@@ -80,7 +98,6 @@
       "cta": "Contact us"
     }
   },
-
   "contact": {
     "hero": {
       "title": "Contact us",
@@ -108,7 +125,6 @@
       "note": "When you click Send, your email app opens with your message pre-filled."
     }
   },
-
   "faq": {
     "title": "Frequently asked questions",
     "subtitle": "Everything to know before experiencing a signature dinner.",
@@ -164,10 +180,13 @@
       {
         "q": "How can I keep up with upcoming events?",
         "a": "Just reach out via our Contact page to be added to our mailing list, and follow our news on Instagram: @dineditbxl."
+      },
+      {
+        "q": "Can I privatise a Dinédit dinner?",
+        "a": "Yes, on request. We also organise bespoke events for companies, associations or private groups wishing to experience an exclusive artistic and gastronomic evening."
       }
     ]
   },
-
   "apropos": {
     "title": "Who are we?",
     "founders": {

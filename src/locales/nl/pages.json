@@ -34,7 +34,6 @@
     },
     "cta": "Word lid"
   },
-
   "entreprises": {
     "hero": {
       "title": "Een Dinédit voor uw onderneming",
@@ -67,11 +66,30 @@
     "partners": {
       "title": "Zij vertrouwden ons",
       "list": [
-        "Actiris", "Beliris", "De Europese Commissie", "VUB", "Siekkens",
-        "Transition Network", "The Lemon Spoon", "Brussels Rock School", "Innoviris",
-        "ValueBugs", "Fruitcollect", "Club33", "Promethea", "Screen Brussels",
-        "Elzenhof", "Butterfly & Co", "CommPass", "Betuned", "CIEP", "ULB",
-        "Marcolini", "Belgium Travel Company", "FGTB", "Groupe De Cloedt",
+        "Actiris",
+        "Beliris",
+        "De Europese Commissie",
+        "VUB",
+        "Siekkens",
+        "Transition Network",
+        "The Lemon Spoon",
+        "Brussels Rock School",
+        "Innoviris",
+        "ValueBugs",
+        "Fruitcollect",
+        "Club33",
+        "Promethea",
+        "Screen Brussels",
+        "Elzenhof",
+        "Butterfly & Co",
+        "CommPass",
+        "Betuned",
+        "CIEP",
+        "ULB",
+        "Marcolini",
+        "Belgium Travel Company",
+        "FGTB",
+        "Groupe De Cloedt",
         "Les Sorbiers – Les Tourelles"
       ]
     },
@@ -80,7 +98,6 @@
       "cta": "Contacteer ons"
     }
   },
-
   "contact": {
     "hero": {
       "title": "Contacteer ons",
@@ -108,7 +125,6 @@
       "note": "Wanneer u op Versturen klikt, opent uw e-mailprogramma met uw bericht vooraf ingevuld."
     }
   },
-
   "faq": {
     "title": "Veelgestelde vragen",
     "subtitle": "Alles wat u moet weten voor u een 'dîner inédit' beleeft.",
@@ -164,10 +180,13 @@
       {
         "q": "Hoe blijf ik op de hoogte van de volgende evenementen?",
         "a": "Neem contact op via onze Contactpagina om aan onze mailinglijst te worden toegevoegd, en volg ons nieuws op Instagram: @dineditbxl."
+      },
+      {
+        "q": "Kan ik een Dinédit-diner privatiseren?",
+        "a": "Ja, op aanvraag. We organiseren ook evenementen op maat voor bedrijven, verenigingen of privégroepen die een exclusieve artistieke en gastronomische avond willen beleven."
       }
     ]
   },
-
   "apropos": {
     "title": "Wie zijn wij?",
     "founders": {
