@@ -6,8 +6,12 @@
 import { useTranslation } from 'react-i18next'
 import { Leaf, HeartHandshake, Scale } from 'lucide-react'
 
+import { useSeo } from '../lib/useSeo'
+
 export default function APropos() {
   const { t } = useTranslation('pages')
+
+  useSeo({ title: t('apropos.title'), description: t('apropos.founders.intro'), path: '/a-propos' })
 
   const pillars = [
     { icon: Leaf,           key: 'environment' },

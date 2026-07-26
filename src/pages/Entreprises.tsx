@@ -9,6 +9,7 @@ import { Check } from 'lucide-react'
 
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
+import { useSeo } from '../lib/useSeo'
 
 const CTA = 'inline-block px-7 py-3 rounded-full bg-gold text-nuit text-sm font-medium tracking-wide hover:bg-gold-dark transition-colors'
 
@@ -17,6 +18,8 @@ export default function Entreprises() {
   const { lang } = useAppLanguage()
   const prefix = lang === siteConfig.languages.default ? '' : `/${lang}`
   const contact = `${prefix}/contact`
+
+  useSeo({ title: t('entreprises.hero.title'), description: t('entreprises.hero.subtitle'), path: '/entreprises' })
 
   const items = t('entreprises.options.option2.items', { returnObjects: true }) as string[]
   const partners = t('entreprises.partners.list', { returnObjects: true }) as string[]

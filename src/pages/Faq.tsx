@@ -3,12 +3,39 @@
 // Accordéon natif <details>/<summary> (clavier + a11y sans JS).
 // ─────────────────────────────────────────────────────────────────────────────
 
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Plus } from 'lucide-react'
+
+import { useSeo } from '../lib/useSeo'
 
 export default function Faq() {
   const { t } = useTranslation('pages')
   const items = t('faq.items', { returnObjects: true }) as { q: string; a: string }[]
+
+  useSeo({ title: t('faq.title'), description: t('faq.subtitle'), path: '/faq' })
+
+  // JSON-LD FAQPage (rich results) — mis à jour par langue.
+  useEffect(() => {
+    const ld = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: items.map(it => ({
+        '@type': 'Question',
+        name: it.q,
+        acceptedAnswer: { '@type': 'Answer', text: it.a },
+      })),
+    }
+    let el = document.getElementById('faq-jsonld')
+    if (!el) {
+      el = document.createElement('script')
+      el.id = 'faq-jsonld'
+      ;(el as HTMLScriptElement).type = 'application/ld+json'
+      document.head.appendChild(el)
+    }
+    el.textContent = JSON.stringify(ld)
+    return () => { document.getElementById('faq-jsonld')?.remove() }
+  }, [items])
 
   return (
     <div className="pb-24 max-w-3xl mx-auto">

@@ -140,7 +140,9 @@ def transition_past(events):
             shutil.move(str(ev["_path"]), str(dst))
             ev["_path"] = dst
             ev["status"] = "past"
-            dst.write_text(json.dumps(ev, ensure_ascii=False, indent=2), encoding="utf-8")
+            # Retire la clé interne _path (PosixPath, non sérialisable) avant dump.
+            serializable = {k: v for k, v in ev.items() if k != "_path"}
+            dst.write_text(json.dumps(serializable, ensure_ascii=False, indent=2), encoding="utf-8")
             moved += 1
             print(f"[MOVE] {ev['slug']} → past/")
     return moved
@@ -367,9 +369,14 @@ def build_agenda_index(upcoming, past):
 
 # ── Sitemap multilingue avec hreflang ─────────────────────────────────
 STATIC_PAGES = [
-    {"path": "/",             "priority": "1.0", "changefreq": "weekly"},
-    {"path": "/agenda",       "priority": "0.9", "changefreq": "daily"},
-    {"path": "/architectes",  "priority": "0.7", "changefreq": "monthly"},
+    {"path": "/",               "priority": "1.0", "changefreq": "weekly"},
+    {"path": "/agenda",         "priority": "0.9", "changefreq": "daily"},
+    {"path": "/devenir-membre", "priority": "0.8", "changefreq": "monthly"},
+    {"path": "/entreprises",    "priority": "0.8", "changefreq": "monthly"},
+    {"path": "/a-propos",       "priority": "0.7", "changefreq": "monthly"},
+    {"path": "/faq",            "priority": "0.6", "changefreq": "monthly"},
+    {"path": "/contact",        "priority": "0.6", "changefreq": "monthly"},
+    # NB: /architectes → 301 vers /a-propos (staticwebapp.config.json) → hors sitemap.
 ]
 
 

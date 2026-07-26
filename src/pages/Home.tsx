@@ -25,12 +25,19 @@ import Gallery from '../sections/Gallery'
 import AgendaInline from '../sections/AgendaInline'
 import Footer from '../sections/Footer'
 import { openAnaisWithArchitectes } from '../lib/anaisIntent'
+import { useSeo } from '../lib/useSeo'
 
 export default function Home() {
   const { t } = useTranslation(['home', 'common'])
   const { lang } = useAppLanguage()
   const location = useLocation()
   const prefix = lang === siteConfig.languages.default ? '' : `/${lang}`
+
+  useSeo({
+    title: `${siteConfig.brand.name} — ${siteConfig.brand.tagline}`,
+    description: t('home:hero.tagline'),
+    path: '/',
+  })
 
   useEffect(() => {
     if (location.hash === '#agenda') {

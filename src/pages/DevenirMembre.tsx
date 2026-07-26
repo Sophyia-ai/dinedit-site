@@ -10,6 +10,7 @@ import { Tag, Images, Users, Sparkles } from 'lucide-react'
 
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
+import { useSeo } from '../lib/useSeo'
 
 const ICONS = [Tag, Images, Users, Sparkles]
 
@@ -17,6 +18,8 @@ export default function DevenirMembre() {
   const { t } = useTranslation('pages')
   const { lang } = useAppLanguage()
   const prefix = lang === siteConfig.languages.default ? '' : `/${lang}`
+
+  useSeo({ title: t('membre.hero.title'), description: t('membre.hero.subtitle'), path: '/devenir-membre' })
 
   const benefits = t('membre.benefits.items', { returnObjects: true }) as { title: string; text: string }[]
 

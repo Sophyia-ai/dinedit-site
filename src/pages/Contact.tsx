@@ -9,10 +9,13 @@ import { useTranslation } from 'react-i18next'
 import { Mail, Instagram } from 'lucide-react'
 
 import { siteConfig } from '../config/site'
+import { useSeo } from '../lib/useSeo'
 
 export default function Contact() {
   const { t } = useTranslation('pages')
   const email = siteConfig.brand.email
+
+  useSeo({ title: t('contact.hero.title'), description: t('contact.hero.subtitle'), path: '/contact' })
 
   const subjects = t('contact.form.subjects', { returnObjects: true }) as Record<string, string>
   const subjectKeys = Object.keys(subjects)
