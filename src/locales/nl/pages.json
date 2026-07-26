@@ -1,1 +1,208 @@
-{}
+{
+  "membre": {
+    "hero": {
+      "title": "Word lid van Dinédit",
+      "subtitle": "Een statuut voor wie terugkomt — want de beste manier om een Dinédit te beleven, is er vaak naar terugkeren."
+    },
+    "benefits": {
+      "title": "Wat het concreet verandert",
+      "items": [
+        {
+          "title": "Een voorkeurstarief",
+          "text": "-15% op elk diner van de programmatie, automatisch toegepast bij reservatie. Met een knop kunt u een factuur aanvragen."
+        },
+        {
+          "title": "Toegang tot de foto's van de avonden",
+          "text": "Bekijk de beelden van elke voorbije editie."
+        },
+        {
+          "title": "Contact tussen leden",
+          "text": "Op eenvoudige aanvraag wordt u in contact gebracht met andere gasten — zonder openbare ledenlijst, met respect voor iedereen."
+        },
+        {
+          "title": "Nieuwigheden als eerste",
+          "text": "Leden worden als eerste geïnformeerd over toekomstige exclusieve evenementen."
+        }
+      ]
+    },
+    "price": {
+      "title": "Het tarief",
+      "amount": "75 €",
+      "period": "/ jaar",
+      "text": "Een lidmaatschap dat snel rendeert: vanaf uw 3ᵉ reservatie in het jaar overstijgt de besparing het bedrag van het lidgeld.",
+      "note": "Stilzwijgende jaarlijkse verlenging, op elk moment opzegbaar vóór de verlenging."
+    },
+    "cta": "Word lid"
+  },
+
+  "entreprises": {
+    "hero": {
+      "title": "Een Dinédit voor uw onderneming",
+      "subtitle": "Creatieve teambuilding, een intiem diner of een corporate avond: een evenement beleven met Dinédit betekent afstappen van confectie-evenementen."
+    },
+    "intro": "Een ontmoeting creëren die blijvend indruk maakt, vraagt naast professionaliteit ook echte alchemie. De technische elementen zijn onmisbaar, maar de mens primeert altijd — de subtiele connectie en het esthetische kader staan centraal in elk Dinédit-project.",
+    "options": {
+      "title": "Twee manieren om een Dinédit te beleven voor uw onderneming",
+      "option1": {
+        "kicker": "Optie 1",
+        "title": "Een avond uit de programmatie privatiseren",
+        "text": "Reserveer exclusief een van onze geplande data — bijvoorbeeld de dag voor of na een publiek diner — voor uw teams, klanten of partners, in dezelfde locatie, met dezelfde chef en dezelfde kunstenaar als de publieke editie.",
+        "cta": "Vraag een privatisering aan"
+      },
+      "option2": {
+        "kicker": "Optie 2",
+        "title": "Een volledig op maat gemaakte Dinédit",
+        "intro": "Van de eenvoudigste vraag tot een strategisch concept dat beantwoordt aan een precieze behoefte, creëren we de alchemie samen met u:",
+        "items": [
+          "Een geheime en exclusieve locatie, gekozen voor uw evenement",
+          "Een culinaire ervaring van de hand van een getalenteerde chef",
+          "Een originele artistieke dimensie (live painting, enscenering, creatieve workshop)",
+          "Geëngageerde leveranciers (fotografen, bloemisten, videografen)",
+          "Een persoonlijke, soepele en creatieve begeleiding, van briefing tot avond",
+          "Een concreet ESG-engagement, van de keuze van producenten tot het beheer van verspilling"
+        ],
+        "cta": "Creëer uw moment op maat"
+      }
+    },
+    "partners": {
+      "title": "Zij vertrouwden ons",
+      "list": [
+        "Actiris", "Beliris", "De Europese Commissie", "VUB", "Siekkens",
+        "Transition Network", "The Lemon Spoon", "Brussels Rock School", "Innoviris",
+        "ValueBugs", "Fruitcollect", "Club33", "Promethea", "Screen Brussels",
+        "Elzenhof", "Butterfly & Co", "CommPass", "Betuned", "CIEP", "ULB",
+        "Marcolini", "Belgium Travel Company", "FGTB", "Groupe De Cloedt",
+        "Les Sorbiers – Les Tourelles"
+      ]
+    },
+    "closing": {
+      "text": "Een project in gedachten? Laten we praten.",
+      "cta": "Contacteer ons"
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "title": "Contacteer ons",
+      "subtitle": "Een vraag, een privatisering, een project op maat? Schrijf ons — we antwoorden u met plezier."
+    },
+    "channels": {
+      "emailLabel": "Via e-mail",
+      "instagramLabel": "Op Instagram",
+      "instagramHandle": "@dineditbxl"
+    },
+    "form": {
+      "name": "Uw naam",
+      "email": "Uw e-mail",
+      "subject": "Onderwerp",
+      "subjects": {
+        "reservation": "Een diner reserveren",
+        "membre": "Word lid",
+        "privatisation": "Een privatisering aanvragen",
+        "surmesure": "Een evenement op maat",
+        "autre": "Andere"
+      },
+      "message": "Uw bericht",
+      "submit": "Versturen",
+      "note": "Wanneer u op Versturen klikt, opent uw e-mailprogramma met uw bericht vooraf ingevuld."
+    }
+  },
+
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "subtitle": "Alles wat u moet weten voor u een 'dîner inédit' beleeft.",
+    "items": [
+      {
+        "q": "Wat zijn de 'dîners inédits' van Dinédit?",
+        "a": "Dinédit organiseert unieke ervaringen die gastronomie en kunst samenbrengen op ongewone locaties. Elk diner is bedacht als een moment buiten de tijd, waar gasten een kunstenaar, een chef en een geheime plek ontdekken."
+      },
+      {
+        "q": "Hoe neem ik deel aan een diner?",
+        "a": "Schrijf u eenvoudig in op de website of per e-mail via info@dinedit.be. Omdat de plaatsen beperkt zijn (doorgaans 20 tot 30 gasten), raden we aan te reserveren zodra een nieuw evenement wordt aangekondigd."
+      },
+      {
+        "q": "Hoe vaak organiseren jullie publieke evenementen?",
+        "a": "We organiseren ongeveer één diner per maand, oftewel 10 tot 12 afspraken per jaar."
+      },
+      {
+        "q": "Hoeveel kost een avond 'dîner inédit'?",
+        "a": "De prijs van een diner uit de eigen programmatie van Dinédit varieert naargelang de kunstenaar, de chef, de locatie en de formule van de avond. We streven naar een tarief rond 150 € incl. btw per persoon, waarbij sommige uitzonderlijke edities aan een hoger tarief kunnen worden aangeboden. Voor een diner op maat wordt de prijs op offerte opgesteld."
+      },
+      {
+        "q": "Waar vinden de diners plaats?",
+        "a": "De locaties zijn geheim en ongewoon: kunstenaarsateliers, privéappartementen, kapellen, oude fabrieken, galerijen, modernistische huizen, enz. Het exacte adres wordt pas enkele dagen voor het evenement aan de deelnemers onthuld."
+      },
+      {
+        "q": "Wie zijn de gastchefs en kunstenaars?",
+        "a": "Elk diner zet een gastchef in de kijker (soms met ster, soms opkomend) die een uniek, door het evenement geïnspireerd menu bereidt, en een kunstenaar (schilder, muzikant, fotograaf, performer, designer, enz.) die zijn wereld met de gasten deelt. De programmatie is altijd anders om de deelnemers te verrassen."
+      },
+      {
+        "q": "Houden de menu's rekening met dieetwensen?",
+        "a": "Ja. Meld bij uw reservatie uw allergieën, intoleranties of specifieke diëten, zodat de chef het menu kan aanpassen."
+      },
+      {
+        "q": "Is het enkel voor kunst- of gastronomieliefhebbers?",
+        "a": "Helemaal niet. Onze avonden zijn er voor iedereen die nieuwsgierig en open van geest is. Of u nu kunstliefhebber, fijnproever of gewoon op zoek naar een originele ervaring bent, u bent welkom."
+      },
+      {
+        "q": "Mag ik alleen komen?",
+        "a": "Uiteraard. Veel deelnemers komen alleen en gebruiken de diners om nieuwe ontmoetingen te maken in een gezellige sfeer."
+      },
+      {
+        "q": "Is het enkel voor Franstaligen?",
+        "a": "Frans, Engels, Nederlands… en vaak meer: deze diners trekken ook een heel internationaal publiek aan!"
+      },
+      {
+        "q": "Hoeveel mensen nemen deel aan elk evenement?",
+        "a": "De avonden zijn op mensenmaat, meestal beperkt tot maximaal 30 gasten, om nabijheid en uitwisseling met de kunstenaars, chefs en andere gasten te garanderen."
+      },
+      {
+        "q": "Wat verandert het lidmaatschap concreet?",
+        "a": "Lid worden (75 €/jaar) geeft u een voorkeurstarief van -15% op elk diner, toegang tot de fotogalerij van voorbije avonden, een contact met andere leden op aanvraag, en prioritaire informatie over toekomstige exclusieve Dinédit-evenementen."
+      },
+      {
+        "q": "Hoe blijf ik op de hoogte van de volgende evenementen?",
+        "a": "Stuur een e-mail naar info@dinedit.be om aan onze mailinglijst te worden toegevoegd, en volg ons nieuws op Instagram: @dineditbxl."
+      }
+    ]
+  },
+
+  "apropos": {
+    "title": "Wie zijn wij?",
+    "founders": {
+      "intro": "Fany Ramadier en Serge Van Mol hebben heel verschillende parcours — zij in Frankrijk, hij in België.",
+      "serge": "Serge is een Brusselaar en komt uit de Schone Kunsten. Een ondernemer in hart en nieren, gespecialiseerd in het organiseren van evenementen voor bedrijven. Hij kent kunstenaars, gepassioneerde verzamelaars en chefs, en blijft er nieuwe ontmoeten om hun werelden te delen.",
+      "fany": "Fany is Parisienne en komt uit de bedrijfswereld, uit het domein van klantenervaring. Nieuwsgierig naar anderen, brengt ze met plezier mensen van alle leeftijden en achtergronden samen. Als freelance consultant helpt ze bedrijven bij het ontwikkelen van duurzame strategieën en circulaire projecten… waarden die ze ook op Dinédit toepast!",
+      "genesis": "Het mengen van genres en culturen is hun grote passie. Tijdens hun omzwervingen, in New York of Londen, ontdekten ze het concept van exclusieve diners en secret cinema — avonden op geheime plekken, bereikbaar via de achterdeur van een antiquair die enkel ingewijden kennen. Met Dinédit willen ze die dynamiek creëren in een intieme benadering. In 2017 lanceren ze de 'dîners inédits', met als uitdaging conventies te doorbreken en gewoontes te veranderen… want een avontuur begint soms vlakbij huis."
+    },
+    "esg": {
+      "title": "Ons ESG-charter",
+      "subtitle": "Een concreet engagement, van de keuze van producenten tot het beheer van verspilling.",
+      "environment": {
+        "title": "Milieu",
+        "items": [
+          "We geven de voorkeur aan seizoensgebonden, lokale en verantwoorde keuken, in samenwerking met geëngageerde chefs.",
+          "We werken samen met lokale producenten en gepassioneerde ambachtslieden, zoals Domaine du Chenoy, wiens Belgische bubbels Perle de Wallonie (Belbul-gelabeld) onze food-and-wine pairings verfijnen.",
+          "We verminderen voedselverspilling door hoeveelheden aan te passen en overschotten slim te hergebruiken.",
+          "Onze diners worden opgesmukt met lokale en seizoensbloemen, voor elegante en milieuvriendelijke decors."
+        ]
+      },
+      "social": {
+        "title": "Sociaal",
+        "items": [
+          "We brengen kunstenaars, chefs, ambachtslieden en gasten samen in een geest van uitwisseling, overdracht en culturele diversiteit.",
+          "We ondersteunen opkomend talent door hen zichtbaarheid en samenwerkingskansen te bieden.",
+          "We verkiezen intieme tafels om menselijke uitwisseling, gezelligheid en het smeden van echte banden te bevorderen.",
+          "We stellen ons netwerk en onze zichtbaarheid ten dienste van verenigingen zoals CREHAM, om hen te helpen bekend te worden en nuttige ontmoetingen voor hun zaak te creëren."
+        ]
+      },
+      "governance": {
+        "title": "Bestuur",
+        "items": [
+          "We werken met transparantie en integriteit, met respect voor mensen en partnerschappen.",
+          "We bevorderen duurzame samenwerkingen met onze partners, vanuit een logica van wederzijds vertrouwen."
+        ]
+      }
+    }
+  }
+}

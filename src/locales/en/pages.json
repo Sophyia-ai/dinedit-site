@@ -1,1 +1,208 @@
-{}
+{
+  "membre": {
+    "hero": {
+      "title": "Become a Dinédit member",
+      "subtitle": "A status designed for those who come back — because the best way to experience a Dinédit is often to return."
+    },
+    "benefits": {
+      "title": "What it actually changes",
+      "items": [
+        {
+          "title": "A preferential rate",
+          "text": "-15% on every dinner in the programme, applied automatically at booking. A button lets you request an invoice."
+        },
+        {
+          "title": "Access to event photos",
+          "text": "Browse the images from every past edition."
+        },
+        {
+          "title": "Introductions between members",
+          "text": "On request, be put in touch with other guests — no public directory, always with respect for everyone."
+        },
+        {
+          "title": "New editions first",
+          "text": "Members are the first to hear about upcoming exclusive events."
+        }
+      ]
+    },
+    "price": {
+      "title": "The rate",
+      "amount": "€75",
+      "period": "/ year",
+      "text": "A membership quickly paid off: from your 3rd booking in the year, the savings exceed the cost of the membership.",
+      "note": "Automatic yearly renewal, cancellable at any time before renewal."
+    },
+    "cta": "Become a member"
+  },
+
+  "entreprises": {
+    "hero": {
+      "title": "A Dinédit for your company",
+      "subtitle": "Creative team building, an intimate dinner or a corporate evening: living an event with Dinédit means stepping out of off-the-shelf events."
+    },
+    "intro": "Creating a truly memorable encounter takes, beyond professionalism, genuine alchemy. The technical elements are essential, but people always come first — subtle connection and an aesthetic setting are at the heart of every Dinédit project.",
+    "options": {
+      "title": "Two ways to experience a Dinédit for your company",
+      "option1": {
+        "kicker": "Option 1",
+        "title": "Privatise an evening from the programme",
+        "text": "Book one of our scheduled dates exclusively — for example the day before or after a public dinner — for your teams, clients or partners, in the same venue, with the same chef and the same artist as the public edition.",
+        "cta": "Request a private event"
+      },
+      "option2": {
+        "kicker": "Option 2",
+        "title": "A fully bespoke Dinédit",
+        "intro": "From the simplest request to strategic design meeting a precise need, we create the alchemy with you:",
+        "items": [
+          "A secret, exclusive venue chosen for your event",
+          "A culinary experience crafted by a talented chef",
+          "An original artistic dimension (live painting, staging, creative workshop)",
+          "Committed partners (photographers, florists, videographers)",
+          "Personalised, flexible and creative support, from brief to evening",
+          "A concrete ESG commitment, from choosing producers to managing waste"
+        ],
+        "cta": "Create your bespoke moment"
+      }
+    },
+    "partners": {
+      "title": "They trusted us",
+      "list": [
+        "Actiris", "Beliris", "The European Commission", "VUB", "Siekkens",
+        "Transition Network", "The Lemon Spoon", "Brussels Rock School", "Innoviris",
+        "ValueBugs", "Fruitcollect", "Club33", "Promethea", "Screen Brussels",
+        "Elzenhof", "Butterfly & Co", "CommPass", "Betuned", "CIEP", "ULB",
+        "Marcolini", "Belgium Travel Company", "FGTB", "Groupe De Cloedt",
+        "Les Sorbiers – Les Tourelles"
+      ]
+    },
+    "closing": {
+      "text": "Something in mind? Let's talk.",
+      "cta": "Contact us"
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "title": "Contact us",
+      "subtitle": "A question, a private event, a bespoke project? Write to us — we'll be glad to reply."
+    },
+    "channels": {
+      "emailLabel": "By email",
+      "instagramLabel": "On Instagram",
+      "instagramHandle": "@dineditbxl"
+    },
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "subject": "Subject",
+      "subjects": {
+        "reservation": "Book a dinner",
+        "membre": "Become a member",
+        "privatisation": "Request a private event",
+        "surmesure": "A bespoke event",
+        "autre": "Other"
+      },
+      "message": "Your message",
+      "submit": "Send",
+      "note": "When you click Send, your email app opens with your message pre-filled."
+    }
+  },
+
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything to know before experiencing a signature dinner.",
+    "items": [
+      {
+        "q": "What are Dinédit's “signature dinners”?",
+        "a": "Dinédit creates unique experiences that blend gastronomy and art in unusual venues. Each dinner is designed as a moment out of time, where guests discover an artist, a chef and a secret place."
+      },
+      {
+        "q": "How do I take part in a dinner?",
+        "a": "Simply sign up on the website or by email at info@dinedit.be. As places are limited (usually 20 to 30 guests), we recommend booking as soon as a new event is announced."
+      },
+      {
+        "q": "How often do you hold public events?",
+        "a": "We organise about one dinner a month, i.e. 10 to 12 dates a year."
+      },
+      {
+        "q": "How much does a “signature dinner” evening cost?",
+        "a": "The price of a dinner from Dinédit's own programme varies according to the artist, the chef, the venue and the format of the evening. We aim to keep a rate of around €150 incl. VAT per person, with some exceptional editions offered at a higher rate. For a bespoke dinner, the price is drawn up on quotation."
+      },
+      {
+        "q": "Where do the dinners take place?",
+        "a": "The venues are secret and unusual: artists' studios, private apartments, chapels, former factories, galleries, modernist houses, and more. The exact address is revealed only to participants a few days before the event."
+      },
+      {
+        "q": "Who are the guest chefs and artists?",
+        "a": "Each dinner showcases a guest chef (sometimes starred, sometimes emerging) who cooks a unique menu inspired by the event, and an artist (painter, musician, photographer, performer, designer, etc.) who shares their world with the guests. The line-up is always different to surprise participants."
+      },
+      {
+        "q": "Do the menus take dietary requirements into account?",
+        "a": "Yes. When booking, please let us know about any allergies, intolerances or specific diets so the chef can adapt the menu."
+      },
+      {
+        "q": "Is it only for art or food lovers?",
+        "a": "Not at all. Our evenings are for anyone curious and open-minded. Whether you're an art lover, a foodie, or simply after an original experience, you're welcome."
+      },
+      {
+        "q": "Can I come on my own?",
+        "a": "Of course. Many participants come alone and use the dinners to make new connections in a friendly atmosphere."
+      },
+      {
+        "q": "Is it only for French speakers?",
+        "a": "French, English, Dutch… and often more: these dinners also attract a very international crowd!"
+      },
+      {
+        "q": "How many people attend each event?",
+        "a": "The evenings are human-sized, usually limited to a maximum of 30 guests, to ensure closeness and exchange with the artists, chefs and other guests."
+      },
+      {
+        "q": "What does membership actually change?",
+        "a": "Becoming a member (€75/year) gives you a preferential rate of -15% on every dinner, access to the photo gallery of past evenings, an introduction to other members on request, and priority information about future exclusive Dinédit events."
+      },
+      {
+        "q": "How can I keep up with upcoming events?",
+        "a": "Just send an email to info@dinedit.be to be added to our mailing list, and follow our news on Instagram: @dineditbxl."
+      }
+    ]
+  },
+
+  "apropos": {
+    "title": "Who are we?",
+    "founders": {
+      "intro": "Fany Ramadier and Serge Van Mol have very different backgrounds — she in France, he in Belgium.",
+      "serge": "Serge is from Brussels and trained at the Fine Arts. An entrepreneur at heart, he specialises in organising events for companies. He knows artists, passionate collectors and chefs, and never stops meeting new ones and sharing their worlds.",
+      "fany": "Fany is Parisian and comes from the corporate world of customer experience. Curious about others, she loves bringing together people of all ages and walks of life. A freelance consultant, she helps companies develop sustainable strategies and circular projects… values she also applies to Dinédit!",
+      "genesis": "Blending genres and cultures is their great passion. On their travels, in New York or London, they discovered the concept of exclusive dinners and secret cinema — evenings held in secret places, reached through the back door of an antique dealer known only to insiders. With Dinédit, they set out to create that dynamic in an intimate approach. In 2017 they launched the signature dinners, challenging themselves to shake up conventions and change habits… because adventure sometimes begins just around the corner."
+    },
+    "esg": {
+      "title": "Our ESG charter",
+      "subtitle": "A concrete commitment, from choosing producers to managing waste.",
+      "environment": {
+        "title": "Environment",
+        "items": [
+          "We favour seasonal, local and responsible cuisine, working with committed chefs.",
+          "We work with local producers and passionate artisans, such as Domaine du Chenoy, whose Belgian sparkling wines Perle de Wallonie (Belbul-certified) elevate our food-and-wine pairings.",
+          "We reduce food waste by adjusting quantities and cleverly reusing surpluses.",
+          "Our dinners are adorned with local, seasonal flowers for elegant, planet-friendly settings."
+        ]
+      },
+      "social": {
+        "title": "Social",
+        "items": [
+          "We bring together artists, chefs, artisans and guests in a spirit of exchange, transmission and cultural diversity.",
+          "We support emerging talents by offering them visibility and collaboration opportunities.",
+          "We favour intimate tables to encourage human exchange, conviviality and the creation of genuine bonds.",
+          "We put our network and visibility at the service of associations such as CREHAM, helping them gain recognition and create meaningful encounters for their cause."
+        ]
+      },
+      "governance": {
+        "title": "Governance",
+        "items": [
+          "We work with transparency and integrity, respecting people and partnerships.",
+          "We foster lasting collaborations with our partners, in a logic of mutual trust."
+        ]
+      }
+    }
+  }
+}
