@@ -2131,7 +2131,16 @@
         function createNavItem(item, isQuickAction) {
           const hasChildren = item.children && item.children.length > 0;
           if (!hasChildren) {
-            // Simple button
+            // Rubrique-lien : si item.url est défini, la rubrique mène directement
+            // à la page correspondante (pas de prompt chat).
+            if (item.url) {
+              const a = document.createElement("a");
+              a.className = isQuickAction ? "sophyia-quick-btn" : "sophyia-site-nav";
+              a.textContent = item.label;
+              a.href = item.url;
+              return a;
+            }
+            // Simple button (prompt chat)
             const btn = document.createElement("button");
             btn.className = isQuickAction ? "sophyia-quick-btn" : "sophyia-site-nav";
             btn.textContent = item.label;
@@ -2157,6 +2166,16 @@
           const dd = document.createElement("div");
           dd.className = "sophyia-nav-dropdown";
           item.children.forEach(child => {
+            // Enfant-lien : si child.url est défini, mène directement à la page.
+            if (child.url) {
+              const a = document.createElement("a");
+              a.className = "sophyia-nav-sub";
+              a.textContent = child.label;
+              a.href = child.url;
+              a.addEventListener("click", () => { wrap.classList.remove("open"); });
+              dd.appendChild(a);
+              return;
+            }
             const sub = document.createElement("button");
             sub.className = "sophyia-nav-sub";
             sub.textContent = child.label;

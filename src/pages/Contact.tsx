@@ -10,6 +10,7 @@ import { Mail, Instagram } from 'lucide-react'
 
 import { siteConfig } from '../config/site'
 import { useSeo } from '../lib/useSeo'
+import ObfuscatedEmail from '../components/ObfuscatedEmail'
 
 export default function Contact() {
   const { t } = useTranslation('pages')
@@ -41,15 +42,15 @@ export default function Contact() {
       <div className="grid md:grid-cols-[1fr_1.4fr] gap-10 max-w-4xl mx-auto">
         {/* Canaux directs */}
         <div className="space-y-5">
-          <a href={`mailto:${email}`} className="flex items-center gap-3 rounded-xl border border-nuit/10 bg-white p-4 hover:border-gold transition-colors group">
+          <div className="flex items-center gap-3 rounded-xl border border-nuit/10 bg-white p-4">
             <span className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0">
               <Mail className="w-5 h-5" strokeWidth={1.5} />
             </span>
             <span>
               <span className="block text-xs uppercase tracking-wider text-nuit/50">{t('contact.channels.emailLabel')}</span>
-              <span className="text-sm text-nuit group-hover:text-gold transition-colors">{email}</span>
+              <ObfuscatedEmail className="text-sm text-nuit hover:text-gold transition-colors cursor-pointer" />
             </span>
-          </a>
+          </div>
           {siteConfig.social.instagram && (
             <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl border border-nuit/10 bg-white p-4 hover:border-gold transition-colors group">
               <span className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold shrink-0">

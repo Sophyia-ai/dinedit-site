@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
 import BrandLogo from '../components/BrandLogo'
+import ObfuscatedEmail from '../components/ObfuscatedEmail'
 
 export default function Footer() {
   const { t } = useTranslation('common')
@@ -19,7 +20,6 @@ export default function Footer() {
     window.dispatchEvent(new CustomEvent('open-legal', { detail: kind }))
   }
 
-  const email = t('common.email')
   const city = t('common.city')
   const country = t('common.country')
 
@@ -56,9 +56,10 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-semibold text-nuit uppercase tracking-wider mb-3">{t('footer.contact')}</h4>
             <div className="space-y-2 text-sm">
-              <a href={`mailto:${email}`} className="flex items-center gap-2 text-nuit/70 hover:text-gold transition-colors">
-                <Mail className="w-4 h-4" /> {email}
-              </a>
+              <span className="flex items-center gap-2 text-nuit/70">
+                <Mail className="w-4 h-4 shrink-0" />
+                <ObfuscatedEmail className="hover:text-gold transition-colors cursor-pointer text-left" />
+              </span>
               <div className="flex items-center gap-2 text-nuit/70">
                 <MapPin className="w-4 h-4" /> {city}, {country}
               </div>
