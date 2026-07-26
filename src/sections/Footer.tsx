@@ -26,7 +26,7 @@ export default function Footer() {
   return (
     <footer className="bg-bone text-nuit border-t border-nuit/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           <div>
             <BrandLogo className="h-12 mb-4" tone="nuit" label={siteConfig.brand.name} />
             <p className="text-xs uppercase tracking-[0.25em] text-gold">{t('footer.tagline')}</p>
@@ -66,18 +66,23 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Menu — mêmes rubriques que le drawer (SEO + accès direct) */}
           <div>
-            <h4 className="text-xs font-semibold text-nuit uppercase tracking-wider mb-3">Navigation</h4>
+            <h4 className="text-xs font-semibold text-nuit uppercase tracking-wider mb-3">{t('footer.menu')}</h4>
             <div className="space-y-2 text-sm">
-              <Link to={`${prefix}/agenda`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('nav.diners')}
-              </Link>
-              <Link to={`${prefix}/a-propos`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('nav.apropos')}
-              </Link>
-              <Link to={`${prefix}/faq`} className="block text-nuit/70 hover:text-gold transition-colors">
-                {t('nav.faq')}
-              </Link>
+              <Link to={`${prefix}/agenda`} className="block text-nuit/70 hover:text-gold transition-colors">{t('nav.diners')}</Link>
+              <Link to={`${prefix}/devenir-membre`} className="block text-nuit/70 hover:text-gold transition-colors">{t('nav.membre')}</Link>
+              <Link to={`${prefix}/entreprises`} className="block text-nuit/70 hover:text-gold transition-colors">{t('nav.entreprises')}</Link>
+              <Link to={`${prefix}/a-propos`} className="block text-nuit/70 hover:text-gold transition-colors">{t('nav.apropos')}</Link>
+              <Link to={`${prefix}/contact`} className="block text-nuit/70 hover:text-gold transition-colors">{t('nav.contact')}</Link>
+              <Link to={`${prefix}/faq`} className="block text-nuit/70 hover:text-gold transition-colors">{t('nav.faq')}</Link>
+            </div>
+          </div>
+
+          {/* Légal */}
+          <div>
+            <h4 className="text-xs font-semibold text-nuit uppercase tracking-wider mb-3">{t('footer.legal')}</h4>
+            <div className="space-y-2 text-sm">
               <button onClick={() => openLegal('mentions')} className="block text-nuit/70 hover:text-gold transition-colors text-left">
                 {t('footer.mentions')}
               </button>

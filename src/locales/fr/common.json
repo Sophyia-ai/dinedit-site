@@ -29,7 +29,9 @@
     "sources": "Sources",
     "mentions": "Mentions légales",
     "privacy": "Confidentialité",
-    "cgu": "Conditions générales"
+    "cgu": "Conditions générales",
+    "menu": "Menu",
+    "legal": "Informations légales"
   },
   "stub": {
     "soon": "Contenu à venir"
