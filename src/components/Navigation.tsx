@@ -107,7 +107,7 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-        solid ? 'bg-bone/95 backdrop-blur-md border-b border-nuit/10' : 'bg-transparent'
+        solid ? 'bg-bone border-b border-nuit/10 shadow-[0_1px_12px_rgba(27,42,74,0.06)]' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
