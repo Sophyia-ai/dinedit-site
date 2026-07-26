@@ -1,0 +1,212 @@
+{
+  "membre": {
+    "hero": {
+      "title": "Devenez membre Dinédit",
+      "subtitle": "Un statut pensé pour ceux qui reviennent, parce que la meilleure façon de vivre un Dinédit, c'est souvent d'y revenir."
+    },
+    "benefits": {
+      "title": "Ce que ça change concrètement",
+      "items": [
+        {
+          "title": "Un tarif préférentiel",
+          "text": "-15 % sur chaque dîner de la programmation, appliqué automatiquement à la réservation. Un bouton vous permet de demander une facture."
+        },
+        {
+          "title": "L'accès aux photos des soirées",
+          "text": "Retrouvez les images de chaque édition passée."
+        },
+        {
+          "title": "La mise en relation entre membres",
+          "text": "Sur simple demande, soyez mis en contact avec d'autres convives — sans annuaire public, dans le respect de chacun."
+        },
+        {
+          "title": "Les nouveautés en priorité",
+          "text": "Les membres sont informés en premier des futurs événements exclusifs."
+        }
+      ]
+    },
+    "price": {
+      "title": "Le tarif",
+      "amount": "75 €",
+      "period": "/ an",
+      "text": "Une cotisation vite rentabilisée : dès votre 3ᵉ réservation dans l'année, l'économie réalisée dépasse le montant de la cotisation.",
+      "note": "Reconduction tacite chaque année, résiliable à tout moment avant le renouvellement."
+    },
+    "cta": "Devenez membre"
+  },
+
+  "entreprises": {
+    "hero": {
+      "title": "Un Dinédit pour votre entreprise",
+      "subtitle": "Team building créatif, dîner intimiste ou soirée corporate : vivre un événement avec Dinédit, c'est sortir du prêt-à-porter événementiel."
+    },
+    "intro": "Créer une rencontre qui marque durablement demande, au-delà du professionnalisme, une véritable alchimie. Les éléments techniques sont indispensables, mais l'humain prime toujours — la connexion subtile et le cadre esthétique sont au cœur de chaque projet Dinédit.",
+    "options": {
+      "title": "Deux façons de vivre un Dinédit pour votre entreprise",
+      "option1": {
+        "kicker": "Option 1",
+        "title": "Privatiser une soirée de la programmation",
+        "text": "Réservez en exclusivité une de nos dates programmées, par exemple la veille ou le lendemain d'un dîner public, pour vos équipes, clients ou partenaires, dans le même lieu, avec le même chef et le même artiste que l'édition publique.",
+        "cta": "Demandez une privatisation"
+      },
+      "option2": {
+        "kicker": "Option 2",
+        "title": "Un Dinédit entièrement sur mesure",
+        "intro": "De la demande la plus simple jusqu'à la conception stratégique répondant à un besoin précis, nous créons l'alchimie avec vous :",
+        "items": [
+          "Un lieu secret et exclusif, choisi pour votre événement",
+          "Une expérience culinaire signée par un chef talentueux",
+          "Une dimension artistique originale (live painting, mise en scène, atelier créatif)",
+          "Des prestataires engagés (photographes, fleuristes, vidéastes)",
+          "Un accompagnement personnalisé, souple et créatif, du brief à la soirée",
+          "Un engagement ESG concret, du choix des producteurs à la gestion du gaspillage"
+        ],
+        "cta": "Créez votre moment sur mesure"
+      }
+    },
+    "partners": {
+      "title": "Ils nous ont fait confiance",
+      "list": [
+        "Actiris", "Beliris", "La Commission Européenne", "VUB", "Siekkens",
+        "Transition Network", "The Lemon Spoon", "Brussels Rock School", "Innoviris",
+        "ValueBugs", "Fruitcollect", "Club33", "Promethea", "Screen Brussels",
+        "Elzenhof", "Butterfly & Co", "CommPass", "Betuned", "CIEP", "ULB",
+        "Marcolini", "Belgium Travel Company", "FGTB", "Groupe De Cloedt",
+        "Les Sorbiers – Les Tourelles"
+      ]
+    },
+    "closing": {
+      "text": "Un projet en tête ? Parlons-en.",
+      "cta": "Contactez-nous"
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "title": "Contactez-nous",
+      "subtitle": "Une question, une privatisation, un projet sur mesure ? Écrivez-nous, nous vous répondons avec plaisir."
+    },
+    "channels": {
+      "emailLabel": "Par e-mail",
+      "instagramLabel": "Sur Instagram",
+      "instagramHandle": "@dineditbxl"
+    },
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre e-mail",
+      "subject": "Objet",
+      "subjects": {
+        "reservation": "Réserver un dîner",
+        "membre": "Devenir membre",
+        "privatisation": "Demander une privatisation",
+        "surmesure": "Un événement sur mesure",
+        "autre": "Autre"
+      },
+      "message": "Votre message",
+      "submit": "Envoyer",
+      "note": "En cliquant sur Envoyer, votre logiciel de messagerie s'ouvre avec votre message pré-rempli."
+    }
+  },
+
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce qu'il faut savoir avant de vivre un dîner inédit.",
+    "items": [
+      {
+        "q": "Qu'est-ce que « les dîners inédits » de Dinédit ?",
+        "a": "Dinédit organise des expériences uniques qui allient gastronomie et art dans des lieux insolites. Chaque dîner est pensé comme une parenthèse hors du temps, où les convives découvrent un artiste, un chef et un lieu secret."
+      },
+      {
+        "q": "Comment participer à un dîner ?",
+        "a": "Il suffit de s'inscrire sur le site web ou par mail à info@dinedit.be. Les places étant limitées (généralement 20 à 30 convives), nous conseillons de réserver dès l'annonce d'un nouvel événement."
+      },
+      {
+        "q": "À quelle fréquence avez-vous des événements publics ?",
+        "a": "Nous organisons environ un dîner par mois, soit 10 à 12 rendez-vous par an."
+      },
+      {
+        "q": "Combien coûte une soirée « dîner inédit » ?",
+        "a": "Le prix d'un dîner de la programmation propre de Dinédit varie selon l'artiste, le chef, le lieu et la formule de la soirée. Nous cherchons à maintenir un tarif autour de 150 € TTC par personne, certaines éditions exceptionnelles pouvant être proposées à un tarif plus élevé. Pour un dîner sur-mesure, le prix est élaboré sur devis."
+      },
+      {
+        "q": "Où se déroulent les dîners ?",
+        "a": "Les lieux sont secrets et insolites : ateliers d'artistes, appartements privés, chapelles, anciennes usines, galeries, maisons modernistes, etc. L'adresse exacte est révélée uniquement aux participants quelques jours avant l'événement."
+      },
+      {
+        "q": "Qui sont les chefs et les artistes invités ?",
+        "a": "Chaque dîner met à l'honneur un chef invité (parfois étoilé, parfois émergent) qui cuisine un menu unique inspiré de l'événement, et un artiste (peintre, musicien, photographe, performeur, designer, etc.) qui partage son univers avec les convives. La programmation est toujours différente pour surprendre les participants."
+      },
+      {
+        "q": "Est-ce que les menus tiennent compte des régimes alimentaires ?",
+        "a": "Oui. Lors de la réservation, merci de nous signaler vos allergies, intolérances ou régimes spécifiques afin que le chef puisse adapter le menu."
+      },
+      {
+        "q": "Est-ce réservé aux passionnés d'art ou de gastronomie ?",
+        "a": "Pas du tout. Nos soirées s'adressent à toutes les personnes curieuses et ouvertes d'esprit. Que vous soyez amateur d'art, gastronome, ou simplement en quête d'une expérience originale, vous êtes les bienvenus."
+      },
+      {
+        "q": "Puis-je venir seul(e) ?",
+        "a": "Bien sûr. Beaucoup de participants viennent seuls et profitent des dîners pour faire de nouvelles rencontres dans une ambiance conviviale."
+      },
+      {
+        "q": "Est-ce réservé aux francophones ?",
+        "a": "Français, anglais, néerlandais… et souvent davantage : ces dîners attirent aussi des profils très internationaux !"
+      },
+      {
+        "q": "Combien de personnes participent à chaque événement ?",
+        "a": "Les soirées sont à taille humaine, limitées en général à 30 convives maximum, afin de garantir proximité et échanges avec les artistes, les chefs et les autres invités."
+      },
+      {
+        "q": "Qu'est-ce que le statut de membre change concrètement ?",
+        "a": "Devenir membre (75 €/an) vous donne un tarif préférentiel de -15 % sur chaque dîner, l'accès à la galerie photo des soirées passées, une mise en relation avec d'autres membres sur demande, et une information prioritaire sur les futurs événements exclusifs Dinédit."
+      },
+      {
+        "q": "Comment être tenu au courant des prochains événements ?",
+        "a": "Envoyez un mail à info@dinedit.be pour être ajouté à notre liste de diffusion, et suivez nos actualités sur Instagram : @dineditbxl."
+      },
+      {
+        "q": "Peut-on privatiser un dîner Dinédit ?",
+        "a": "Oui, sur demande. Nous organisons également des événements sur mesure pour des entreprises, associations ou groupes privés souhaitant vivre une expérience artistique et gastronomique exclusive."
+      }
+    ]
+  },
+
+  "apropos": {
+    "title": "Qui sommes-nous ?",
+    "founders": {
+      "intro": "Fany Ramadier et Serge Van Mol ont des parcours très différents, elle en France, lui en Belgique.",
+      "serge": "Serge est bruxellois, il vient des Beaux-Arts. Entrepreneur dans l'âme, il est spécialiste de l'organisation d'événements pour les entreprises. Il connaît des artistes, des collectionneurs passionnés, des chefs, et n'a de cesse d'en rencontrer de nouveaux et de partager leurs univers.",
+      "fany": "Fany est parisienne, elle vient du monde de l'entreprise dans le domaine de l'expérience client. Curieuse des autres, elle s'amuse à faire se rencontrer des personnes de tous âges et milieux confondus. Consultante freelance, elle aide les entreprises à développer des stratégies durables et des projets circulaires… des valeurs qu'elle applique aussi à Dinédit !",
+      "genesis": "Le mélange des genres et des cultures est leur grande passion. Au gré de leurs pérégrinations, à New York ou à Londres, ils découvrent le concept de dîners exclusifs et de secret cinema — ces soirées qui se tiennent dans des lieux secrets, accessibles par la porte dérobée d'un antiquaire connue des seuls initiés. Avec Dinédit, ils désirent créer cette dynamique dans une approche intimiste. En 2017, ils lancent les dîners inédits et se donnent pour défi de bousculer les conventions et de changer les habitudes… parce que l'aventure commence parfois à deux pas de chez soi."
+    },
+    "esg": {
+      "title": "Notre charte ESG",
+      "subtitle": "Un engagement concret, du choix des producteurs à la gestion du gaspillage.",
+      "environment": {
+        "title": "Environnement",
+        "items": [
+          "Nous privilégions une cuisine de saison, locale et responsable, en collaboration avec des chefs engagés.",
+          "Nous collaborons avec des producteurs locaux et des artisans passionnés, comme le Domaine du Chenoy, dont les bulles belges Perle de Wallonie (labellisées Belbul) subliment nos accords mets-vins.",
+          "Nous réduisons le gaspillage alimentaire en adaptant les quantités et en réutilisant intelligemment les excédents.",
+          "Nos dîners s'ornent de fleurs locales et de saison, pour des décors élégants et respectueux de la planète."
+        ]
+      },
+      "social": {
+        "title": "Social",
+        "items": [
+          "Nous rassemblons artistes, chefs, artisans et convives dans un esprit d'échange, de transmission et de diversité culturelle.",
+          "Nous soutenons des talents émergents en leur offrant une visibilité et des opportunités de collaboration.",
+          "Nous privilégions des tables intimistes, afin de favoriser les échanges humains, la convivialité et la création de véritables liens.",
+          "Nous mettons notre réseau et notre visibilité au service d'associations comme le CREHAM, pour les aider à se faire connaître et à créer des rencontres utiles à leur cause."
+        ]
+      },
+      "governance": {
+        "title": "Gouvernance",
+        "items": [
+          "Nous travaillons avec transparence et intégrité, dans le respect des personnes et des partenariats.",
+          "Nous favorisons les collaborations durables avec nos partenaires, dans une logique de confiance mutuelle."
+        ]
+      }
+    }
+  }
+}

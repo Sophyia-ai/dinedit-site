@@ -55,11 +55,16 @@ module.exports = {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0)' },
         },
+        'marquee': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         'fade-in-up': 'fade-in-up 0.6s ease-out',
         'fade-in': 'fade-in 0.25s ease-out',
         'slide-in-right': 'slide-in-right 0.3s cubic-bezier(0.22, 1, 0.36, 1)',
+        'marquee': 'marquee 40s linear infinite',
       },
     },
   },

@@ -1,49 +1,62 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// APropos.tsx — « À propos » Dinédit : Serge & Fany, fondateurs (2017) + genèse.
-//
-// Refonte Track 1 de l'ancien Architectes.tsx (route /architectes → /a-propos).
-// Contenu conservé (namespace i18n 'architectes') — raffinage copy = Track 2.
+// APropos.tsx — « À propos » (brief §5) : histoire des fondateurs + charte ESG.
+// Namespace i18n 'pages' > apropos. Photos fondateurs à fournir (Track 2+).
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { useTranslation } from 'react-i18next'
+import { Leaf, HeartHandshake, Scale } from 'lucide-react'
 
 export default function APropos() {
-  const { t } = useTranslation('architectes')
+  const { t } = useTranslation('pages')
+
+  const pillars = [
+    { icon: Leaf,           key: 'environment' },
+    { icon: HeartHandshake, key: 'social' },
+    { icon: Scale,          key: 'governance' },
+  ] as const
 
   return (
     <div className="pb-24">
-      <div className="max-w-4xl mx-auto px-6">
-        <header className="text-center mb-16">
-          <h1 className="font-display text-4xl md:text-5xl text-nuit">{t('title')}</h1>
-          <p className="mt-4 text-nuit/70 max-w-xl mx-auto font-display text-xl">
-            {t('subtitle')}
-          </p>
-        </header>
+      {/* Fondateurs */}
+      <header className="text-center max-w-3xl mx-auto pt-8 pb-10">
+        <h1 className="font-display text-4xl md:text-5xl text-nuit">{t('apropos.title')}</h1>
+      </header>
 
-        <div className="grid md:grid-cols-2 gap-10 mb-20">
-          {(['serge', 'fany'] as const).map(person => (
-            <article key={person} className="text-center md:text-left">
-              <div className="aspect-square rounded-2xl bg-nuit/5 border border-nuit/10 mb-5 flex items-center justify-center">
-                <span className="text-nuit/30 text-sm italic">Photo {t(`${person}.name`)}</span>
-              </div>
-              <h2 className="font-display text-2xl text-nuit">{t(`${person}.name`)}</h2>
-              <p className="text-xs uppercase tracking-[0.2em] text-gold mt-1 mb-4">
-                {t(`${person}.role`)}
-              </p>
-              <p className="text-nuit/80 leading-relaxed text-sm">{t(`${person}.bio`)}</p>
-            </article>
-          ))}
+      <section className="max-w-2xl mx-auto space-y-5 text-nuit/80 leading-relaxed mb-20">
+        <p className="font-display text-xl text-nuit text-center">{t('apropos.founders.intro')}</p>
+        <p>{t('apropos.founders.serge')}</p>
+        <p>{t('apropos.founders.fany')}</p>
+        <p>{t('apropos.founders.genesis')}</p>
+      </section>
+
+      {/* Charte ESG */}
+      <section className="border-t border-nuit/10 pt-16">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <h2 className="font-display text-3xl text-nuit">{t('apropos.esg.title')}</h2>
+          <p className="mt-3 text-nuit/60">{t('apropos.esg.subtitle')}</p>
         </div>
 
-        <section className="border-t border-nuit/10 pt-14">
-          <h2 className="font-display text-3xl text-nuit text-center mb-6">
-            {t('genesis.title')}
-          </h2>
-          <p className="text-nuit/80 leading-relaxed max-w-2xl mx-auto text-center">
-            {t('genesis.text')}
-          </p>
-        </section>
-      </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {pillars.map(({ icon: Icon, key }) => {
+            const items = t(`apropos.esg.${key}.items`, { returnObjects: true }) as string[]
+            return (
+              <div key={key} className="rounded-2xl border border-nuit/10 bg-white p-6">
+                <div className="w-11 h-11 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-4">
+                  <Icon className="w-5 h-5" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-display text-xl text-nuit mb-4">{t(`apropos.esg.${key}.title`)}</h3>
+                <ul className="space-y-3">
+                  {items.map((it, i) => (
+                    <li key={i} className="text-sm text-nuit/70 leading-relaxed border-l-2 border-gold/30 pl-3">
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
+        </div>
+      </section>
     </div>
   )
 }
