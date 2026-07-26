@@ -5,17 +5,35 @@
     "cta_agenda": "Vertel me erover",
     "cta_btob": "Een evenement samenstellen"
   },
+  "identity": {
+    "kicker": "De alchemie van de ontmoeting, de kunst om unieke ervaringen te creëren.",
+    "p1": "We bedenken evenementen op maat voor bedrijven en particulieren en bieden onze eigen programmatie van unieke diners aan. We weigeren confectie-evenementen: elk project is zo bedacht dat de alchemie van de ontmoeting het evenement zelf overstijgt.",
+    "p2": "Elke maand organiseert Dinédit een exclusief diner op een ongewone locatie voor een twintigtal gasten. Elke editie zet een kunstenaar, een chef en een plek in de kijker, voor een intieme en gezellige ervaring die de verbeelding prikkelt en authentieke uitwisseling aanmoedigt.",
+    "closing": "Dinédit verandert uw ontmoetingen in menselijke, esthetische en professionele meerwaarde."
+  },
   "intro": {
     "title": "Twee manieren om aan te sluiten",
     "voie_diner": {
-      "label": "Aansluiten bij een uniek diner",
-      "text": "Reserveer je plek voor een van de komende unieke diners. In persoonlijke naam — of in groep namens je bedrijf (dezelfde prijs per persoon, aangepaste ontvangst vooraf afgestemd met het huis).",
-      "cta": "Bekijk de agenda"
+      "label": "Bekijk de programmatie",
+      "text": "Ontdek onze volgende programmatie: een geheime locatie, een chef, een kunstenaar, een twintigtal gasten.",
+      "cta": "Reserveer uw plek"
     },
     "voie_compose": {
-      "label": "Stel je eigen evenement samen",
-      "text": "Serge en Fany stellen samen met jou een evenement op maat samen: afterwork, productlancering, privé-avond, bruiloft. Onze werkwijze in drie woorden: intimiteit, verrassing, circulariteit.",
-      "cta": "Ontmoet de Architecten"
+      "label": "Een evenement organiseren",
+      "text": "Privatiseer een van onze avonden, of laten we samen een volledig op maat gemaakte Dinédit ontwerpen.",
+      "cta": "Contacteer ons"
     }
+  },
+  "testimonials": {
+    "title": "Wat onze gasten zeggen",
+    "items": [
+      { "quote": "Proficiat! De avond was een prachtige ervaring. Ik ben dol op jullie concept. Jullie hebben mijn verwachtingen overtroffen. Het menu, de wijnen, de bediening en de sfeer waren onberispelijk.", "author": "Claire S." },
+      { "quote": "Een immense dankjewel voor deze absoluut magische avond! Jullie hebben een moment gecreëerd dat kunst, emotie en gastronomie met veel finesse verweefde. Ik was oprecht geraakt door de sfeer die jullie wisten te creëren. Bedankt voor de connecties!", "author": "Laurent" },
+      { "quote": "Prachtige avond! Het was een groot succes en daarvoor danken we jullie. Uitstekend eten, superbe sfeer en een heel boeiend publiek. We kijken uit naar de volgende uitnodigingen.", "author": "Hugues" },
+      { "quote": "Nogmaals bravo voor de organisatie van het diner bij KoolKoor, het was zeer geslaagd!", "author": "Claire M." },
+      { "quote": "Nogmaals bedankt voor jullie ontvangst, jullie passie en die gulheid die jullie kenmerkt.", "author": "Danièle" },
+      { "quote": "Een heel grote dankjewel voor de organisatie en de ervaring van gisteravond, het was top!", "author": "Géraldine" },
+      { "quote": "Heel erg bedankt voor deze schitterende avond. Alles was perfect!", "author": "Myleen" }
+    ]
   }
 }
