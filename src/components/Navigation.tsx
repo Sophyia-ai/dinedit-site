@@ -17,6 +17,7 @@ import { useTranslation } from 'react-i18next'
 import { siteConfig } from '../config/site'
 import { useAppLanguage } from '../context/LanguageContext'
 import LanguagePill from './LanguagePill'
+import BrandLogo from './BrandLogo'
 
 export default function Navigation() {
   const { t } = useTranslation('common')
@@ -111,12 +112,8 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex items-center justify-between gap-4">
-          <Link to={homeHref} className="shrink-0" aria-label={siteConfig.brand.name}>
-            <img
-              src={siteConfig.brand.logoPath}
-              alt={siteConfig.brand.name}
-              className={`h-9 md:h-10 w-auto transition-all ${solid ? '' : 'brightness-0 invert opacity-95'}`}
-            />
+          <Link to={homeHref} className="shrink-0 group" aria-label={siteConfig.brand.name}>
+            <BrandLogo className="h-9 md:h-10" tone={solid ? 'nuit' : 'bone'} hoverGold />
           </Link>
 
           <div className="flex items-center gap-1 sm:gap-2">
@@ -162,7 +159,7 @@ export default function Navigation() {
             className="absolute top-0 right-0 h-full w-full max-w-sm bg-bone shadow-2xl flex flex-col animate-slide-in-right"
           >
             <div className="flex items-center justify-between px-6 py-5 border-b border-nuit/10">
-              <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-8 w-auto" />
+              <BrandLogo className="h-8" tone="nuit" label={siteConfig.brand.name} />
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}

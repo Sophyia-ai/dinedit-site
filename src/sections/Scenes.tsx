@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next'
 import { siteConfig } from '../config/site'
 import { useAppLanguage, type Language } from '../context/LanguageContext'
 import { openAnaisWithEvent } from '../lib/anaisIntent'
+import BrandLogo from '../components/BrandLogo'
 
 interface SceneEvent {
   slug: string
@@ -58,7 +59,7 @@ export default function Scenes() {
     return (
       <section className="relative min-h-[88vh] bg-bone flex flex-col">
         <div className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-          <img src={siteConfig.brand.logoPath} alt={siteConfig.brand.name} className="h-24 md:h-32 w-auto mb-8 opacity-95" />
+          <BrandLogo className="h-24 md:h-32 mb-8" tone="nuit" label={siteConfig.brand.name} />
           <p className="font-display text-2xl md:text-4xl leading-snug max-w-2xl text-nuit/90">
             {t('home:hero.tagline')}
           </p>
