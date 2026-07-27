@@ -451,6 +451,47 @@
     }
   },
   {
+    "slug": "concerts-de-carillon-d-ete-2026",
+    "published": "2026-07-27",
+    "event_date": "2026-06-17",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Mélodies estivales à Bruges : un concert de carillon enchanteur",
+      "en": "Summer Melodies in Bruges: An Enchanting Carillon Concert",
+      "nl": "Zomermelodieën in Brugge: Een Betoverend Beiaardconcert"
+    },
+    "excerpt": {
+      "fr": "L'été à Bruges sera rythmé par des carillons envoûtants, créant une atmosphère délicate au sein de la cour de l'hôtel de ville. Chez Dinédit, nous apprécions ces moments où la musique s'entrelace avec le patrimoine et la gastronomie.",
+      "en": "Summer in Bruges will be filled with enchanting carillons, creating a delicate atmosphere in the town hall courtyard. At Dinédit, we cherish these moments where music intertwines with heritage and gastronomy.",
+      "nl": "De zomer in Brugge zal gevuld zijn met betoverende beiaarden, die een delicate sfeer creëren in de binnenplaats van het stadhuis. Bij Dinédit waarderen we deze momenten waarop muziek zich vermengt met erfgoed en gastronomie."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "musique",
+        "patrimoine",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "music",
+        "heritage",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "muziek",
+        "erfgoed",
+        "cultuur"
+      ]
+    }
+  },
+  {
     "slug": "het-belfort-vertelt-le-beffroi-nous-raconte",
     "published": "2026-07-01",
     "event_date": "2026-07-01",
@@ -859,6 +900,47 @@
     }
   },
   {
+    "slug": "a-la-conquete-des-sentiers-secrets-d-ivoz-ramet",
+    "published": "2026-07-27",
+    "event_date": "2026-08-13",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Explorez les sentiers cachés d'Ivoz-Ramet, un voyage à savourer",
+      "en": "Explore the Hidden Trails of Ivoz-Ramet, a Journey to Savor",
+      "nl": "Ontdek de Verborgen Paden van Ivoz-Ramet, een Reis om te Genieten"
+    },
+    "excerpt": {
+      "fr": "Le 13 août 2026, partez à la découverte des sentiers secrets d'Ivoz-Ramet, où nature et histoire s'entrelacent. Nous, chez Dinédit, apprécions ces moments qui éveillent les sens et nourrissent l'âme.",
+      "en": "On August 13, 2026, embark on a journey to discover the secret trails of Ivoz-Ramet, where nature and history intertwine. At Dinédit, we cherish these moments that awaken the senses and nourish the soul.",
+      "nl": "Op 13 augustus 2026, ga op ontdekkingstocht naar de geheime paden van Ivoz-Ramet, waar natuur en geschiedenis samenkomen. Bij Dinédit waarderen we deze momenten die de zintuigen prikkelen en de ziel voeden."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "nature",
+        "patrimoine",
+        "découverte"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "nature",
+        "heritage",
+        "discovery"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "natuur",
+        "erfgoed",
+        "ontdekking"
+      ]
+    }
+  },
+  {
     "slug": "visites-guidees-de-l-office-de-tourisme-le-grand-tour-de-lie",
     "published": "2026-07-01",
     "event_date": "2026-08-16",
@@ -1101,6 +1183,47 @@
         "confidentiële tentoonstelling",
         "gastronomie",
         "ambacht"
+      ]
+    }
+  },
+  {
+    "slug": "exposition-marie-jo-lafontaine-tout-ange-est-terrible",
+    "published": "2026-07-27",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "À la découverte de l'univers sensible de Marie-Jo Lafontaine",
+      "en": "Discovering the Sensitive Universe of Marie-Jo Lafontaine",
+      "nl": "Op ontdekking in het gevoelige universum van Marie-Jo Lafontaine"
+    },
+    "excerpt": {
+      "fr": "L’exposition de Marie-Jo Lafontaine, 'Tout ange est terrible', nous invite à une exploration délicate de l'art contemporain. Un moment où l’art et la gastronomie de Dinédit se rencontrent en toute harmonie.",
+      "en": "Marie-Jo Lafontaine's exhibition, 'Tout ange est terrible', invites us to a delicate exploration of contemporary art. A moment where Dinédit's art and gastronomy meet in perfect harmony.",
+      "nl": "De tentoonstelling van Marie-Jo Lafontaine, 'Tout ange est terrible', nodigt ons uit voor een delicate verkenning van hedendaagse kunst. Een moment waarop de kunst en gastronomie van Dinédit in perfecte harmonie samenkomen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art contemporain",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "contemporary art",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "hedendaagse kunst",
+        "cultuur"
       ]
     }
   }
