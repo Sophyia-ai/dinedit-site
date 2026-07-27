@@ -207,9 +207,18 @@ def generate_html(event):
                     f"Vanaf € {price} per persoon" if (price and lang == "nl") else \
                     {"fr": "Tarif à confirmer", "en": "Price to be confirmed", "nl": "Prijs nog te bevestigen"}[lang]
 
+        cta_book = {"fr": "Réservez votre place", "en": "Book your seat",
+                    "nl": "Reserveer uw plek"}.get(lang, "Réservez votre place")
+        cta_intro = {"fr": "Réservez votre place pour cette édition.",
+                     "en": "Book your seat for this edition.",
+                     "nl": "Reserveer uw plek voor deze editie."}.get(lang, "Réservez votre place pour cette édition.")
+
         html = template
         for k, v in {
             "{{LANG}}": lang,
+            "{{SLUG}}": event.get("slug", ""),
+            "{{CTA_BOOK}}": cta_book,
+            "{{CTA_INTRO}}": cta_intro,
             "{{TITLE}}": title,
             "{{EXCERPT}}": excerpt,
             "{{META_DESC}}": (event.get("seo") or {}).get(f"meta_description_{lang}") or excerpt,

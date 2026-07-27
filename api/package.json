@@ -1,0 +1,9 @@
+{
+  "name": "dinedit-api",
+  "version": "1.0.0",
+  "description": "Fonctions managées Azure SWA — Dinédit (checkout Stripe)",
+  "main": "checkout/index.js",
+  "dependencies": {
+    "stripe": "^16.12.0"
+  }
+}

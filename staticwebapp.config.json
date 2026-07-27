@@ -12,6 +12,9 @@
       "/*.{js,css,jpg,jpeg,png,ico,svg,webp,xml,txt,json}"
     ]
   },
+  "platform": {
+    "apiRuntime": "node:18"
+  },
   "mimeTypes": {
     ".json": "application/json"
   },
