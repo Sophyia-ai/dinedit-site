@@ -2,11 +2,9 @@
   "slug": "2026-09-25-j-adore-c-est-quoi",
   "status": "upcoming",
   "rubric": "evenement",
-
   "date_start": "2026-09-25T19:30:00+02:00",
   "date_end": "2026-09-25T23:30:00+02:00",
   "_todo_dates": "Vendredi (pas samedi comme les 2 autres) — confirmer si format différent (apéro-dîner court, dîner standard, autre). Heures précises à confirmer Serge.",
-
   "location_name": null,
   "location_address": null,
   "location_city": null,
@@ -14,60 +12,54 @@
   "location_lat": null,
   "location_lng": null,
   "_todo_location": "Lieu à confirmer Serge — pas indiqué sur le flyer. Cohérent avec le pattern énigmatique de la série Dinédit 2026.",
-
   "capacity": 20,
   "_todo_capacity": "À confirmer Serge (~20 supposé).",
-
-  "price_btoc_eur": null,
+  "price_btoc_eur": 150,
   "_todo_price": "À confirmer Serge (fourchette habituelle 150–185 €).",
-
   "guests": [],
   "_todo_guests": "Aucun nom sur le flyer (choix éditorial). À compléter Serge : (1) un **parfumeur** ou un **nez** (le flyer joue très clairement avec l'iconographie d'un grand parfum floral solaire — lotus doré, or, question « J'adore » — clin d'œil à un flacon-icône sans le citer) ; (2) un **chef** qui travaille les **accords floraux et olfactifs** (pâtisserie florale d'auteur, cuisine moléculaire des senteurs, haute table qui pense en notes de tête/cœur/fond).",
-
   "chef": null,
   "_todo_chef": "À confirmer Serge.",
-
   "flyer_image": "/images/events/2026-09-25/flyer.jpg",
   "hero_image": null,
   "gallery": [],
   "_todo_images": "Source flyer = sites/dinedit-site/events/j'adoreflyer.jpg (1749×2481). À recopier dans /public/images/events/2026-09-25/flyer.jpg. Hero (œuvre / lieu / table) + galerie : à compléter quand Serge fournit.",
-
   "stripe_checkout_url": null,
   "stripe_product_id": null,
   "_todo_stripe": "Phase 3.",
-
   "btob_lead_email": "anais@dinedit.be",
-
   "title": {
     "fr": "Dîner inédit du 25 septembre — J'adore c'est quoi ?",
     "en": "Singular Dinner of September 25 — What does \"I love it\" mean?",
     "nl": "Uniek diner van 25 september — Wat betekent \"Ik vind het geweldig\"?"
   },
   "_todo_title": "Le titre FR « J'adore c'est quoi ? » est parlé et interpellant. Versions EN/NL = traductions du sens, à valider Raoul. Alternative : garder « J'adore c'est quoi ? » identique partout pour préserver la signature.",
-
   "excerpt": {
     "fr": "Un lotus doré, une question — « J'adore c'est quoi ? » — et l'écho d'un flacon qu'on reconnaît sans le nommer. Le 25 septembre, Dinédit invite parfumerie et table à dialoguer : ce qui se hume, ce qui se goûte, ce qu'on aime sans toujours savoir pourquoi.",
     "en": "A golden lotus, a question — \"What does 'I love it' mean?\" — and the echo of a flacon you recognise without it being named. On Friday, September 25, Dinédit invites perfumery and the table to talk to one another: what we breathe in, what we taste, what we love without quite knowing why.",
     "nl": "Een gouden lotus, een vraag — « Wat betekent \"ik vind het geweldig\" eigenlijk? » — en de echo van een flacon die je herkent zonder dat hij wordt genoemd. Op vrijdag 25 september laat Dinédit parfumerie en tafel met elkaar spreken: wat we inademen, wat we proeven, waarvan we houden zonder altijd te weten waarom."
   },
   "_todo_excerpt": "Excerpts assument le clin d'œil parfumerie (sans citer la marque, copyright). À valider Raoul / Serge.",
-
   "body_md": {
     "fr": "## Une question qui veut être posée\n\n*Section à enrichir quand Serge aura confirmé le nez, le chef et le lieu.*\n\nUn lotus figé dans l'or, une question — *« J'adore c'est quoi ? »* — et l'écho d'un grand flacon qu'on n'a pas besoin de citer pour le reconnaître. Le 25 septembre, Dinédit fait dialoguer ce qui se hume et ce qui se goûte. La parfumerie et la table partagent les mêmes mots : note de tête, note de cœur, note de fond. Ils parlent rarement ensemble. Ce soir-là, ils se font face.\n\n## Le nez et le chef\n\n*Profils à compléter avec Serge.*\n\nUn parfumeur ou un nez invité. Un chef qui pense en accords floraux et qui ose les notes olfactives à table. La soirée se construit comme une **dégustation à quatre dimensions** — l'œil, l'odorat, le palais, la conversation. On adore, et on cherche pourquoi.\n\n## L'œuvre\n\n*La fleur du flyer est la clé visuelle de la soirée — un lotus de bronze ou de laiton patiné, ouvert juste assez. À préciser Serge : pièce d'un artiste belge, prêt de collection, ou commande spécifique pour Dinédit ?*\n\n## Le lieu\n\n*Communiqué à l'inscription, dans la tradition Dinédit.*\n\n## Capacité\n\n**20 convives.** À titre **personnel**, l'inscription se fait directement en ligne. En **groupe avec votre entreprise**, la maison adapte la prestation : prévenez Anaïs en amont.\n\n## Format vendredi\n\n*Note interne : cet événement se tient un **vendredi**, alors que la programmation Dinédit privilégie habituellement le samedi. À confirmer avec Serge si le format est ajusté (démarrage plus tôt après le travail, apéritif olfactif prolongé, etc.).*",
-
     "en": "## TODO — translate once content is locked",
     "nl": "## TODO — translate once content is locked"
   },
   "_todo_body": "FR reframée autour de l'axe parfumerie × gastronomie (lecture confirmée Raoul 2026-06-30). À enrichir une fois Serge a fourni le nez, le chef, le lieu, et confirmé si le format vendredi change quelque chose.",
-
-  "tags": ["parfumerie", "olfaction", "accords floraux", "lotus", "vendredi", "automne", "art × gastronomie"],
-
+  "tags": [
+    "parfumerie",
+    "olfaction",
+    "accords floraux",
+    "lotus",
+    "vendredi",
+    "automne",
+    "art × gastronomie"
+  ],
   "seo": {
     "meta_description_fr": "Dîner inédit Dinédit le vendredi 25 septembre 2026 : « J'adore c'est quoi ? » — un dialogue entre parfumerie et table autour des accords floraux, 20 convives, lieu insolite révélé à l'inscription.",
     "meta_description_en": "Dinédit singular dinner on Friday, September 25, 2026: 'What does \"I love it\" mean?' — perfumery meets the table around floral accords, 20 guests, secret location revealed at booking.",
     "meta_description_nl": "Dinédit uniek diner op vrijdag 25 september 2026: '« J'adore c'est quoi ? »' — parfumerie ontmoet de tafel rond florale akkoorden, 20 gasten, geheime locatie onthuld bij reservering."
   },
-
   "_meta": {
     "source_flyer": "sites/dinedit-site/events/j'adoreflyer.jpg",
     "format_note": "Vendredi — différent du format habituel (samedi). Vérifier avec Serge si c'est intentionnel et si la mécanique change (heures, durée, apéritif prolongé, etc.).",

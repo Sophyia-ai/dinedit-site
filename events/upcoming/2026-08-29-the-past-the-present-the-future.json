@@ -2,11 +2,9 @@
   "slug": "2026-08-29-the-past-the-present-the-future",
   "status": "upcoming",
   "rubric": "evenement",
-
   "date_start": "2026-08-29T19:30:00+02:00",
   "date_end": "2026-08-29T23:30:00+02:00",
   "_todo_dates": "Heures à confirmer avec Serge (apéritif / dîner / fin).",
-
   "location_name": null,
   "location_address": null,
   "location_city": null,
@@ -14,60 +12,52 @@
   "location_lat": null,
   "location_lng": null,
   "_todo_location": "Lieu à confirmer Serge — pas indiqué sur le flyer (choix éditorial mystère). Pour le SEO et la page article, prévoir : (a) si lieu secret jusqu'à inscription → location_name='Lieu insolite révélé après réservation' + ville indicative ; (b) si lieu nominal connu d'avance → adresse complète.",
-
   "capacity": 20,
   "_todo_capacity": "À confirmer Serge.",
-
-  "price_btoc_eur": null,
+  "price_btoc_eur": 175,
   "_todo_price": "À confirmer Serge (fourchette habituelle 150–185 €).",
-
   "guests": [],
   "_todo_guests": "Aucun nom sur le flyer (choix éditorial). À compléter avec Serge : artiste·s (sculpteur contemporain ? performeur ?) + chef invité. Le visuel évoque un travail autour de la sculpture / matière / fragmentation — préciser le médium et le profil de l'artiste invité.",
-
   "chef": null,
   "_todo_chef": "À confirmer Serge.",
-
   "flyer_image": "/images/events/2026-08-29/flyer.jpg",
   "hero_image": null,
   "gallery": [],
   "_todo_images": "Source flyer = sites/dinedit-site/events/flyer29 out.jpg (1749×2481). À recopier dans /public/images/events/2026-08-29/flyer.jpg. Hero (œuvre / atelier / lieu) + galerie : à compléter quand Serge fournit.",
-
   "stripe_checkout_url": null,
   "stripe_product_id": null,
   "_todo_stripe": "Phase 3.",
-
   "btob_lead_email": "anais@dinedit.be",
-
   "title": {
     "fr": "Dîner inédit du 29 août — The Past, the Present & the Future",
     "en": "Singular Dinner of August 29 — The Past, the Present & the Future",
     "nl": "Uniek diner van 29 augustus — The Past, the Present & the Future"
   },
   "_todo_title": "Titre artistique en anglais conservé tel quel (titre d'œuvre). Préfixe FR/NL avant le titre — à valider Raoul.",
-
   "excerpt": {
     "fr": "Un buste antique qui se fissure et se transforme en pluie d'or et d'argent. Le 29 août, Dinédit fait dialoguer ce qui a été, ce qui est, et ce qui pourrait advenir — autour d'une table et d'une œuvre. Le reste se découvrira sur place.",
     "en": "An ancient bust cracking open into a rain of gold and silver. On August 29, Dinédit brings the past, the present and what is yet to come into a single conversation — around a table and a work. The rest reveals itself on site.",
     "nl": "Een antieke buste die openbarst in een regen van goud en zilver. Op 29 augustus brengt Dinédit het verleden, het heden en wat nog komen kan samen in één gesprek — rond een tafel en een kunstwerk. De rest onthult zich ter plaatse."
   },
   "_todo_excerpt": "Excerpts respectent le ton mystérieux du flyer (rien n'est dévoilé). À valider Raoul / Serge.",
-
   "body_md": {
     "fr": "## L'alchimie du temps\n\n*Section à enrichir quand Serge aura confirmé l'artiste, le chef et le lieu.*\n\nLe 29 août, Dinédit pose une question simple à travers une œuvre et une table : que reste-t-il de ce que nous avons été, et qu'allons-nous devenir ? Le flyer montre un buste antique fissuré, dont la moitié se désintègre en pluie d'or et d'argent — image d'un passage, d'une transformation. La soirée prolonge cette image dans la chair, dans le verre, dans le partage.\n\n## L'œuvre, l'artiste\n\n*Profil à compléter — artiste contemporain travaillant la sculpture, la matière, le temps.*\n\n## La table\n\n*Menu et chef invité à confirmer avec Serge.*\n\n## Le lieu\n\n*Choix éditorial : le lieu fait partie du dévoilement. Communiqué à l'inscription. Détails d'accès (transports, parking, gare la plus proche) précisés au moment de la confirmation.*\n\n## Capacité\n\n**20 convives.** À titre **personnel**, l'inscription se fait directement en ligne. En **groupe avec votre entreprise**, la maison adapte la prestation : prévenez Anaïs en amont.",
-
     "en": "## TODO — translate once content is locked",
     "nl": "## TODO — translate once content is locked"
   },
   "_todo_body": "FR teaser respecte le ton énigmatique du flyer. À enrichir une fois Serge a fourni l'artiste, le chef et le lieu. EN + NL traduits après validation FR.",
-
-  "tags": ["sculpture", "antique × contemporain", "art contemporain", "fin d'été", "mystère"],
-
+  "tags": [
+    "sculpture",
+    "antique × contemporain",
+    "art contemporain",
+    "fin d'été",
+    "mystère"
+  ],
   "seo": {
     "meta_description_fr": "Dîner inédit Dinédit le 29 août 2026 : « The Past, the Present & the Future » — un dialogue entre une œuvre et une table, 20 convives, lieu insolite révélé à l'inscription.",
     "meta_description_en": "Dinédit singular dinner on August 29, 2026: 'The Past, the Present & the Future' — a conversation between a work and a table, 20 guests, secret location revealed at booking.",
     "meta_description_nl": "Dinédit uniek diner op 29 augustus 2026: 'The Past, the Present & the Future' — een gesprek tussen een werk en een tafel, 20 gasten, geheime locatie onthuld bij reservering."
   },
-
   "_meta": {
     "source_flyer": "sites/dinedit-site/events/flyer29 out.jpg",
     "source_flyer_filename_note": "Le nom de fichier contient « out » = abréviation orale de « août » (et non « octobre »). Date réelle confirmée par le texte du flyer : samedi 29 août 2026.",
