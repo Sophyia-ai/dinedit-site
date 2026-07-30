@@ -41,6 +41,47 @@
     }
   },
   {
+    "slug": "exposition-pierre-kroll",
+    "published": "2026-07-30",
+    "event_date": "2024-09-13",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "À la découverte de l'univers de Pierre Kroll à Liège",
+      "en": "Discovering the Universe of Pierre Kroll in Liège",
+      "nl": "Ontdek het universum van Pierre Kroll in Luik"
+    },
+    "excerpt": {
+      "fr": "L'exposition dédiée à Pierre Kroll au Musée du Grand Curtius nous invite à explorer l'univers satirique d'un caricaturiste liégeois. Une belle occasion de marier art et gastronomie avec Dinédit dans la région.",
+      "en": "The exhibition dedicated to Pierre Kroll at the Musée du Grand Curtius invites us to explore the satirical universe of a Liège caricaturist. A wonderful opportunity to combine art and gastronomy with Dinédit in the region.",
+      "nl": "De tentoonstelling gewijd aan Pierre Kroll in het Musée du Grand Curtius nodigt ons uit om het satirische universum van een Luikse caricaturist te verkennen. Een prachtige gelegenheid om kunst en gastronomie te combineren met Dinédit in de regio."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "dali-cybernetics",
     "published": "2026-07-16",
     "event_date": "2025-08-19",
@@ -900,6 +941,47 @@
     }
   },
   {
+    "slug": "benenwerk-2026",
+    "published": "2026-07-30",
+    "event_date": "2026-08-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "La danse s'invite à Bruges : une rencontre de styles et de rythmes",
+      "en": "Dance Invites Itself to Bruges: A Meeting of Styles and Rhythms",
+      "nl": "De Dans Nodigt Zich Uit in Brugge: Een Ontmoeting van Stijlen en Ritmes"
+    },
+    "excerpt": {
+      "fr": "À Bruges, le festival 'Benenwerk 2026' promet une immersion dans l'art de la danse. Une belle occasion de célébrer les mouvements et l'énergie, en écho à l'esprit de Dinédit.",
+      "en": "In Bruges, the 'Benenwerk 2026' festival promises an immersion in the art of dance. A wonderful opportunity to celebrate movement and energy, echoing the spirit of Dinédit.",
+      "nl": "In Brugge belooft het festival 'Benenwerk 2026' een onderdompeling in de kunst van de dans. Een mooie gelegenheid om beweging en energie te vieren, in lijn met de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "danse",
+        "festival",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "dance",
+        "festival",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "dans",
+        "festival",
+        "cultuur"
+      ]
+    }
+  },
+  {
     "slug": "a-la-conquete-des-sentiers-secrets-d-ivoz-ramet",
     "published": "2026-07-27",
     "event_date": "2026-08-13",
@@ -1223,6 +1305,47 @@
         "België",
         "confidentiële tentoonstelling",
         "hedendaagse kunst",
+        "cultuur"
+      ]
+    }
+  },
+  {
+    "slug": "nocturne-au-musee-de-la-vie-rurale",
+    "published": "2026-07-30",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "Une soirée au Musée de la vie Rurale : une immersion sensorielle",
+      "en": "An Evening at the Museum of Rural Life: A Sensory Immersion",
+      "nl": "Een Avond in het Museum van het Plattelandsleven: Een Sensorische Onderdompeling"
+    },
+    "excerpt": {
+      "fr": "Le Musée de la vie Rurale s'anime pour une nocturne promettant une expérience riche en émotions. À travers les expositions et les animations, nous découvrons l'héritage culturel de la Flandre tout en s’alignant avec l’esprit de Dinédit.",
+      "en": "The Museum of Rural Life comes alive for a night promising an emotionally rich experience. Through exhibitions and activities, we discover Flanders' cultural heritage while aligning with Dinédit's spirit.",
+      "nl": "Het Museum van het Plattelandsleven komt tot leven voor een avond die een emotioneel rijke ervaring belooft. Door middel van tentoonstellingen en activiteiten ontdekken we het culturele erfgoed van Vlaanderen, in lijn met de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "patrimoine",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "heritage",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "erfgoed",
         "cultuur"
       ]
     }
