@@ -5,19 +5,14 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
 import { Tag, Images, Users, Sparkles } from 'lucide-react'
 
-import { siteConfig } from '../config/site'
-import { useAppLanguage } from '../context/LanguageContext'
 import { useSeo } from '../lib/useSeo'
 
 const ICONS = [Tag, Images, Users, Sparkles]
 
 export default function DevenirMembre() {
   const { t } = useTranslation('pages')
-  const { lang } = useAppLanguage()
-  const prefix = lang === siteConfig.languages.default ? '' : `/${lang}`
 
   useSeo({ title: t('membre.hero.title'), description: t('membre.hero.subtitle'), path: '/devenir-membre' })
 
@@ -58,14 +53,12 @@ export default function DevenirMembre() {
         </p>
         <p className="mt-5 text-sm text-nuit/70 leading-relaxed">{t('membre.price.text')}</p>
         <p className="mt-3 text-xs text-nuit/50">{t('membre.price.note')}</p>
-        {/* Adhésion en ligne EN PAUSE (pas d'espace membre / -15% câblé) → Contact (liste d'attente).
-            Réactiver /api/checkout?type=membre quand l'espace membre existera. */}
-        <Link
-          to={`${prefix}/contact`}
+        <a
+          href="/api/checkout?type=membre"
           className="inline-block mt-8 px-8 py-3 rounded-full bg-gold text-nuit font-medium tracking-wide hover:bg-gold-dark transition-colors"
         >
           {t('membre.cta')}
-        </Link>
+        </a>
       </section>
     </div>
   )

@@ -73,6 +73,7 @@ module.exports = async function (context, req) {
       const title = pickTitle(ev.title)
       session = await stripe.checkout.sessions.create({
         mode: 'payment',
+        allow_promotion_codes: true, // codes membre (-15%) saisissables au checkout
         line_items: [{
           quantity: 1,
           adjustable_quantity: { enabled: true, minimum: 1, maximum: 10 },
