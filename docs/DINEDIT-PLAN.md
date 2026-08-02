@@ -764,3 +764,35 @@ Extraction du builder + appel Azure OpenAI GPT-4o-mini avec le scénario problé
 - Tour 4 « 10 personnes » → phrase complice + lien mailto propre (décodé : « Événement sur-mesure — dîner à l'aveugle — 10 convives — dans 3 semaines » + body structuré + signature)
 
 **Verdict** : refonte validée en local, poussée en prod (SHA events `8f034e03d1afc57b`). Villa `5ef9171b061640e0` intacte.
+
+---
+
+## Journal — 2026-08 : Stripe checkout + mini-CRM Google Sheets + adhésion membre
+
+### Paiement (auto-génération, zéro manip client)
+- **`api/checkout/index.js`** (fonction managée Azure SWA) :
+  - `GET /api/checkout?event=<slug>` → Checkout Session (mode payment), **prix lu CÔTÉ SERVEUR** depuis `agenda_data.json` (anti-triche) + `allow_promotion_codes` (codes membre). Prix absent → redirige /contact.
+  - `GET /api/checkout?type=membre` → abonnement **75 €/an** (mode subscription).
+  - Prix dîners : 29 août **150 €**, 25 sept **200 €**.
+
+### Mini-CRM Google Sheets (Option B)
+- **`api/stripe-webhook/index.js`** : `POST /api/stripe/webhook` → **vérif signature Stripe AVANT parsing** → `checkout.session.completed` → écrit un lead dans l'onglet **Leads**. **Idempotent** (dédup sur `stripe_session_id`, colonne H → no-op 200). Erreur écriture → 5xx (retry natif Stripe).
+- Sheet `1WluhOOedc_RyLN5AwYWLTyl5-rrAkQXy9a8LqNqyQms`, onglet **Leads** (⚠️ était « Feuille 1 », renommé), service account `dinedit-events@dinedit-crm.iam.gserviceaccount.com` (éditeur).
+- Env Azure SWA (`dinedit-site` / RG `Sophyia-chat`) : `STRIPE_SECRET_KEY` (sk_live), `STRIPE_WEBHOOK_SECRET`, `GOOGLE_SHEETS_CLIENT_EMAIL` / `_PRIVATE_KEY` / `_SPREADSHEET_ID` / `_TAB_NAME=Leads`, `SITE_URL`.
+
+### Adhésion membre (réactivée avec codes promo)
+- CTA /devenir-membre → abonnement 75 €/an (capté par le webhook → CRM).
+- **−15 % via code promo Stripe `MEMBRE15`** (bon de réduction 15 % + code promotionnel réutilisable, illimité) — le membre le saisit au checkout d'un dîner. Pas d'espace membre auto → copy ajustée « via un code membre envoyé ». Avantages (photos, priorité, mise en relation) = manuels via le CRM.
+
+### Sécurité (vérifiée le 2026-08-03)
+- **0 secret dans le bundle front** (vérifié : grep sk_/rk_/whsec_/PRIVATE KEY/service account = 0).
+- **Webhook signé** : requête non signée → **400**. Seul Stripe (avec le whsec_) peut écrire.
+- **Prix côté serveur** (jamais depuis le navigateur).
+- Clés uniquement en env Azure. Webhooks WooCommerce obsolètes nettoyés (dinedit.be supprimé, linen-hippopotamus… désactivé).
+- **Testé live end-to-end** : event signé → 1 ligne · dédup → pas de doublon · mauvaise signature → 400 · mapping 14 colonnes OK. **Aucun vrai paiement à ce jour.**
+
+### Reste (non bloquant)
+- Webhook ne capte pas encore les **renouvellements** d'abonnement (`invoice.paid`) — visibles dans Stripe.
+- **Espace membre auto** (login + −15 % sans code + galerie) = projet ultérieur.
+- Ancien **WordPress/WooCommerce** encore en ligne sur son hébergement (linen-hippopotamus…) — à éteindre un jour.
+- `whsec_` a transité une fois dans le chat → à rouler si souci. Code `MEMBRE15` partagé (passer à des codes uniques par membre si abus).

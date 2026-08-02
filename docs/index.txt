@@ -1,0 +1,7 @@
+# docs/ — dinedit-site (INDEX)
+DINEDIT-PLAN.md      — doc canonique de chantier : plan + journaux datés (refonte V2, SEO, Stripe/CRM, adhésion).
+WRITE-PLAN-TRACK1.md — write-plan certifié Codex du Track 1 (header global + routes + 301).
+knowledge-anais.md   — socle de connaissance du chatbot Anaïs (events).
+welcomes-anais.md    — messages de welcome d'Anaïs.
+WARNINGS.md          — landmines / pièges du repo à ne pas refaire.
+index.txt            — ce fichier : liste des docs + rôle.
