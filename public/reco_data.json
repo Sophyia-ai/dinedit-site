@@ -451,6 +451,47 @@
     }
   },
   {
+    "slug": "ouvert-a-partir-du-8-mai-2026",
+    "published": "2026-08-03",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Le centre d'art BRUSK : une nouvelle étoile à Bruges",
+      "en": "The BRUSK Art Center: A New Star in Brussels",
+      "nl": "Het BRUSK Kunstencentrum: Een nieuwe ster in Brussel"
+    },
+    "excerpt": {
+      "fr": "À partir du 8 mai 2026, le centre d'art BRUSK nous invite à découvrir deux expositions fascinantes. Un moment prometteur qui résonne avec notre amour pour l'art et la gastronomie chez Dinédit.",
+      "en": "Starting May 8, 2026, the BRUSK Art Center invites us to discover two fascinating exhibitions. A promising moment that resonates with our love for art and gastronomy at Dinédit.",
+      "nl": "Vanaf 8 mei 2026 nodigt het BRUSK Kunstencentrum ons uit om twee fascinerende tentoonstellingen te ontdekken. Een veelbelovende gelegenheid die resoneert met onze liefde voor kunst en gastronomie bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "art contemporain",
+        "exposition",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "contemporary art",
+        "exhibition",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "hedendaagse kunst",
+        "tentoonstelling",
+        "cultuur"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -1347,6 +1388,47 @@
         "confidentiële expo",
         "erfgoed",
         "cultuur"
+      ]
+    }
+  },
+  {
+    "slug": "exposition-sur-william-nelson-cromwell-a-l-ecole-dentelliere",
+    "published": "2026-08-03",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "Une exposition intrigante sur William Nelson Cromwell en Flandre",
+      "en": "An Intriguing Exhibition on William Nelson Cromwell in Flanders",
+      "nl": "Een Intrigerende Tentoonstelling over William Nelson Cromwell in Vlaanderen"
+    },
+    "excerpt": {
+      "fr": "Nous avons découvert une exposition captivante dédiée à William Nelson Cromwell, un événement qui résonne avec la créativité de Dinédit. À travers l'art, cette rencontre promet d'éveiller vos sens et d'enrichir vos réflexions.",
+      "en": "We discovered a captivating exhibition dedicated to William Nelson Cromwell, an event that resonates with the creativity of Dinédit. Through art, this meeting promises to awaken your senses and enrich your reflections.",
+      "nl": "We hebben een boeiende tentoonstelling ontdekt die aan William Nelson Cromwell is gewijd, een evenement dat resoneert met de creativiteit van Dinédit. Door middel van kunst belooft deze ontmoeting uw zintuigen te prikkelen en uw gedachten te verrijken."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "kunst",
+        "gastronomie"
       ]
     }
   }
