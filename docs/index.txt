@@ -1,5 +1,6 @@
 # docs/ — dinedit-site (INDEX)
 DINEDIT-PLAN.md      — doc canonique de chantier : plan + journaux datés (refonte V2, SEO, Stripe/CRM, adhésion).
+VISION-COPILOTE-CLIENT.md — vision figée (plateforme, pilote Dinédit) : l'IA du site devient copilote du patron (PWA + push, propose+valide).
 WRITE-PLAN-TRACK1.md — write-plan certifié Codex du Track 1 (header global + routes + 301).
 knowledge-anais.md   — socle de connaissance du chatbot Anaïs (events).
 welcomes-anais.md    — messages de welcome d'Anaïs.
