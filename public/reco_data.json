@@ -82,6 +82,47 @@
     }
   },
   {
+    "slug": "pierre-kroll-celebre-et-prolifique-caricaturiste-liegeois-es",
+    "published": "2026-08-10",
+    "event_date": "2024-09-13",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Pierre Kroll à l'honneur : entre art et gastronomie à Liège",
+      "en": "Pierre Kroll in the Spotlight: Between Art and Gastronomy in Liège",
+      "nl": "Pierre Kroll in de Schijnwerpers: Tussen Kunst en Gastronomie in Luik"
+    },
+    "excerpt": {
+      "fr": "Venez découvrir l'univers de Pierre Kroll, célèbre caricaturiste liégeois, à travers une exposition captivante. Chez Dinédit, nous trouvons que la rencontre entre art et gastronomie enrichit nos expériences.",
+      "en": "Come discover the world of Pierre Kroll, a renowned Liège caricaturist, through a captivating exhibition. At Dinédit, we believe that the meeting of art and gastronomy enriches our experiences.",
+      "nl": "Kom de wereld van Pierre Kroll ontdekken, een beroemde Liège caricaturist, via een boeiende tentoonstelling. Bij Dinédit vinden we dat de ontmoeting tussen kunst en gastronomie onze ervaringen verrijkt."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "art"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "kunst"
+      ]
+    }
+  },
+  {
     "slug": "dali-cybernetics",
     "published": "2026-07-16",
     "event_date": "2025-08-19",
@@ -1060,6 +1101,47 @@
         "natuur",
         "erfgoed",
         "ontdekking"
+      ]
+    }
+  },
+  {
+    "slug": "brugse-belofte-promesse-de-bruges-2026",
+    "published": "2026-08-10",
+    "event_date": "2026-08-15",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Célébrons la Promesse de Bruges : un moment chargé d'histoire",
+      "en": "Celebrating the Promise of Bruges: A Moment Steeped in History",
+      "nl": "Laten we de Belofte van Brugge vieren: een moment vol geschiedenis"
+    },
+    "excerpt": {
+      "fr": "L'année 2026 marquera la célébration d'une tradition séculaire à Bruges, où un cierge de promesse de 16,33 kg sera offert. Un événement qui résonne avec l'esprit de Dinédit, alliant patrimoine et gastronomie.",
+      "en": "The year 2026 will mark the celebration of a centuries-old tradition in Bruges, where a 16.33 kg promise candle will be offered. An event that resonates with the spirit of Dinédit, blending heritage and gastronomy.",
+      "nl": "Het jaar 2026 markeert de viering van een eeuwenoude traditie in Brugge, waar een beloftekaars van 16,33 kg zal worden aangeboden. Een evenement dat resoneert met de geest van Dinédit, dat erfgoed en gastronomie combineert."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "tradition",
+        "gastronomie",
+        "patrimoine"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "tradition",
+        "gastronomy",
+        "heritage"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "traditie",
+        "gastronomie",
+        "erfgoed"
       ]
     }
   },
