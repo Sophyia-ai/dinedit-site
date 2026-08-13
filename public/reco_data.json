@@ -1187,6 +1187,47 @@
     }
   },
   {
+    "slug": "au-fil-de-leau-a-angleur-entre-nature-sauvage-et-passe-indus",
+    "published": "2026-08-13",
+    "event_date": "2026-08-16",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Exploration sensorielle à Angleur : nature et histoire",
+      "en": "Sensory Exploration in Angleur: Nature and History",
+      "nl": "Sensorische Verkenning in Angleur: Natuur en Geschiedenis"
+    },
+    "excerpt": {
+      "fr": "Le dimanche 16 août 2026, laissez-vous séduire par une balade au fil de l’eau à Angleur, où la nature sauvage rencontre un passé industriel fascinant. Un moment d'évasion qui résonne avec notre passion pour l'art culinaire à Dinédit.",
+      "en": "On Sunday, August 16, 2026, let yourself be enchanted by a waterside stroll in Angleur, where wild nature meets a fascinating industrial past. A moment of escape that resonates with our passion for culinary art at Dinédit.",
+      "nl": "Op zondag 16 augustus 2026, laat je betoveren door een wandeling langs het water in Angleur, waar de wilde natuur een fascinerend industrieel verleden ontmoet. Een ontsnapping die weerklinkt met onze passie voor culinaire kunst bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "handwerk"
+      ]
+    }
+  },
+  {
     "slug": "balade-au-crepuscule",
     "published": "2026-07-20",
     "event_date": "2026-08-19",
@@ -1510,6 +1551,47 @@
         "België",
         "confidentiële expo",
         "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
+    "slug": "exposition-horizon-s-a-la-galerie-de-l-hotel-d-halluin",
+    "published": "2026-08-13",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "Explorez l'Art Contemporain à la Galerie de l'Hôtel d'Halluin",
+      "en": "Explore Contemporary Art at the Hôtel d'Halluin Gallery",
+      "nl": "Ontdek Hedendaagse Kunst in de Galerie van het Hôtel d'Halluin"
+    },
+    "excerpt": {
+      "fr": "La Galerie de l'Hôtel d'Halluin présente l'exposition \"Horizon(s)\" qui dévoile des œuvres contemporaines dans un cadre raffiné. Une belle occasion de marier l'art et la gastronomie avec Dinédit.",
+      "en": "The Hôtel d'Halluin Gallery presents the exhibition 'Horizon(s)', showcasing contemporary works in a refined setting. A wonderful opportunity to blend art and gastronomy with Dinédit.",
+      "nl": "De Galerie van het Hôtel d'Halluin presenteert de tentoonstelling 'Horizon(s)', die hedendaagse werken onthult in een verfijnde omgeving. Een mooie gelegenheid om kunst en gastronomie te combineren met Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art contemporain",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "contemporary art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "hedendaagse kunst",
         "gastronomie"
       ]
     }
