@@ -533,6 +533,47 @@
     }
   },
   {
+    "slug": "vision-large-les-mondes-interconnectes-de-bruges-900-1550",
+    "published": "2026-08-17",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Exploration des mondes interconnectés de Bruges au Moyen-Âge",
+      "en": "Exploring the Interconnected Worlds of Bruges in the Middle Ages",
+      "nl": "Verkenning van de onderling verbonden werelden van Brugge in de Middeleeuwen"
+    },
+    "excerpt": {
+      "fr": "À travers l'exposition VISION LARGE, Bruges dévoile son histoire médiévale riche et complexe. Un voyage sensoriel à travers le temps qui résonne avec notre passion pour la gastronomie curée chez Dinédit.",
+      "en": "Through the VISION LARGE exhibition, Bruges reveals its rich and complex medieval history. A sensory journey through time that resonates with our passion for gastronomy at Dinédit.",
+      "nl": "Via de tentoonstelling VISION LARGE onthult Brugge zijn rijke en complexe middeleeuwse geschiedenis. Een zintuiglijke reis door de tijd die resoneert met onze passie voor gastronomie bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "histoire",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "history",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "geschiedenis",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -1305,6 +1346,47 @@
         "België",
         "ambacht",
         "erfgoed",
+        "rondleiding"
+      ]
+    }
+  },
+  {
+    "slug": "histoires-de-grands-brigands-et-de-petits-larcins-ou-l-inver",
+    "published": "2026-08-17",
+    "event_date": "2026-08-21",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Explorez les récits intrigants de Liège avec Dinédit",
+      "en": "Explore the Intriguing Tales of Liège with Dinédit",
+      "nl": "Verken de Intrigerende Verhalen van Luik met Dinédit"
+    },
+    "excerpt": {
+      "fr": "Immergez-vous dans les récits captivants des brigands liégeois, où chaque coin de rue murmure une histoire. Avec Dinédit, nous vous invitons à découvrir l'authenticité de la gastronomie à Bruxelles en écho à ces récits historiques.",
+      "en": "Immerse yourself in the captivating tales of Liège's brigands, where every street corner whispers a story. With Dinédit, we invite you to discover the authenticity of gastronomy in Brussels echoing these historical narratives.",
+      "nl": "Dompel jezelf onder in de boeiende verhalen van de Luikse bandieten, waar elke straathoek een verhaal fluistert. Met Dinédit nodigen we je uit om de authenticiteit van de gastronomie in Brussel te ontdekken in echo van deze historische verhalen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "histoire",
+        "gastronomie",
+        "visite guidée"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "history",
+        "gastronomy",
+        "guided tour"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "geschiedenis",
+        "gastronomie",
         "rondleiding"
       ]
     }
