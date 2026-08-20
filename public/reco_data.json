@@ -615,6 +615,47 @@
     }
   },
   {
+    "slug": "au-prehistomuseum-la-ferme-neolithique-se-reinvente",
+    "published": "2026-08-20",
+    "event_date": "2026-06-01",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Une ferme néolithique réinventée au Préhistomuseum de Flémalle",
+      "en": "A Neolithic Farm Reimagined at the Préhistomuseum in Flémalle",
+      "nl": "Een heruitgevonden neolithische boerderij in het Préhistomuseum van Flémalle"
+    },
+    "excerpt": {
+      "fr": "À Flémalle, le Préhistomuseum offre une redécouverte immersive de la Préhistoire. Cet événement résonne avec l'esprit de Dinédit, alliant art et gastronomie dans des lieux inédits.",
+      "en": "In Flémalle, the Préhistomuseum offers an immersive rediscovery of Prehistory. This event resonates with the spirit of Dinédit, combining art and gastronomy in unique locations.",
+      "nl": "In Flémalle biedt het Préhistomuseum een meeslepende herontdekking van de prehistorie. Dit evenement resoneert met de geest van Dinédit, waarbij kunst en gastronomie in unieke locaties worden gecombineerd."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "gastronomie",
+        "handwerk"
+      ]
+    }
+  },
+  {
     "slug": "concerts-de-carillon-d-ete-2026",
     "published": "2026-07-27",
     "event_date": "2026-06-17",
@@ -1392,6 +1433,47 @@
     }
   },
   {
+    "slug": "reiefestival-2026",
+    "published": "2026-08-20",
+    "event_date": "2026-09-04",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Un festival artistique au fil des canaux de Bruges",
+      "en": "An Artistic Festival Along the Canals of Bruges",
+      "nl": "Een Artistiek Festival Langs de Kanalen van Brugge"
+    },
+    "excerpt": {
+      "fr": "Le Reiefestival à Bruges vous invite à explorer un monde où l'art et le patrimoine s'entremêlent. Chez Dinédit, nous sommes séduits par cette célébration qui fait écho à notre passion pour les expériences uniques en Belgique.",
+      "en": "The Reiefestival in Bruges invites you to explore a world where art and heritage intertwine. At Dinédit, we are captivated by this celebration that resonates with our passion for unique experiences in Belgium.",
+      "nl": "Het Reiefestival in Brugge nodigt je uit om een wereld te verkennen waar kunst en erfgoed samenkomen. Bij Dinédit zijn we betoverd door deze viering die aansluit bij onze passie voor unieke ervaringen in België."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo artistique",
+        "patrimoine",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "artistic expo",
+        "heritage",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "artistieke expo",
+        "erfgoed",
+        "cultuur"
+      ]
+    }
+  },
+  {
     "slug": "parcours-famille-au-musee-de-flandre-le-cirque-endormi",
     "published": "2026-07-09",
     "event_date": "",
@@ -1674,6 +1756,47 @@
         "België",
         "confidentiële tentoonstelling",
         "hedendaagse kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
+    "slug": "van-gogh-au-borinage-la-naissance-d-un-artiste",
+    "published": "2026-08-20",
+    "event_date": "",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "À la découverte de Van Gogh au Borinage : un écho artistique en Belgique",
+      "en": "Discovering Van Gogh in the Borinage: An Artistic Echo in Belgium",
+      "nl": "De ontdekking van Van Gogh in het Borinage: een artistieke echo in België"
+    },
+    "excerpt": {
+      "fr": "Plongez dans l'univers de Vincent van Gogh au Borinage, où l'art et la nature se rencontrent. Cet événement résonne avec notre approche de la gastronomie curée à Bruxelles chez Dinédit.",
+      "en": "Dive into the world of Vincent van Gogh in the Borinage, where art and nature meet. This event resonates with our culinary approach in Brussels at Dinédit.",
+      "nl": "Duik in de wereld van Vincent van Gogh in het Borinage, waar kunst en natuur elkaar ontmoeten. Dit evenement sluit aan bij onze culinaire benadering in Brussel bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
         "gastronomie"
       ]
     }
