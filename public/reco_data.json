@@ -1433,6 +1433,47 @@
     }
   },
   {
+    "slug": "le-grand-tour-de-liege-etape-4-de-chenee-a-la-boverie",
+    "published": "2026-08-24",
+    "event_date": "2026-08-29",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Une balade bucolique à Liège : le grand tour de Chênée à la Boverie",
+      "en": "A Bucolic Stroll in Liège: The Grand Tour from Chênée to La Boverie",
+      "nl": "Een Bucolische Wandeling in Luik: De Grote Tour van Chênée naar La Boverie"
+    },
+    "excerpt": {
+      "fr": "Le grand tour de Liège vous invite à une promenade enchanteuse au fil de la Meuse. Dans cette ambiance chaleureuse, Dinédit vous propose de découvrir la gastronomie au détour de chaque arrêt.",
+      "en": "The Grand Tour of Liège invites you to an enchanting walk along the Meuse. In this warm atmosphere, Dinédit offers you a chance to discover gastronomy at every stop.",
+      "nl": "De Grote Tour van Luik nodigt je uit voor een betoverende wandeling langs de Maas. In deze warme sfeer biedt Dinédit je de kans om de gastronomie bij elke stop te ontdekken."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "balade",
+        "culture",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "walk",
+        "culture",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "wandeling",
+        "cultuur",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "reiefestival-2026",
     "published": "2026-08-20",
     "event_date": "2026-09-04",
