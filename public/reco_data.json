@@ -1433,6 +1433,47 @@
     }
   },
   {
+    "slug": "tanks-in-town",
+    "published": "2026-08-27",
+    "event_date": "2026-08-28",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "Tanks in Town : un événement à la croisée des arts et de l'histoire à Mons",
+      "en": "Tanks in Town: An Event at the Intersection of Arts and History in Mons",
+      "nl": "Tanks in Town: Een evenement op het snijpunt van kunst en geschiedenis in Mons"
+    },
+    "excerpt": {
+      "fr": "Du 28 au 30 août 2026, Mons s'anime avec Tanks in Town, une exposition captivante d'art et de véhicules militaires. Cet événement résonne avec l'esprit de Dinédit, où l'art et la gastronomie se rencontrent pour des expériences inoubliables.",
+      "en": "From August 28 to 30, 2026, Mons comes alive with Tanks in Town, a captivating exhibition of art and military vehicles. This event resonates with the spirit of Dinédit, where art and gastronomy meet for unforgettable experiences.",
+      "nl": "Van 28 tot 30 augustus 2026 komt Mons tot leven met Tanks in Town, een boeiende tentoonstelling van kunst en militaire voertuigen. Dit evenement weerklinkt met de geest van Dinédit, waar kunst en gastronomie samenkomen voor onvergetelijke ervaringen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "le-grand-tour-de-liege-etape-4-de-chenee-a-la-boverie",
     "published": "2026-08-24",
     "event_date": "2026-08-29",
@@ -1510,6 +1551,47 @@
         "België",
         "artistieke expo",
         "erfgoed",
+        "cultuur"
+      ]
+    }
+  },
+  {
+    "slug": "journees-du-patrimoine-l-hotel-de-ville-ou-le-pouvoir-se-met",
+    "published": "2026-08-27",
+    "event_date": "2026-09-12",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "À la découverte de l'hôtel de ville de Liège lors des Journées du patrimoine",
+      "en": "Discovering the Liège Town Hall during Heritage Days",
+      "nl": "Ontdekking van het stadhuis van Luik tijdens de Erfgoeddagen"
+    },
+    "excerpt": {
+      "fr": "Les Journées du patrimoine de Liège nous invitent à explorer l'hôtel de ville, un lieu chargé d'histoires. Une belle occasion de lier culture et gastronomie avec Dinédit dans cette région vibrante.",
+      "en": "Heritage Days in Liège invite us to explore the town hall, a place rich in history. A wonderful opportunity to blend culture and gastronomy with Dinédit in this vibrant region.",
+      "nl": "De Erfgoeddagen in Luik nodigen ons uit om het stadhuis te verkennen, een plek vol verhalen. Een mooie gelegenheid om cultuur en gastronomie te combineren met Dinédit in deze levendige regio."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "patrimoine",
+        "gastronomie",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "heritage",
+        "gastronomy",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "erfgoed",
+        "gastronomie",
         "cultuur"
       ]
     }
