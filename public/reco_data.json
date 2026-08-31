@@ -574,6 +574,47 @@
     }
   },
   {
+    "slug": "brusk",
+    "published": "2026-08-31",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Une immersion artistique à Bruges avec BRUSK : un écho à Dinédit",
+      "en": "An Artistic Immersion in Bruges with BRUSK: A Reflection of Dinédit",
+      "nl": "Een artistieke onderdompeling in Brugge met BRUSK: een echo van Dinédit"
+    },
+    "excerpt": {
+      "fr": "BRUSK, le nouveau centre d'art de Bruges, dévoile deux expositions fascinantes. En résonance avec l'esprit de Dinédit, cet événement marie art et expérience sensorielle.",
+      "en": "BRUSK, the new art center in Bruges, unveils two fascinating exhibitions. In harmony with the spirit of Dinédit, this event blends art and sensory experience.",
+      "nl": "BRUSK, het nieuwe kunstcentrum in Brugge, onthult twee fascinerende tentoonstellingen. In lijn met de geest van Dinédit, verenigt dit evenement kunst en zintuiglijke ervaring."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art contemporain",
+        "Bruges"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "contemporary art",
+        "Bruges"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "hedendaagse kunst",
+        "Brugge"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -1511,6 +1552,47 @@
         "wandeling",
         "cultuur",
         "gastronomie"
+      ]
+    }
+  },
+  {
+    "slug": "silent-disco-night",
+    "published": "2026-08-31",
+    "event_date": "2026-09-03",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "Une nuit dansante et silencieuse à Mons",
+      "en": "A Dancing and Silent Night in Mons",
+      "nl": "Een Dansende en Stille Nacht in Mons"
+    },
+    "excerpt": {
+      "fr": "La Silent Disco Night à Mons invite à une expérience immersive où chaque participant choisit sa propre musique. Dans une ambiance conviviale, Dinédit vous propose de savourer ce moment de partage et de découverte culinaire.",
+      "en": "The Silent Disco Night in Mons invites you to an immersive experience where each participant chooses their own music. In a friendly atmosphere, Dinédit offers you the chance to enjoy this moment of sharing and culinary discovery.",
+      "nl": "De Silent Disco Night in Mons nodigt je uit voor een meeslepende ervaring waarin elke deelnemer zijn eigen muziek kiest. In een gezellige sfeer biedt Dinédit je de kans om dit moment van delen en culinaire ontdekking te genieten."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "événement culturel",
+        "gastronomie",
+        "musique"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "cultural event",
+        "gastronomy",
+        "music"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "culturele gebeurtenis",
+        "gastronomie",
+        "muziek"
       ]
     }
   },
