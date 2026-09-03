@@ -615,6 +615,47 @@
     }
   },
   {
+    "slug": "exposition-art-brusk-vision-large",
+    "published": "2026-09-03",
+    "event_date": "2026-05-08",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "À la découverte des univers de Bruges : Art BRUSK VISION LARGE",
+      "en": "Discovering the Universes of Bruges: Art BRUSK VISION LARGE",
+      "nl": "Ontdek de universums van Brugge: Art BRUSK VISION LARGE"
+    },
+    "excerpt": {
+      "fr": "L'exposition Art BRUSK VISION LARGE nous transporte dans les méandres de l'histoire de Bruges. À travers des œuvres fascinantes, nous ressentons l'âme vibrante de cette ville, en écho à notre démarche Dinédit.",
+      "en": "The Art BRUSK VISION LARGE exhibition takes us through the twists of Bruges' history. Through fascinating works, we feel the vibrant soul of this city, echoing our Dinédit approach.",
+      "nl": "De tentoonstelling Art BRUSK VISION LARGE neemt ons mee door de kronkels van de geschiedenis van Brugge. Door fascinerende werken voelen we de levendige ziel van deze stad, in echo van onze Dinédit-aanpak."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "culture",
+        "patrimoine"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "culture",
+        "heritage"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "cultuur",
+        "erfgoed"
+      ]
+    }
+  },
+  {
     "slug": "brussels-renaissance-festival",
     "published": "2026-07-01",
     "event_date": "2026-05-17",
@@ -1634,6 +1675,47 @@
         "artistieke expo",
         "erfgoed",
         "cultuur"
+      ]
+    }
+  },
+  {
+    "slug": "festifood",
+    "published": "2026-09-03",
+    "event_date": "2026-09-10",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "À la découverte de Festifood : un festival gourmand à Mons",
+      "en": "Discover Festifood: A Culinary Festival in Mons",
+      "nl": "Ontdek Festifood: Een Culinaire Festival in Mons"
+    },
+    "excerpt": {
+      "fr": "Festifood s'annonce comme une célébration des saveurs et des artisans locaux. Un moment idéal pour apprécier la gastronomie belge tout en s'imprégnant de l'atmosphère chaleureuse de Mons, en écho à l'esprit de Dinédit.",
+      "en": "Festifood promises to be a celebration of flavors and local artisans. It's the perfect moment to appreciate Belgian gastronomy while soaking in the warm atmosphere of Mons, echoing the spirit of Dinédit.",
+      "nl": "Festifood belooft een viering van smaken en lokale ambachtslieden te worden. Het is het ideale moment om de Belgische gastronomie te waarderen terwijl je de warme sfeer van Mons opsnuift, in lijn met de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "gastronomie",
+        "festival",
+        "artisans"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "gastronomy",
+        "festival",
+        "artisans"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "gastronomie",
+        "festival",
+        "ambachtslieden"
       ]
     }
   },
