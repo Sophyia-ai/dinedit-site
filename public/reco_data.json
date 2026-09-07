@@ -123,6 +123,47 @@
     }
   },
   {
+    "slug": "pierre-kroll-exposition",
+    "published": "2026-09-07",
+    "event_date": "2024-09-13",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "L'univers satirique de Pierre Kroll à Liège : une exposition à découvrir",
+      "en": "The Satirical Universe of Pierre Kroll in Liège: An Exhibition to Discover",
+      "nl": "Het satirische universum van Pierre Kroll in Luik: een tentoonstelling om te ontdekken"
+    },
+    "excerpt": {
+      "fr": "L'exposition dédiée à Pierre Kroll dévoile l'humour incisif et la créativité d'un caricaturiste emblématique. À travers cette initiative, Dinédit célèbre l'art engagé et l'échange culturel.",
+      "en": "The exhibition dedicated to Pierre Kroll reveals the incisive humor and creativity of an iconic caricaturist. Through this initiative, Dinédit celebrates engaged art and cultural exchange.",
+      "nl": "De tentoonstelling gewijd aan Pierre Kroll onthult de scherpe humor en creativiteit van een iconische karikaturist. Met dit initiatief viert Dinédit de geëngageerde kunst en culturele uitwisseling."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "dali-cybernetics",
     "published": "2026-07-16",
     "event_date": "2025-08-19",
@@ -1757,6 +1798,88 @@
         "erfgoed",
         "gastronomie",
         "cultuur"
+      ]
+    }
+  },
+  {
+    "slug": "12-eme-edition-des-fetes-de-wallonie",
+    "published": "2026-09-07",
+    "event_date": "2026-09-17",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "Célébrons ensemble les Fêtes de Wallonie à Mons en 2026",
+      "en": "Let's Celebrate the Walloon Festivals Together in Mons in 2026",
+      "nl": "Laten we samen de Feesten van Wallonië in Mons in 2026 vieren"
+    },
+    "excerpt": {
+      "fr": "Les Fêtes de Wallonie s’annoncent comme un moment vibrant où traditions et convivialité se rencontrent. Cet événement est l’occasion parfaite de savourer la culture belge tout en découvrant l’esprit de Dinédit.",
+      "en": "The Walloon Festivals promise to be a vibrant moment where traditions and friendliness meet. This event is the perfect opportunity to savor Belgian culture while discovering the spirit of Dinédit.",
+      "nl": "De Feesten van Wallonië beloven een bruisend moment te zijn waar tradities en gezelligheid samenkomen. Dit evenement is de perfecte gelegenheid om de Belgische cultuur te proeven en de geest van Dinédit te ontdekken."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "culture",
+        "gastronomie",
+        "événement"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "culture",
+        "gastronomy",
+        "event"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "cultuur",
+        "gastronomie",
+        "evenement"
+      ]
+    }
+  },
+  {
+    "slug": "exposition-art-brusk-maree-haute-l-homme-et-la-mer-dans-la-m",
+    "published": "2026-09-07",
+    "event_date": "2026-10-30",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Éveillez vos sens à l'exposition Art BRUSK : L'homme et la mer",
+      "en": "Awaken Your Senses at the Art BRUSK Exhibition: Man and the Sea",
+      "nl": "Ontwaak je zintuigen op de Art BRUSK tentoonstelling: De man en de zee"
+    },
+    "excerpt": {
+      "fr": "L'exposition Art BRUSK à Bruges nous invite à plonger dans un univers où la mer inspire l'art et la mode. Avec Dinédit, nous vous proposons d'explorer les liens entre gastronomie et créativité dans des lieux inédits.",
+      "en": "The Art BRUSK exhibition in Bruges invites us to dive into a world where the sea inspires art and fashion. With Dinédit, we encourage you to explore the connections between gastronomy and creativity in unique venues.",
+      "nl": "De Art BRUSK tentoonstelling in Brugge nodigt ons uit om te duiken in een wereld waar de zee kunst en mode inspireert. Met Dinédit moedigen we je aan om de verbindingen tussen gastronomie en creativiteit in unieke locaties te verkennen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "handwerk"
       ]
     }
   },
