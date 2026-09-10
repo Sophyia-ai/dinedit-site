@@ -164,6 +164,47 @@
     }
   },
   {
+    "slug": "pierre-kroll",
+    "published": "2026-09-10",
+    "event_date": "2024-09-13",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Une exposition inédite dédiée à Pierre Kroll au Musée du Grand Curtius",
+      "en": "A Unique Exhibition Dedicated to Pierre Kroll at the Grand Curtius Museum",
+      "nl": "Een Unieke Tentoonstelling Gewijd aan Pierre Kroll in het Museum van de Grote Curtius"
+    },
+    "excerpt": {
+      "fr": "L'univers de Pierre Kroll s'invite au Musée du Grand Curtius à Liège, offrant une plongée dans son esprit satirique. Ce moment résonne avec notre passion pour l'art et la gastronomie, des valeurs chères à Dinédit.",
+      "en": "The world of Pierre Kroll invites you to the Grand Curtius Museum in Liège, offering a dive into his satirical mind. This moment resonates with our passion for art and gastronomy, values dear to Dinédit.",
+      "nl": "De wereld van Pierre Kroll nodigt je uit in het Museum van de Grote Curtius in Luik, met een duik in zijn satirische geest. Dit moment resoneert met onze passie voor kunst en gastronomie, waarden die dierbaar zijn aan Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "art"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "kunst"
+      ]
+    }
+  },
+  {
     "slug": "dali-cybernetics",
     "published": "2026-07-16",
     "event_date": "2025-08-19",
@@ -1798,6 +1839,47 @@
         "erfgoed",
         "gastronomie",
         "cultuur"
+      ]
+    }
+  },
+  {
+    "slug": "festival-brugeois-de-la-biere-2026",
+    "published": "2026-09-10",
+    "event_date": "2026-09-12",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Venez célébrer la bière à Bruges en 2026 avec Dinédit",
+      "en": "Come Celebrate Beer in Bruges in 2026 with Dinédit",
+      "nl": "Kom Bier Vieren in Brugge in 2026 met Dinédit"
+    },
+    "excerpt": {
+      "fr": "Le Festival de la Bière de Bruges promet une expérience sensorielle riche. Nous avons repéré cet événement qui résonne avec l'esprit de Dinédit, fusionnant art et gastronomie.",
+      "en": "The Bruges Beer Festival promises a rich sensory experience. We have spotted this event that resonates with the spirit of Dinédit, merging art and gastronomy.",
+      "nl": "Het Brugse Bierfestival belooft een rijke zintuiglijke ervaring. We hebben dit evenement opgemerkt dat resoneert met de geest van Dinédit, waarbij kunst en gastronomie samenkomen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "gastronomie",
+        "artisanat",
+        "festival"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "gastronomy",
+        "craftsmanship",
+        "festival"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "gastronomie",
+        "ambacht",
+        "festival"
       ]
     }
   },
