@@ -205,6 +205,47 @@
     }
   },
   {
+    "slug": "exposition-de-pierre-kroll",
+    "published": "2026-09-14",
+    "event_date": "2024-09-13",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "À la découverte de l'œuvre de Pierre Kroll au Musée du Grand Curtius",
+      "en": "Discovering the Work of Pierre Kroll at the Grand Curtius Museum",
+      "nl": "Ontdek het werk van Pierre Kroll in het Museum van de Grote Curtius"
+    },
+    "excerpt": {
+      "fr": "L'exposition de Pierre Kroll, caricaturiste liégeois de renom, promet un voyage captivant à travers ses œuvres. Une belle occasion de marier art et gastronomie, comme nous le faisons chez Dinédit.",
+      "en": "The Pierre Kroll exhibition, renowned Liège caricaturist, promises a captivating journey through his works. A wonderful opportunity to blend art and gastronomy, as we do at Dinédit.",
+      "nl": "De tentoonstelling van Pierre Kroll, de bekende Luikse karikaturist, belooft een boeiende reis door zijn werken. Een mooie gelegenheid om kunst en gastronomie te combineren, zoals we doen bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "dali-cybernetics",
     "published": "2026-07-16",
     "event_date": "2025-08-19",
@@ -1921,6 +1962,88 @@
         "cultuur",
         "gastronomie",
         "evenement"
+      ]
+    }
+  },
+  {
+    "slug": "anima-eterna-brugge-alexander-melnikov-bartok-musique-pour-c",
+    "published": "2026-09-14",
+    "event_date": "2026-09-18",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Une soirée musicale avec Anima Eterna et Alexander Melnikov à Bruges",
+      "en": "An Evening of Music with Anima Eterna and Alexander Melnikov in Bruges",
+      "nl": "Een Muzikale Avond met Anima Eterna en Alexander Melnikov in Brugge"
+    },
+    "excerpt": {
+      "fr": "Le 18 septembre 2026, Bruges vibrera aux sons de Bartók interprétés par Anima Eterna et Alexander Melnikov. Une expérience sensorielle qui résonne avec l'esprit de Dinédit.",
+      "en": "On September 18, 2026, Bruges will resonate with the sounds of Bartók performed by Anima Eterna and Alexander Melnikov. An immersive experience that echoes the spirit of Dinédit.",
+      "nl": "Op 18 september 2026 zal Brugge resoneren met de klanken van Bartók, uitgevoerd door Anima Eterna en Alexander Melnikov. Een zintuiglijke ervaring die weerklank vindt in de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "musique",
+        "culture",
+        "événement"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "music",
+        "culture",
+        "event"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "muziek",
+        "cultuur",
+        "evenement"
+      ]
+    }
+  },
+  {
+    "slug": "marc-chagall-matieres",
+    "published": "2026-09-14",
+    "event_date": "2026-10-10",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "L'univers coloré de Marc Chagall à Mons : une invitation à l'émerveillement",
+      "en": "The Colorful Universe of Marc Chagall in Mons: An Invitation to Wonder",
+      "nl": "Het Kleurrijke Universum van Marc Chagall in Mons: Een Uitnodiging tot Verwondering"
+    },
+    "excerpt": {
+      "fr": "Découvrez l'exposition captivante sur Marc Chagall à Mons, où l'art et les émotions se mêlent avec délicatesse. Une belle occasion de s'inspirer avant un dîner Dinédit chaleureux.",
+      "en": "Discover the captivating exhibition on Marc Chagall in Mons, where art and emotions intertwine delicately. A wonderful opportunity to be inspired before a warm Dinédit dinner.",
+      "nl": "Ontdek de boeiende tentoonstelling over Marc Chagall in Mons, waar kunst en emoties subtiel samensmelten. Een mooie gelegenheid om geïnspireerd te raken voor een warm Dinédit-diner."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "art",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "art",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "kunst",
+        "gastronomie"
       ]
     }
   },
