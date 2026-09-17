@@ -1966,6 +1966,47 @@
     }
   },
   {
+    "slug": "journees-europeennes-du-patrimoine-2026-a-bailleul-balade-pa",
+    "published": "2026-09-17",
+    "event_date": "2026-09-17",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "Explorez les Villages de Flandre lors des Journées Européennes du Patrimoine",
+      "en": "Explore the Villages of Flanders during the European Heritage Days",
+      "nl": "Verken de Dorpjes van Vlaanderen tijdens de Europese Erfgoeddagen"
+    },
+    "excerpt": {
+      "fr": "Les Journées Européennes du Patrimoine offrent une occasion de flâner dans les charmants villages de Flandre tout en découvrant leur histoire. Une expérience qui résonne avec la démarche de Dinédit, alliant art et gastronomie dans des lieux insolites.",
+      "en": "The European Heritage Days offer a chance to stroll through the charming villages of Flanders while discovering their history. An experience that resonates with Dinédit's approach, combining art and gastronomy in unique locations.",
+      "nl": "De Europese Erfgoeddagen bieden een kans om door de charmante dorpjes van Vlaanderen te slenteren en hun geschiedenis te ontdekken. Een ervaring die aansluit bij de aanpak van Dinédit, die kunst en gastronomie in unieke locaties combineert."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "patrimoine",
+        "gastronomie",
+        "art"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "heritage",
+        "gastronomy",
+        "art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "erfgoed",
+        "gastronomie",
+        "kunst"
+      ]
+    }
+  },
+  {
     "slug": "anima-eterna-brugge-alexander-melnikov-bartok-musique-pour-c",
     "published": "2026-09-14",
     "event_date": "2026-09-18",
@@ -2003,6 +2044,47 @@
         "muziek",
         "cultuur",
         "evenement"
+      ]
+    }
+  },
+  {
+    "slug": "dimanche-sans-voiture",
+    "published": "2026-09-17",
+    "event_date": "2026-09-20",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Une journée sans voiture à Bruges : redécouvrez la ville autrement",
+      "en": "A Car-Free Day in Bruges: Rediscover the City Differently",
+      "nl": "Een autovrije dag in Brugge: herontdek de stad op een andere manier"
+    },
+    "excerpt": {
+      "fr": "Le 20 septembre, Bruges se transforme en un havre de tranquillité où la voiture n'a pas sa place. Dans cet écrin de calme, Dinédit vous invite à explorer des moments de gastronomie inédits.",
+      "en": "On September 20th, Bruges transforms into a haven of tranquility where cars have no place. In this serene setting, Dinédit invites you to explore unique gastronomic moments.",
+      "nl": "Op 20 september verandert Brugge in een oase van rust waar de auto geen plaats heeft. In deze serene omgeving nodigt Dinédit je uit om unieke gastronomische momenten te verkennen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "gastronomie",
+        "événement",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "gastronomy",
+        "event",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "gastronomie",
+        "evenement",
+        "cultuur"
       ]
     }
   },
@@ -2085,6 +2167,47 @@
         "confidentiële tentoonstelling",
         "gastronomie",
         "handwerk"
+      ]
+    }
+  },
+  {
+    "slug": "les-fortifications-de-la-citadelle",
+    "published": "2026-09-17",
+    "event_date": "2026-12-03",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "À la découverte des fortifications de la citadelle de Liège",
+      "en": "Discovering the Fortifications of the Liège Citadel",
+      "nl": "Ontdekking van de vestingwerken van de citadel van Luik"
+    },
+    "excerpt": {
+      "fr": "Le 3 décembre 2026, plongeons au cœur des fortifications de la citadelle de Liège, un voyage à travers l'histoire dans un cadre enchanteur. Ce moment résonne avec l'esprit de Dinédit, où art et gastronomie se rencontrent dans des lieux inédits.",
+      "en": "On December 3, 2026, let’s dive into the fortifications of the Liège Citadel, a journey through history in an enchanting setting. This moment resonates with the spirit of Dinédit, where art and gastronomy meet in unique places.",
+      "nl": "Op 3 december 2026 duiken we in de vestingwerken van de citadel van Luik, een reis door de geschiedenis in een betoverende omgeving. Dit moment resoneert met de geest van Dinédit, waar kunst en gastronomie elkaar ontmoeten op unieke locaties."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "patrimoine",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "heritage",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "erfgoed",
+        "gastronomie"
       ]
     }
   },
