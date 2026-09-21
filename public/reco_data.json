@@ -287,6 +287,47 @@
     }
   },
   {
+    "slug": "a-l-abri-et-en-securite-800-ans-d-histoire-surprenante-du-be",
+    "published": "2026-09-21",
+    "event_date": "2026-04-03",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Explorez l'histoire fascinante du Béguinage de Bruges avec Dinédit",
+      "en": "Explore the Fascinating History of the Beguinage of Bruges with Dinédit",
+      "nl": "Verken de Fascinerende Geschiedenis van het Begijnhof van Brugge met Dinédit"
+    },
+    "excerpt": {
+      "fr": "Le Béguinage de Bruges, inscrit au patrimoine mondial de l'UNESCO, révèle 800 ans d'histoires et de secrets. Avec Dinédit, nous vous invitons à découvrir ce lieu chargé d'émotion et d'histoire.",
+      "en": "The Beguinage of Bruges, a UNESCO World Heritage site, reveals 800 years of stories and secrets. With Dinédit, we invite you to discover this emotionally rich and historic place.",
+      "nl": "Het Begijnhof van Brugge, een UNESCO-werelderfgoed, onthult 800 jaar aan verhalen en geheimen. Met Dinédit nodigen we je uit om deze emotioneel rijke en historische plek te ontdekken."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "histoire",
+        "gastronomie",
+        "culture"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "history",
+        "gastronomy",
+        "culture"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "geschiedenis",
+        "gastronomie",
+        "cultuur"
+      ]
+    }
+  },
+  {
     "slug": "regards-pluriels-lart-belge-et-lutopie-communiste-au-xxe-sie",
     "published": "2026-07-01",
     "event_date": "2026-04-11",
@@ -2130,6 +2171,47 @@
     }
   },
   {
+    "slug": "la-nuit-des-musees",
+    "published": "2026-09-21",
+    "event_date": "2026-10-16",
+    "source_name": "visitmons.be",
+    "source_url": "https://www.visitmons.be",
+    "region": "Mons",
+    "title": {
+      "fr": "Explorez la Nuit des musées à Mons avec Dinédit",
+      "en": "Explore the Night of Museums in Mons with Dinédit",
+      "nl": "Verken de Nacht van de Musea in Mons met Dinédit"
+    },
+    "excerpt": {
+      "fr": "Le 16 octobre 2026, Mons s'illumine pour une Nuit des musées où l'art et la culture s'entrelacent. Un moment idéal pour découvrir des lieux insolites, en écho à l'esprit de Dinédit.",
+      "en": "On October 16, 2026, Mons will light up for a Night of Museums where art and culture intertwine. A perfect moment to discover unusual places, echoing the spirit of Dinédit.",
+      "nl": "Op 16 oktober 2026 zal Mons oplichten voor een Nacht van de Musea waar kunst en cultuur samensmelten. Een ideaal moment om ongewone plekken te ontdekken, in lijn met de geest van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "culture",
+        "gastronomie"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "culture",
+        "gastronomy"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "cultuur",
+        "gastronomie"
+      ]
+    }
+  },
+  {
     "slug": "exposition-art-brusk-maree-haute-l-homme-et-la-mer-dans-la-m",
     "published": "2026-09-07",
     "event_date": "2026-10-30",
@@ -2536,6 +2618,47 @@
         "confidentiële tentoonstelling",
         "kunst",
         "gastronomie"
+      ]
+    }
+  },
+  {
+    "slug": "acces-a-la-vue-panoramique-de-la-cite-administrative",
+    "published": "2026-09-21",
+    "event_date": "",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Découvrez la vue imprenable de la Cité administrative à Liège",
+      "en": "Discover the Stunning View of the Administrative City in Liège",
+      "nl": "Ontdek het Adembenemende Uitzicht op de Administratieve Stad in Luik"
+    },
+    "excerpt": {
+      "fr": "Le panorama de la Cité administrative à Liège offre une expérience visuelle saisissante. En parallèle, Dinédit vous invite à savourer des dîners inédits à Bruxelles.",
+      "en": "The panorama of the Administrative City in Liège offers a striking visual experience. Meanwhile, Dinédit invites you to enjoy unique dinners in Brussels.",
+      "nl": "Het panorama van de Administratieve Stad in Luik biedt een indrukwekkende visuele ervaring. Ondertussen nodigt Dinédit je uit om unieke diners in Brussel te genieten."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "gastronomie",
+        "handwerk"
       ]
     }
   }
