@@ -1,5 +1,46 @@
 [
   {
+    "slug": "reouverture-du-design-museum-gent",
+    "published": "2026-09-24",
+    "event_date": "2023-10-03",
+    "source_name": "visitgent.be",
+    "source_url": "https://visit.gent.be/fr",
+    "region": "Gand",
+    "title": {
+      "fr": "La réouverture du Design Museum Gent : une nouvelle aile à explorer",
+      "en": "The Reopening of the Design Museum Gent: A New Wing to Explore",
+      "nl": "De heropening van het Design Museum Gent: een nieuwe vleugel om te verkennen"
+    },
+    "excerpt": {
+      "fr": "La réouverture du Design Museum Gent nous invite à redécouvrir l’art dans un espace rénové. Chez Dinédit, nous apprécions les moments où la culture et la gastronomie se rencontrent.",
+      "en": "The reopening of the Design Museum Gent invites us to rediscover art in a renovated space. At Dinédit, we cherish moments where culture and gastronomy meet.",
+      "nl": "De heropening van het Design Museum Gent nodigt ons uit om kunst opnieuw te ontdekken in een gerenoveerde ruimte. Bij Dinédit waarderen we de momenten waarop cultuur en gastronomie samenkomen."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "culture",
+        "design"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "culture",
+        "design"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "cultuur",
+        "design"
+      ]
+    }
+  },
+  {
     "slug": "pierre-kroll-celebre-et-prolifique-caricaturiste-liegeois",
     "published": "2026-07-06",
     "event_date": "2024-09-13",
@@ -2253,6 +2294,47 @@
     }
   },
   {
+    "slug": "maree-haute-l-homme-et-la-mer-dans-la-mode-et-l-art",
+    "published": "2026-09-24",
+    "event_date": "2026-10-30",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Un voyage artistique au fil de l'eau à Bruges",
+      "en": "An Artistic Journey Along the Water in Bruges",
+      "nl": "Een Artistieke Reis Langs het Water in Brugge"
+    },
+    "excerpt": {
+      "fr": "L'exposition 'MARÉE HAUTE' à Bruges nous plonge dans l'univers fascinant de la mer à travers l'art et la mode. Chez Dinédit, nous célébrons ces moments qui marient culture et gastronomie.",
+      "en": "The exhibition 'HIGH TIDE' in Bruges immerses us in the fascinating world of the sea through art and fashion. At Dinédit, we celebrate these moments that blend culture and gastronomy.",
+      "nl": "De tentoonstelling 'HOOG WATER' in Brugge dompelt ons onder in de fascinerende wereld van de zee door middel van kunst en mode. Bij Dinédit vieren we deze momenten die cultuur en gastronomie combineren."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële tentoonstelling",
+        "gastronomie",
+        "ambacht"
+      ]
+    }
+  },
+  {
     "slug": "les-fortifications-de-la-citadelle",
     "published": "2026-09-17",
     "event_date": "2026-12-03",
@@ -2637,6 +2719,47 @@
       "fr": "Le panorama de la Cité administrative à Liège offre une expérience visuelle saisissante. En parallèle, Dinédit vous invite à savourer des dîners inédits à Bruxelles.",
       "en": "The panorama of the Administrative City in Liège offers a striking visual experience. Meanwhile, Dinédit invites you to enjoy unique dinners in Brussels.",
       "nl": "Het panorama van de Administratieve Stad in Luik biedt een indrukwekkende visuele ervaring. Ondertussen nodigt Dinédit je uit om unieke diners in Brussel te genieten."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "gastronomie",
+        "handwerk"
+      ]
+    }
+  },
+  {
+    "slug": "visites-guidees-de-l-office-de-tourisme",
+    "published": "2026-09-24",
+    "event_date": "",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Explorez Liège avec les visites guidées de l'office de tourisme",
+      "en": "Explore Liège with Guided Tours from the Tourist Office",
+      "nl": "Ontdek Luik met de rondleidingen van de toeristische dienst"
+    },
+    "excerpt": {
+      "fr": "Les visites guidées de l'office de tourisme révèlent les secrets de Liège avec une approche sensorielle. Chez Dinédit, nous aimons les moments qui marient découverte et gastronomie.",
+      "en": "The guided tours from the tourist office reveal the secrets of Liège with a sensory approach. At Dinédit, we cherish moments that blend discovery and gastronomy.",
+      "nl": "De rondleidingen van de toeristische dienst onthullen de geheimen van Luik met een sensorische benadering. Bij Dinédit houden we van momenten die ontdekking en gastronomie combineren."
     },
     "tags": {
       "fr": [
