@@ -2335,6 +2335,47 @@
     }
   },
   {
+    "slug": "krikrak-2026",
+    "published": "2026-09-28",
+    "event_date": "2026-11-07",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Krikrak 2026 : une immersion artistique à Bruges",
+      "en": "Krikrak 2026: An Artistic Immersion in Bruges",
+      "nl": "Krikrak 2026: Een Artistieke Onderdompeling in Brugge"
+    },
+    "excerpt": {
+      "fr": "En novembre 2026, Bruges s'anime avec la douzième édition de Krikrak, un festival artistique qui promet des découvertes. Une belle occasion pour nous de marier art et gastronomie à travers les dîners inédits de Dinédit.",
+      "en": "In November 2026, Bruges comes alive with the twelfth edition of Krikrak, an artistic festival promising discoveries. A wonderful opportunity for us to blend art and gastronomy through Dinédit's unique dinners.",
+      "nl": "In november 2026 komt Brugge tot leven met de twaalfde editie van Krikrak, een artistiek festival dat ontdekkingen belooft. Een prachtige gelegenheid voor ons om kunst en gastronomie te combineren via de unieke diners van Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "art contemporain"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential exhibition",
+        "gastronomy",
+        "contemporary art"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "gastronomie",
+        "hedendaagse kunst"
+      ]
+    }
+  },
+  {
     "slug": "les-fortifications-de-la-citadelle",
     "published": "2026-09-17",
     "event_date": "2026-12-03",
