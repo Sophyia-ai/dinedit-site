@@ -2171,6 +2171,47 @@
     }
   },
   {
+    "slug": "a-la-decouverte-de-la-salle-de-commande-infrabel-a-la-gare-d",
+    "published": "2026-10-01",
+    "event_date": "2026-10-04",
+    "source_name": "visitezliege.be",
+    "source_url": "https://www.visitezliege.be",
+    "region": "Liège",
+    "title": {
+      "fr": "Explorez la salle de commande Infrabel à Liège, un moment inédit",
+      "en": "Explore the Infrabel Control Room in Liège, a Unique Moment",
+      "nl": "Ontdek de Infrabel Controlekamer in Luik, een Uniek Moment"
+    },
+    "excerpt": {
+      "fr": "Le dimanche 4 octobre 2026, plongez dans l'univers fascinant de la salle de commande Infrabel à la gare des Guillemins. Une occasion parfaite pour allier découverte et gastronomie avec Dinédit.",
+      "en": "On Sunday, October 4, 2026, dive into the fascinating world of the Infrabel control room at the Guillemins station. A perfect opportunity to combine discovery and gastronomy with Dinédit.",
+      "nl": "Op zondag 4 oktober 2026 duik je in de fascinerende wereld van de Infrabel controlekamer op het station van Guillemins. Een perfecte gelegenheid om ontdekking en gastronomie te combineren met Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo confidentielle",
+        "gastronomie",
+        "artisanat"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "confidential expo",
+        "gastronomy",
+        "craftsmanship"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "confidentiële expo",
+        "gastronomie",
+        "handwerk"
+      ]
+    }
+  },
+  {
     "slug": "marc-chagall-matieres",
     "published": "2026-09-14",
     "event_date": "2026-10-10",
@@ -2372,6 +2413,47 @@
         "confidentiële expo",
         "gastronomie",
         "hedendaagse kunst"
+      ]
+    }
+  },
+  {
+    "slug": "lueur-d-hiver",
+    "published": "2026-10-01",
+    "event_date": "2026-11-20",
+    "source_name": "visitbruges.be",
+    "source_url": "https://www.visitbruges.be/fr",
+    "region": "Bruges",
+    "title": {
+      "fr": "Éveillez vos sens avec Lueur d'hiver à Bruges",
+      "en": "Awaken Your Senses with Winter Glow in Bruges",
+      "nl": "Ontwaak je zintuigen met Winterglans in Brugge"
+    },
+    "excerpt": {
+      "fr": "L'hiver s'installe à Bruges, enveloppant la ville d'une douce lueur chaleureuse. Cette transformation hivernale résonne avec l'esprit de Dinédit, où chaque moment se vit intensément.",
+      "en": "Winter settles in Bruges, wrapping the city in a warm, gentle glow. This winter transformation resonates with the spirit of Dinédit, where every moment is lived intensely.",
+      "nl": "De winter vestigt zich in Brugge en omhult de stad in een warme, zachte gloed. Deze winterse transformatie resoneert met de geest van Dinédit, waar elk moment intens wordt beleefd."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "expo lumineuse",
+        "gastronomie",
+        "hiver"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "light exhibition",
+        "gastronomy",
+        "winter"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "lichte tentoonstelling",
+        "gastronomie",
+        "winter"
       ]
     }
   },
@@ -2823,6 +2905,47 @@
         "confidentiële expo",
         "gastronomie",
         "handwerk"
+      ]
+    }
+  },
+  {
+    "slug": "soiree-a-la-decouverte-des-varietes-anciennes-au-musee-de-la",
+    "published": "2026-10-01",
+    "event_date": "",
+    "source_name": "coeurdeflandre.fr",
+    "source_url": "https://www.coeurdeflandre.fr/a-faire-sur-place/agenda/",
+    "region": "Flandre",
+    "title": {
+      "fr": "Une soirée dédiée aux variétés anciennes, à Steenwerck",
+      "en": "An Evening Dedicated to Heritage Varieties in Steenwerck",
+      "nl": "Een Avond Gewijd aan Erfgoedvariëteiten in Steenwerck"
+    },
+    "excerpt": {
+      "fr": "Venez explorer les saveurs oubliées lors d'une soirée dédiée aux variétés anciennes. Une belle manière de célébrer la gastronomie, en écho avec notre démarche chez Dinédit.",
+      "en": "Come explore forgotten flavors at an evening dedicated to heritage varieties. A wonderful way to celebrate gastronomy, echoing our approach at Dinédit.",
+      "nl": "Kom vergeten smaken verkennen tijdens een avond gewijd aan erfgoedvariëteiten. Een prachtige manier om de gastronomie te vieren, in lijn met onze aanpak bij Dinédit."
+    },
+    "tags": {
+      "fr": [
+        "Dinédit",
+        "Belgique",
+        "gastronomie",
+        "artisanat",
+        "événement culturel"
+      ],
+      "en": [
+        "Dinédit",
+        "Belgium",
+        "gastronomy",
+        "craftsmanship",
+        "cultural event"
+      ],
+      "nl": [
+        "Dinédit",
+        "België",
+        "gastronomie",
+        "handwerk",
+        "culturele gebeurtenis"
       ]
     }
   }
